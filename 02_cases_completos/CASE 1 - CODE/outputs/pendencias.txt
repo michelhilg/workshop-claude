@@ -1,0 +1,81 @@
+PENDÊNCIAS E ITENS NÃO RESOLVIDOS
+Gerado em: 2026-06-04
+Fonte: consolidação dos arquivos em inputs/
+
+---
+
+ITENS EM ABERTO IDENTIFICADOS NOS INPUTS
+
+1. Ferramenta de agendamento (Buffer? Later? outro?)
+   Arquivo: reuniao_marco_transcricao.txt / reuniao_alinhamento_marco.pptx
+   Status: decidido que não seria Buffer nem Later, mas o nome ficou inaudível na gravação.
+   Ação necessária: confirmar qual ferramenta foi escolhida.
+
+2. Checklist "antes de mandar para edição" incompleto
+   Arquivo: checklist_publicacao_v3.txt
+   Status: parte do checklist foi apagada por engano. Itens faltantes desconhecidos.
+   Ação necessária: reconstruir essa seção.
+
+3. Transformação entregue por Michel — não definida em 1 frase
+   Arquivo: notas_mentoria_gabriel.txt
+   Status: ação pendente sugerida pelo mentor Gabriel. Michel não conseguiu responder na call.
+   Ação necessária: escrever em 1 frase a transformação entregue ao público.
+
+4. Tema do infoproduto — não definido
+   Arquivo: notas_mentoria_gabriel.txt
+   Status: Michel sabe que quer lançar, mas o tema não foi escolhido.
+   Ação necessária: mapear dor recorrente nos comentários e direct dos últimos 30 posts.
+
+5. Decisão sobre lista de e-mail — antes ou depois do 10k seguidores
+   Arquivo: notas_mentoria_gabriel.txt
+   Status: em aberto, Michel não decidiu.
+
+6. "Entrevista de cliente" com 3 seguidores (call por vídeo)
+   Arquivo: notas_mentoria_gabriel.txt
+   Status: sugestão do Gabriel, ainda não realizada.
+
+7. Colaboração com [nome apagado] em maio
+   Arquivo: calendario_abril_rascunho.txt / tracking_conteudo_q1.xlsx
+   Status: o nome do colaborador foi apagado do rascunho. Data: maio de 2026.
+   Ação necessária: recuperar o nome.
+
+8. Dados de março de 2026 — incompletos
+   Arquivo: analise_performance_q1.pptx / tracking_conteudo_q1.xlsx
+   Status: análise do Q1 está com dados parciais de março.
+   Ação necessária: fechar análise até 05/04/2026.
+
+9. Stories nunca foram medidos sistematicamente
+   Arquivo: analise_performance_q1.pptx
+   Status: começar a medir a partir de abril.
+   Ação necessária: definir o que medir e como registrar.
+
+10. UTMs no link da bio não configurados
+    Arquivo: analise_performance_q1.pptx
+    Status: taxa de clique no link da bio ainda não está sendo rastreada.
+    Ação necessária: configurar UTMs.
+
+11. Meta de taxa de salvos por formato não definida
+    Arquivo: analise_performance_q1.pptx
+    Status: hoje a meta de 3% é genérica para todos os formatos.
+    Ação necessária: definir meta separada por reel e carrossel.
+
+12. Backup dos vídeos nunca definido sistematicamente
+    Arquivo: checklist_publicacao_v3.txt
+    Status: em aberto.
+
+13. Semana 3 de abril sem temas
+    Arquivo: calendario_abril_rascunho.txt / tracking_conteudo_q1.xlsx
+    Status: deixada em branco por falta de inspiração no momento do preenchimento.
+
+14. Canal de comunicação com Rodrigo não documentado
+    Arquivo: nenhum dos inputs registra como contatar o Rodrigo.
+
+15. Processo de reaproveitamento de conteúdo para outros formatos
+    Status: mencionado no checklist mas nunca documentado.
+
+---
+
+AUSÊNCIA DE TEMAS ESPERADOS
+
+Todos os 6 temas esperados tinham dados suficientes nos inputs para gerar os arquivos wiki.
+Nenhum foi omitido.

@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Sem Frescura — Apresentação Completa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   CLAUDE SEM FRESCURA — SISTEMA DE SLIDES v2 · UNIFICADO
+   38 slides · 1.1 Abertura → 1.2 Claude → 1.3/2.1 Tour → 2.2 Cases → 3.1 Code → 3.2/3.3 Cases → Bônus
+   ============================================================ */
+:root{
+  --green-deep:#0E3A2F; --green-alt:#0C3329; --cream:#F2EBDD; --cream-soft:#F5EFE3;
+  --coral:#E8865A; --coral-soft:#EE9A73; --mint-bright:#7FE3B0; --mint:#A8E6C9;
+  --mint-muted:#8FB89E; --ink:#0A0A0A; --pill-light:#E7DFCF; --hairline-dark:#3A5247;
+  --f-display:'Hanken Grotesk',system-ui,sans-serif;
+  --f-head:'Hanken Grotesk',system-ui,sans-serif;
+  --f-body:'Hanken Grotesk',system-ui,sans-serif;
+  --f-mono:'JetBrains Mono',ui-monospace,monospace;
+  --r-pill:999px; --r-card:20px;
+  --t-display:6.4vw; --t-title:4.0vw; --t-title-sm:3.0vw; --t-tagline:2.4vw;
+  --t-lead:1.7vw; --t-body:1.45vw; --t-body-sm:1.25vw; --t-meta:1.0vw;
+  --t-foot:0.85vw; --t-tbl:1.32vw; --t-tbl-h:1.0vw;
+  --pad-block:7vh; --pad-inline:6vw; --gap-stack:2.2vh;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;background:#000;overflow:hidden;font-family:var(--f-body)}
+
+/* ---- PALCO ---- */
+.deck{position:fixed;inset:0}
+.stage{position:relative;width:100vw;height:100vh;overflow:hidden;background:var(--bg)}
+.slide{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  padding:var(--pad-block) var(--pad-inline);
+  padding-bottom:calc(var(--pad-block) + 3.5vh);
+  background:var(--bg);color:var(--fg);
+  opacity:0;visibility:hidden;transition:opacity .22s ease,visibility .22s;
+}
+.slide.active{opacity:1;visibility:visible}
+
+/* ---- TEMAS ---- */
+.slide[data-theme="dark"]{
+  --bg:var(--green-deep); --fg:var(--cream); --fg-muted:#B9C9BF;
+  --eyebrow:#8FB89E; --accent:var(--coral); --highlight:var(--mint-bright);
+  --card:rgba(255,255,255,0.05); --card-border:rgba(255,255,255,0.12);
+  --pill:rgba(255,255,255,0.07); --pill-text:var(--cream); --footer:#6E8579; --hairline:#3A5247;
+}
+.slide[data-theme="light"]{
+  --bg:var(--cream); --fg:var(--green-deep); --fg-muted:#5B6B61;
+  --eyebrow:#8A9890; --accent:var(--coral); --highlight:var(--green-deep);
+  --card:var(--pill-light); --card-border:transparent;
+  --pill:var(--pill-light); --pill-text:var(--green-deep); --footer:#9A9684; --hairline:#C9BFA9;
+}
+
+/* ---- TIPOGRAFIA ---- */
+.t-display{font-family:var(--f-display);font-weight:800;letter-spacing:-0.02em;line-height:.95;font-size:var(--t-display)}
+.t-title{font-family:var(--f-head);font-weight:800;letter-spacing:-0.02em;line-height:1.0;font-size:var(--t-title)}
+.t-title.sm{font-size:var(--t-title-sm)}
+.t-tagline{font-family:var(--f-head);font-weight:700;letter-spacing:-0.01em;line-height:1.1;font-size:var(--t-tagline)}
+.t-lead{font-family:var(--f-body);font-weight:400;color:var(--fg-muted);line-height:1.4;font-size:var(--t-lead)}
+.t-body{font-family:var(--f-body);font-weight:400;color:var(--fg-muted);line-height:1.45;font-size:var(--t-body)}
+.coral{color:var(--coral)} .mint{color:var(--mint-bright)} .fg{color:var(--fg)}
+
+/* ---- ESTRUTURA ---- */
+.s-head{display:flex;justify-content:space-between;align-items:flex-start;gap:2vw;flex:0 0 auto;min-height:6vh}
+.s-body{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;min-height:0;padding-top:2vh}
+.s-body.top{justify-content:flex-start}
+.s-body:not(.center){justify-content:flex-start;padding-top:4vh}
+.s-body.center{justify-content:center}
+.stack>*+*{margin-top:var(--gap-stack)}
+
+/* ---- ELEMENTOS DECORATIVOS ---- */
+.eyebrow{font-family:var(--f-mono);font-weight:500;text-transform:uppercase;letter-spacing:0.16em;color:var(--eyebrow);font-size:var(--t-meta)}
+.brand-badge{display:inline-flex;align-items:center;gap:.5em;background:var(--cream);color:var(--green-deep);border-radius:var(--r-pill);padding:.6em 1.2em;font-family:var(--f-head);font-weight:700;font-size:var(--t-meta)}
+.brand-badge .ast{color:var(--coral);font-size:1.15em;line-height:1}
+.section-tag{display:inline-flex;background:var(--mint);color:var(--green-deep);border-radius:var(--r-pill);padding:.45em 1.1em;font-family:var(--f-mono);font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:var(--t-meta)}
+.ast-deco{font-size:2vw;color:var(--coral);line-height:1}
+.icon-box{width:5vw;height:5vw;max-width:108px;max-height:108px;border-radius:20px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;box-shadow:0 10px 30px rgba(14,58,47,.12)}
+.icon-box svg{width:52%;height:52%;stroke-width:2}
+.icon-box.mint{background:var(--mint);color:var(--green-deep)}
+.icon-box.coral{background:var(--coral);color:var(--green-deep)}
+.time-pill{display:inline-flex;align-items:center;gap:.5em;background:var(--mint);color:var(--green-deep);border-radius:var(--r-pill);padding:.5em 1.1em;font-family:var(--f-mono);font-weight:500;font-size:var(--t-meta);align-self:flex-start}
+.footer{position:absolute;left:var(--pad-inline);right:var(--pad-inline);bottom:3vh;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--f-mono);color:var(--footer);font-size:var(--t-foot);letter-spacing:.14em;text-transform:uppercase}
+.footer .meta{line-height:1.7}
+
+/* ---- MOD NUM ---- */
+.mod-num{font-family:var(--f-display);font-weight:800;line-height:.85;letter-spacing:-0.03em;color:var(--fg);font-size:var(--t-display);display:inline-flex;align-items:flex-end}
+.mod-num .dot{width:.26em;height:.26em;background:var(--coral);border-radius:42%;display:inline-block;margin-left:.04em;margin-bottom:.12em}
+
+/* ---- TAG PILLS ---- */
+.tag-pills{display:flex;flex-wrap:wrap;gap:.7vw}
+.tp{display:inline-flex;align-items:center;gap:.5em;background:var(--pill);color:var(--pill-text);border-radius:var(--r-pill);padding:.5em 1.1em;font-family:var(--f-body);font-weight:500;font-size:var(--t-body-sm)}
+.tp::before{content:"";width:.45em;height:.45em;border-radius:50%;background:var(--accent);flex:0 0 auto}
+.slide[data-theme="dark"] .tp::before{background:var(--mint-bright)}
+
+/* ---- CARDS 3 COL ---- */
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6vw}
+.r-card{background:var(--card);border:1px solid var(--card-border);border-radius:var(--r-card);padding:1.8vw}
+.r-card .lbl{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.14em;color:var(--eyebrow);font-size:var(--t-foot)}
+.r-card .h{font-family:var(--f-head);font-weight:700;color:var(--fg);font-size:var(--t-tagline);margin:.3em 0 .25em;letter-spacing:-0.01em;line-height:1.05}
+.r-card .b{font-family:var(--f-body);color:var(--fg-muted);line-height:1.4;font-size:var(--t-body-sm)}
+
+/* ---- DUAS COLUNAS ---- */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2vw}
+.col-box{background:var(--card);border:1px solid var(--card-border);border-radius:var(--r-card);padding:1.9vw}
+.col-box .ch{font-family:var(--f-head);font-weight:700;color:var(--fg);font-size:var(--t-tagline);margin-bottom:.4em;letter-spacing:-0.01em;line-height:1.05}
+.col-box .ch .sub{display:block;font-family:var(--f-mono);font-weight:500;text-transform:uppercase;letter-spacing:.1em;font-size:var(--t-foot);color:var(--eyebrow);margin-bottom:.5em}
+.col-box ul{list-style:none}
+.col-box li{font-family:var(--f-body);color:var(--fg-muted);line-height:1.35;font-size:var(--t-body);padding-left:1.3em;position:relative;margin-top:.5em}
+.col-box li::before{content:"→";position:absolute;left:0;color:var(--accent)}
+
+/* ---- LAYERS MAP ---- */
+.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8vw;align-items:stretch}
+.layer{background:var(--card);border:1px solid var(--card-border);border-radius:var(--r-card);padding:1.9vw;position:relative}
+.layer .ln{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.14em;color:var(--eyebrow);font-size:var(--t-foot)}
+.layer .nm{font-family:var(--f-head);font-weight:800;color:var(--fg);font-size:var(--t-tagline);margin:.2em 0 .25em;letter-spacing:-0.02em}
+.layer .tg{font-family:var(--f-body);color:var(--fg-muted);line-height:1.3;font-size:var(--t-body-sm)}
+.layer .ar{position:absolute;right:-.6em;top:50%;transform:translateY(-50%);color:var(--accent);font-size:1.8vw;z-index:2}
+.layer:last-child .ar{display:none}
+
+/* ---- CHECK LIST ---- */
+.check-list{display:flex;flex-direction:column;gap:1.6vh}
+.check-list.two{display:grid;grid-template-columns:1fr 1fr;gap:1.4vh 2.4vw}
+.chk{display:flex;gap:1.1vw;align-items:flex-start}
+.chk .b{flex:0 0 auto;width:.85vw;height:.85vw;border-radius:50%;background:var(--accent);margin-top:.55em}
+.chk .t{font-family:var(--f-head);font-weight:700;color:var(--fg);line-height:1.15;font-size:var(--t-tagline)}
+.chk .t small{display:block;font-weight:400;color:var(--fg-muted);font-size:.62em;margin-top:.1em;line-height:1.3}
+
+/* ---- ICON RULES ---- */
+.rules{display:flex;flex-direction:column;gap:2.4vh}
+.rule{display:flex;gap:1.3vw;align-items:flex-start}
+.rule .ic{flex:0 0 auto;width:3.4vw;height:3.4vw;max-width:64px;max-height:64px;border-radius:16px;background:var(--mint);display:flex;align-items:center;justify-content:center;color:var(--green-deep)}
+.rule .ic svg{width:55%;height:55%}
+.rule .tx{font-family:var(--f-head);font-weight:700;color:var(--fg);line-height:1.2;font-size:var(--t-tagline)}
+.rule .tx small{display:block;font-weight:400;color:var(--fg-muted);font-size:.6em;margin-top:.12em;line-height:1.3}
+
+/* ---- TABELA ---- */
+.tbl{width:100%;border-collapse:collapse;font-family:var(--f-body)}
+.tbl th,.tbl td{text-align:left;padding:1.7vh 1vw;border-bottom:1px solid var(--hairline);font-size:var(--t-tbl);vertical-align:middle;line-height:1.3}
+.tbl thead th{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.08em;font-size:var(--t-tbl-h);color:var(--eyebrow);font-weight:600;border-bottom:2px solid var(--hairline)}
+.tbl td.metric{font-weight:700;color:var(--fg)}
+.tbl td.win{color:var(--coral);font-weight:800}
+.tbl td.num{font-variant-numeric:tabular-nums;color:var(--fg-muted)}
+.tbl td.concl{color:var(--fg-muted);font-size:var(--t-body-sm);line-height:1.3}
+.tbl .col-claude{background:rgba(127,227,176,.10)}
+.slide[data-theme="light"] .tbl .col-claude{background:rgba(14,58,47,.055)}
+
+/* ---- ANALOGIA ---- */
+.analogy{display:grid;grid-template-columns:1fr auto 1fr;gap:2vw;align-items:center}
+.an-box{background:var(--card);border:1px solid var(--card-border);border-radius:var(--r-card);padding:2.2vw;text-align:center}
+.an-box .em{font-size:4vw;line-height:1}
+.an-box .lb{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--eyebrow);font-size:var(--t-foot);margin-top:.6em}
+.an-box .nm{font-family:var(--f-head);font-weight:800;color:var(--fg);font-size:var(--t-tagline);margin-top:.15em}
+.an-plus{font-family:var(--f-display);font-weight:800;color:var(--accent);font-size:3vw}
+
+/* ---- CICLO ---- */
+.cycle{display:flex;flex-wrap:wrap;gap:1vw;align-items:center;justify-content:center}
+.cycle.left{justify-content:flex-start}
+.cy{background:var(--card);border:1px solid var(--card-border);border-radius:var(--r-pill);padding:.6em 1.3em;font-family:var(--f-head);font-weight:700;color:var(--fg);font-size:var(--t-tagline)}
+.cy.hot{background:var(--coral);color:var(--green-deep);border-color:transparent}
+.cy-ar{color:var(--accent);font-size:1.8vw}
+
+/* ---- SCREENS (telas do Code) ---- */
+.screens{display:grid;grid-template-columns:1fr 1fr;gap:2vw;width:100%}
+.screen{display:flex;flex-direction:column;gap:1vh}
+.screen .ph{aspect-ratio:16/10;border-radius:14px;background:var(--card);border:1px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-family:var(--f-mono);color:var(--fg-muted);font-size:var(--t-body);text-align:center;padding:1em}
+.screen .cap{font-family:var(--f-head);font-weight:700;color:var(--fg);font-size:var(--t-tagline)}
+.screen .cap small{display:block;font-weight:400;color:var(--fg-muted);font-size:.6em;line-height:1.3;margin-top:.15em}
+
+/* ---- HACK / PROMPT / PSN ---- */
+.hack-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.2vw;align-items:start}
+.hack-num{font-family:var(--f-display);font-weight:800;color:var(--accent);font-size:var(--t-display);line-height:.85;letter-spacing:-0.03em}
+.hack-tag{font-family:var(--f-mono);font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-size:var(--t-meta);display:block;margin-bottom:.3em}
+.kpi-big{font-family:var(--f-display);font-weight:800;color:var(--highlight);font-size:5vw;line-height:.9;letter-spacing:-0.03em}
+.prompt-box{background:var(--green-alt);border:1px solid var(--hairline);border-radius:16px;padding:1.8vw;font-family:var(--f-mono);color:var(--mint);font-size:var(--t-body);line-height:1.55;white-space:pre-wrap}
+.slide[data-theme="light"] .prompt-box{background:#1c2b24;color:var(--mint)}
+.psn{display:flex;flex-direction:column;gap:1.6vh}
+.psn-row{display:grid;grid-template-columns:auto 1fr;gap:1vw;align-items:baseline}
+.psn-row .k{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--eyebrow);font-size:var(--t-foot);white-space:nowrap;padding-top:.15em}
+.psn-row .v{font-family:var(--f-body);color:var(--fg);line-height:1.35;font-size:var(--t-body)}
+.psn-row .v strong{color:var(--accent);font-weight:700}
+
+/* ---- TIMELINE ---- */
+.tl{position:relative;width:100%;padding:7vh 0 5vh}
+.tl-bar{position:relative;height:6vh}
+.tl-axis{position:absolute;left:0;right:0;top:50%;height:2px;background:var(--hairline)}
+.tl-win{position:absolute;top:0;height:100%;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:var(--f-mono);font-size:var(--t-foot);font-weight:600}
+.tl-win.a{background:rgba(127,227,176,.20);border:1px solid var(--mint-bright);color:var(--fg)}
+.tl-win.b{background:rgba(232,134,90,.20);border:1px solid var(--coral);color:var(--fg)}
+.tl-work{position:absolute;top:50%;height:3px;background:var(--fg);opacity:.5}
+.tl-mark{position:absolute;font-family:var(--f-mono);font-size:var(--t-foot);color:var(--fg-muted);white-space:nowrap}
+
+/* ---- QR / TIMER / CLOUD ---- */
+.qr-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2vh;text-align:center;height:100%}
+.qr-box{width:22vw;max-width:400px;aspect-ratio:1;background:var(--cream);border-radius:24px;display:flex;align-items:center;justify-content:center;color:var(--green-deep);font-family:var(--f-mono);font-size:var(--t-body);text-align:center;padding:1.5em;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+.survey-q{font-family:var(--f-head);font-weight:800;color:var(--fg);font-size:var(--t-title);line-height:1.05;letter-spacing:-0.01em}
+.survey-sub{font-family:var(--f-body);color:var(--fg-muted);font-size:var(--t-lead);max-width:34ch}
+.timer-big{font-family:var(--f-display);font-weight:800;color:var(--fg);font-size:16vw;line-height:.9;letter-spacing:-0.03em;font-variant-numeric:tabular-nums}
+.cloud{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.2em .6em;max-width:92%}
+.cloud span{font-family:var(--f-head);font-weight:700;line-height:1.05;color:var(--fg-muted)}
+.cloud span.big{color:var(--accent);font-weight:800}
+.cloud span.mid{color:var(--fg)}
+
+/* ---- AGENDA ---- */
+.agenda{display:flex;flex-direction:column;gap:1.2vh}
+.ag-row{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1.4vw;background:var(--card);border:1px solid var(--card-border);border-radius:var(--r-pill);padding:1.4vh 1.8vw}
+.ag-row .num{font-family:var(--f-display);font-weight:800;color:var(--accent);font-size:var(--t-tagline);min-width:1.4em}
+.ag-row .lay{font-family:var(--f-head);font-weight:700;color:var(--fg);font-size:var(--t-tagline);line-height:1.05}
+.ag-row .tag{font-family:var(--f-body);color:var(--fg-muted);font-size:var(--t-body-sm);display:block}
+.ag-row .hr{font-family:var(--f-mono);color:var(--fg-muted);font-size:var(--t-body-sm);white-space:nowrap}
+.ag-row.bonus{background:transparent;border:1px dashed var(--hairline)}
+
+/* ---- PEOPLE CARDS (1.1 Abertura) ---- */
+.people-grid{display:grid;grid-template-columns:1fr 1fr;gap:2vw;width:100%;max-width:66vw}
+.person-card{background:var(--card);border:1px solid var(--card-border);border-radius:var(--r-card);padding:1.4vw 1.6vw 1.6vw;display:flex;flex-direction:column;gap:1.2vh}
+.person-photo{width:100%;aspect-ratio:4/3;border-radius:14px;background:rgba(168,230,201,0.15);border:1px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-family:var(--f-mono);color:var(--eyebrow);font-size:var(--t-foot);text-align:center;letter-spacing:.1em;text-transform:uppercase;overflow:hidden}
+.person-photo img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block}
+.person-name{font-family:var(--f-head);font-weight:800;color:var(--fg);font-size:var(--t-lead);letter-spacing:-0.01em;line-height:1.05}
+.person-items{list-style:none;display:flex;flex-direction:column;gap:.4vh}
+.person-items li{font-family:var(--f-body);color:var(--fg-muted);line-height:1.3;font-size:1.15vw;padding-left:1.2em;position:relative}
+.person-items li::before{content:"·";position:absolute;left:0;color:var(--accent);font-weight:800}
+
+/* ---- INFO CARDS / WIN-STRIP (Bônus) ---- */
+.ic-stack{display:flex;flex-direction:column;gap:.9vh}
+.ic-card{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:1.0vw 1.2vw;display:flex;flex-direction:column;gap:.25em}
+.ic-card .ic-k{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-size:var(--t-foot);font-weight:600}
+.ic-card .ic-v{font-family:var(--f-body);font-size:var(--t-body);color:var(--fg);line-height:1.4}
+.ic-card .ic-v strong{color:var(--accent);font-weight:700}
+.ic-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.4vw}
+.win-strip{display:flex;align-items:stretch;border-radius:16px;overflow:hidden;border:1px solid var(--hairline)}
+.win-seg{padding:1.8vh 1.4vw;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4em;text-align:center}
+.win-seg.a{flex:2;background:rgba(127,227,176,.22);border-right:1px solid rgba(127,227,176,.55)}
+.win-seg.mid{flex:3;background:var(--card);border-right:1px solid rgba(232,134,90,.45)}
+.win-seg.b{flex:2;background:rgba(232,134,90,.18)}
+.win-seg .ws-dur{font-family:var(--f-mono);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:var(--t-meta);color:var(--fg)}
+.win-seg .ws-lab{font-family:var(--f-body);font-size:var(--t-body-sm);color:var(--fg-muted);line-height:1.3}
+
+/* ---- BARRA DE PROGRESSO ---- */
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--coral,#E8865A);z-index:200;transition:width .25s ease;pointer-events:none}
+
+/* ---- HUD / NAVEGAÇÃO ---- */
+.hud{position:fixed;bottom:14px;right:18px;z-index:50;display:flex;gap:8px;align-items:center;font-family:var(--f-mono);font-size:12px;color:#cfc;background:rgba(0,0,0,.4);padding:6px 12px;border-radius:999px;backdrop-filter:blur(6px)}
+.hud button{background:rgba(255,255,255,.12);border:0;color:#fff;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:14px;line-height:1}
+.hud button:hover{background:rgba(255,255,255,.25)}
+.hud .pg{min-width:48px;text-align:center}
+.help{position:fixed;bottom:14px;left:18px;z-index:50;font-family:var(--f-mono);font-size:11px;color:rgba(255,255,255,.45);background:rgba(0,0,0,.35);padding:6px 12px;border-radius:999px}
+@media print{.hud,.help,.progress{display:none}}
+</style>
+</head>
+<body>
+<div id="progress" class="progress" style="width:0%"></div>
+<div class="deck"><div class="stage" id="stage">
+
+  <!-- ===================================================== -->
+  <!-- 1.1 ABERTURA — slides 01–05                           -->
+  <!-- ===================================================== -->
+
+  <!-- 01 — Capa inicial -->
+  <section class="slide active" data-theme="dark">
+    <div class="s-head">
+      <span class="brand-badge"><span class="ast">✳</span> Claude Sem Frescura</span>
+      <span class="ast-deco">✳</span>
+    </div>
+    <div class="s-body center" style="align-items:flex-start;justify-content:center">
+      <div class="stack" style="--gap-stack:3vh">
+        <div class="eyebrow">→ 100% PRÁTICO · 1 DIA · 06 JUN 2026</div>
+        <div class="t-display" style="line-height:.92">Workshop<br><span style="color:var(--mint-bright)">Claude</span><br><span style="color:var(--coral)">Sem Frescura.</span></div>
+        <div style="display:flex;flex-direction:column;gap:.6vh;margin-top:1.2vh">
+          <div style="font-family:var(--f-mono);font-size:var(--t-body-sm);color:var(--mint-muted);letter-spacing:.08em">Michel Hilgemberg &amp; Lucas Xiang Yu</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="meta">06 · JUN · 26<br>10H ÀS 18H · LIVE + GRAVAÇÃO</span><span>01 / 34</span></div>
+  </section>
+
+  <!-- 02 — Quem somos -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">QUEM ESTÁ CONDUZINDO</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Quem está <span class="coral">conduzindo.</span></div>
+      <div class="people-grid">
+        <div class="person-card">
+          <div class="person-photo">
+            <img src="michel.png" alt="Michel Hilgemberg">
+          </div>
+          <div class="person-name">Michel Hilgemberg</div>
+          <ul class="person-items">
+            <li>Engenheiro Mecânico pela UFPR (1º lugar da turma)</li>
+            <li>Pós-graduado em IA pela FIAP</li>
+            <li>Intercâmbio na RWTH Aachen · Alemanha</li>
+            <li>AI Assistant no Fraunhofer IPT (Instituto Alemão)</li>
+          </ul>
+        </div>
+        <div class="person-card">
+          <div class="person-photo">
+            <img src="lucas.png" alt="Lucas Xiang Yu">
+          </div>
+          <div class="person-name">Lucas Xiang Yu</div>
+          <ul class="person-items">
+            <li>Engenheiro Mecânico pela UFPR (3º lugar da turma)</li>
+            <li>Intercâmbio na RWTH Aachen · Alemanha</li>
+            <li>Manufacturing Assistant no Fraunhofer IPT (Instituto Alemão)</li>
+            <li>Co-founder Dinno.chat</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>QUEM SOMOS</span><span>02 / 34</span></div>
+  </section>
+
+  <!-- 03 — Resultado do dia -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head"><span class="section-tag">O RESULTADO DO DIA</span><span class="ast-deco">✳</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Você não vai só assistir.<br><span class="mint">Vai sair diferente.</span></div>
+      <div class="cards-3">
+        <div class="r-card"><div class="lbl">VOCÊ TERÁ</div><div class="h">Construído</div><div class="b">Diversos casos práticos rodando, feitos por você hoje.</div></div>
+        <div class="r-card"><div class="lbl">VOCÊ TERÁ</div><div class="h">Automatizado</div><div class="b">Tarefas manuais agora rodando sozinhas no seu computador.</div></div>
+        <div class="r-card"><div class="lbl">VOCÊ TERÁ</div><div class="h">Economizado</div><div class="b">Tokens sob controle. Assinatura rendendo a semana inteira.</div></div>
+      </div>
+      <div class="t-lead fg" style="max-width:46ch">Hoje não é dia de teoria. <span class="coral">É dia de mão na massa.</span></div>
+    </div>
+    <div class="footer"><span>A PROMESSA</span><span>03 / 34</span></div>
+  </section>
+
+  <!-- 04 — Agenda -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">O MAPA DO DIA</span></div>
+    <div class="s-body stack" style="--gap-stack:1.6vh">
+      <div class="t-title">O mapa do <span class="coral">dia.</span></div>
+      <div class="agenda">
+        <div class="ag-row"><span class="num">1</span><span><span class="lay">Chat</span><span class="tag">Você pergunta. Ele responde.</span></span><span class="hr">10:00 → 11:45</span></div>
+        <div class="ag-row"><span class="num">2</span><span><span class="lay">Cowork</span><span class="tag">Você pede. O Claude executa.</span></span><span class="hr">11:45 → 15:00 (almoço 12h)</span></div>
+        <div class="ag-row"><span class="num">3</span><span><span class="lay">Code</span><span class="tag">Você planeja. Ele constrói.</span></span><span class="hr">15:00 → 17:30</span></div>
+        <div class="ag-row bonus"><span class="num">+</span><span><span class="lay">Economia de Tokens</span><span class="tag">O módulo que se paga sozinho.</span></span><span class="hr">17:30 → 18:00</span></div>
+      </div>
+      <div class="t-lead fg" style="max-width:52ch">No final do dia você sai <strong>dominando o Claude.</strong></div>
+    </div>
+    <div class="footer"><span>AGENDA · LIVE</span><span>04 / 34</span></div>
+  </section>
+
+  <!-- 05 — Como funciona -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">COMO FUNCIONA O DIA</span></div>
+    <div class="s-body stack">
+      <div class="rules">
+        <div class="rule"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="tx">Dúvidas no chat a qualquer hora<small>A gente vai respondendo ao longo do dia.</small></span></div>
+        <div class="rule"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="tx">+30 minutos livres no fim<small>Pra fechar tudo que ficou em aberto.</small></span></div>
+        <div class="rule"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span><span class="tx">Live + Gravação por 12 meses<small>Reassiste quantas vezes quiser.</small></span></div>
+        <div class="rule"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></span><span class="tx">100% prático<small>Abre a ferramenta junto, faz junto.</small></span></div>
+      </div>
+      <div class="t-lead fg" style="max-width:44ch">Bora começar. <span class="coral">O que é o Claude e por que ele.</span></div>
+    </div>
+    <div class="footer"><span>COMO FUNCIONA</span><span>05 / 34</span></div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 1.2 O QUE É O CLAUDE — slides 06–14                   -->
+  <!-- ===================================================== -->
+
+  <!-- 06 — Abertura 1.2 -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head"><span class="eyebrow">1.2 · O QUE É O CLAUDE</span>
+      <div class="icon-box mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+    </div>
+    <div class="s-body center stack">
+      <div class="t-display">O que é o<br><span class="coral">Claude.</span></div>
+      <div class="t-tagline" style="color:var(--fg-muted)">De onde vem, onde vive e por que importa.</div>
+    </div>
+    <div class="footer"><span>1.2 · O QUE É O CLAUDE</span><span>06 / 34</span></div>
+  </section>
+
+  <!-- 07 — O Claude + Anthropic -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">O QUE É O CLAUDE</span></div>
+    <div class="s-body stack">
+      <div class="t-title">O Claude é a IA<br>da <span class="coral">Anthropic.</span></div>
+      <div class="t-lead" style="max-width:34ch">Uma das empresas que mais cresce em IA, foco em IA confiável, pensada pra trabalho de verdade.</div>
+      <div class="tag-pills">
+        <span class="tp">IA confiável</span><span class="tp">Feita pra trabalho</span><span class="tp">Já já a gente vê por que importa</span>
+      </div>
+    </div>
+    <div class="footer"><span>1.2 · O QUE É O CLAUDE</span><span>07 / 34</span></div>
+  </section>
+
+  <!-- 08 — Onde ele vive -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">ONDE ELE VIVE</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Diferentes formas de <span class="coral">acessar o Claude.</span></div>
+      <div class="check-list two">
+        <div class="chk"><span class="b"></span><span class="t">Web<small>claude.ai no navegador</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">App<small>iOS, Android, Windows e macOS</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">CLI<small>Claude Code no terminal</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Design<small>Integração nativa com Figma</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Extensão<small>Direto no seu navegador</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Add-on<small>Excel e Google Sheets</small></span></div>
+      </div>
+    </div>
+    <div class="footer"><span>1.2 · ONDE ELE VIVE</span><span>08 / 34</span></div>
+  </section>
+
+  <!-- 09 — As três grandes IAs -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head"><span class="section-tag">O TERRENO</span><span class="ast-deco">✳</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Hoje são três<br>players <span class="mint">sérios.</span></div>
+      <div class="layers">
+        <div class="layer"><div class="ln">ANTHROPIC</div><div class="nm">Claude</div><div class="tg">O foco de hoje.</div></div>
+        <div class="layer"><div class="ln">OPENAI</div><div class="nm">ChatGPT</div><div class="tg">O que a maioria já usa.</div></div>
+        <div class="layer"><div class="ln">GOOGLE</div><div class="nm">Gemini</div><div class="tg">Forte e gratuito em parte.</div></div>
+      </div>
+      <div class="t-lead fg" style="max-width:52ch">Não existe "a melhor". Existe <span class="mint">a melhor pra cada coisa.</span></div>
+    </div>
+    <div class="footer"><span>1.2 · COMPARATIVO</span><span>09 / 34</span></div>
+  </section>
+
+  <!-- 10 — Tabela A: carros-chefe -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">OS CARROS-CHEFE · OPUS 4.8 · GPT-5.5 · GEMINI 3.1 PRO</span></div>
+    <div class="s-body top stack" style="--gap-stack:1.4vh">
+      <div class="t-title sm">Claude vs ChatGPT vs <span class="coral">Gemini.</span></div>
+      <table class="tbl">
+        <thead><tr><th>Métrica</th><th>O que mede</th><th class="col-claude">Opus 4.8</th><th>GPT-5.5</th><th>Gemini 3.1</th><th>Conclusão</th></tr></thead>
+        <tbody>
+          <tr><td class="metric">Humanity's Last Exam</td><td class="concl">Raciocínio geral, a prova mais difícil</td><td class="win col-claude">57,9%</td><td class="num">52,2%</td><td class="num">51,4%</td><td class="concl">Raciocina melhor no trabalho variado de escritório</td></tr>
+          <tr><td class="metric">SWE-bench Pro</td><td class="concl">Resolver código de ponta a ponta</td><td class="win col-claude">69,2%</td><td class="num">58,6%</td><td class="num">54,2%</td><td class="concl">Na hora de construir (Code), entrega com folga</td></tr>
+          <tr><td class="metric">GPQA Diamond</td><td class="concl">Raciocínio científico pós-grad</td><td class="num col-claude">93,6%</td><td class="num">93,6%</td><td class="num">94,3%</td><td class="concl">Empate técnico, os três gabaritaram</td></tr>
+          <tr><td class="metric">Terminal-Bench 2.1</td><td class="concl">Operar o terminal sozinho</td><td class="num col-claude">74,6%</td><td class="win">78,2%</td><td class="num">70,3%</td><td class="concl">Único ponto em que o GPT lidera</td></tr>
+          <tr><td class="metric">OSWorld</td><td class="concl">Tarefas reais num PC</td><td class="win col-claude">83,4%</td><td class="num">78,7%</td><td class="num">76,2%</td><td class="concl">Pro Cowork, o mais capaz</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer"><span>1.2 · TABELA A · CARROS-CHEFE</span><span>10 / 34</span></div>
+  </section>
+
+  <!-- 11 — Tabela B: modelos do Claude -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">QUAL MODELO USAR · OPUS · SONNET · HAIKU</span></div>
+    <div class="s-body top stack" style="--gap-stack:1.4vh">
+      <div class="t-title sm">Os modelos do <span class="coral">Claude.</span></div>
+      <table class="tbl">
+        <thead><tr><th>Métrica</th><th class="col-claude">Opus</th><th>Sonnet</th><th>Haiku</th><th>Conclusão</th></tr></thead>
+        <tbody>
+          <tr><td class="metric">SWE-bench Verified</td><td class="win col-claude">88,6%</td><td class="num">79,6%</td><td class="num">73,3%</td><td class="concl">Sonnet entrega ~90% do Opus por 1/5 do preço</td></tr>
+          <tr><td class="metric">GPQA Diamond</td><td class="win col-claude">93,6%</td><td class="num">89,9%</td><td class="num">55,2%</td><td class="concl">Haiku cai feio, não é pra tarefa difícil</td></tr>
+          <tr><td class="metric">Preço (saída / 1M tokens)</td><td class="num col-claude">$25</td><td class="num">$15</td><td class="win">$5</td><td class="concl">Haiku custa 5× menos, é aqui que mora a economia</td></tr>
+          <tr><td class="metric">Velocidade</td><td class="num col-claude">lento</td><td class="num">médio</td><td class="win">~97 tok/s</td><td class="concl">Volume e tarefa simples? Haiku resolve</td></tr>
+          <tr><td class="metric">Melhor pra</td><td class="concl col-claude">Build difícil</td><td class="concl">O dia a dia</td><td class="concl">Volume / repetição</td><td class="concl">Sonnet padrão · Opus quando trava · Haiku em volume</td></tr>
+        </tbody>
+      </table>
+      <div class="t-body fg" style="max-width:64ch">Guarda a linha de preço: <span class="coral">no fim do dia mostro como render 5× mais.</span></div>
+    </div>
+    <div class="footer"><span>1.2 · TABELA B · MODELOS</span><span>11 / 34</span></div>
+  </section>
+
+  <!-- 12 — As ferramentas do Claude -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">AS FERRAMENTAS</span></div>
+    <div class="s-body stack">
+      <div class="t-title">As ferramentas <span class="coral">do Claude.</span></div>
+      <div class="check-list">
+        <div class="chk"><span class="b"></span><span class="t">Chat<small>Vive no navegador. Conversa.</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Cowork<small>Desce pro seu computador, mexe nos seus arquivos, executa sem supervisão passo a passo.</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Code<small>Vai pro terminal e constrói aplicações e sistemas de verdade.</small></span></div>
+      </div>
+      <div class="t-lead fg" style="max-width:58ch"><strong>95% dos usuários</strong> moram só no Chat.</div>
+    </div>
+    <div class="footer"><span>1.2 · AS FERRAMENTAS</span><span>12 / 34</span></div>
+  </section>
+
+  <!-- 13 — Por que a Anthropic lidera -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head"><span class="section-tag">POR QUE A ANTHROPIC LIDERA</span><span class="ast-deco">✳</span></div>
+    <div class="s-body stack">
+      <div class="t-tagline" style="max-width:30ch">A Anthropic criou um padrão que a <span class="mint">OpenAI e o Google tiveram que adotar.</span></div>
+      <div class="layers">
+        <div class="layer"><div class="ln">A CONEXÃO</div><div class="nm">MCP</div><div class="tg">A "tomada universal" da IA, liga o Claude às suas ferramentas. <span class="mint">Módulo 2 · Cowork</span></div></div>
+        <div class="layer"><div class="ln">O CONHECIMENTO</div><div class="nm">Skills</div><div class="tg">Ensina o Claude a fazer do seu jeito, sempre igual. <span class="mint">Módulos 1 e 3</span></div></div>
+        <div class="layer"><div class="ln">A EXECUÇÃO</div><div class="nm">Claude Code</div><div class="tg">Trouxe o Claude pro terminal, onde o trabalho pesado acontece. <span class="mint">Módulo 3</span></div></div>
+      </div>
+    </div>
+    <div class="footer"><span>1.2 · AS 3 FRENTES</span><span>13 / 34</span></div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 1.3 TOUR CHAT — slides 15–16                          -->
+  <!-- ===================================================== -->
+
+  <!-- 14 — Localizador Chat -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head"><span class="eyebrow">—— 1.3 · MÓDULO 01 · CHAT</span>
+      <div class="icon-box mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+    </div>
+    <div class="s-body center stack">
+      <span class="time-pill">🕐 10h45 → 11h00</span>
+      <div class="t-display">Tour —<br>Claude <span class="coral">Chat.</span></div>
+      <div class="t-tagline" style="color:var(--fg-muted)">Você pergunta. <span class="coral">Ele responde.</span></div>
+    </div>
+    <div class="footer"><span>1.3 · TOUR CHAT</span><span>14 / 35</span></div>
+  </section>
+
+  <!-- 15 — O que tem dentro do Chat -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 1.3 · TOUR CLAUDE CHAT</span></div>
+    <div class="s-body stack">
+      <div class="t-title">O que tem dentro<br>do <span class="coral">Claude Chat.</span></div>
+      <div class="check-list two" style="margin-top:3.5vh">
+        <div class="chk"><span class="b"></span><span class="t">Projetos<small>Seu espaço de trabalho com contexto fixo.</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Memória<small>Lembra do que importa entre as conversas.</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Artefatos<small>Onde ele entrega de verdade: documento, planilha, etc.</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Skills<small>Ensina o Claude a fazer uma tarefa do seu jeito.</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Conectores<small>Liga o Claude às suas ferramentas.</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Plugins<small>Mix de Skills e Conectores.</small></span></div>
+      </div>
+    </div>
+    <div class="footer"><span>1.3 · DENTRO DO CHAT</span><span>15 / 35</span></div>
+  </section>
+
+  <!-- 16 — Case Chat -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 1.4 · CASE CLAUDE CHAT</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Do caos à skill:<br><span class="coral">organizando seu dia.</span></div>
+      <div class="two-col">
+        <div class="col-box">
+          <div class="ch"><span class="sub">O QUÊ · RESULTADO CONCRETO</span>O que você vai ver sair</div>
+          <div class="t-body" style="margin-top:.6em">Uma lista bagunçada de tarefas entra no chat. Em 45 minutos, sai um quadro visual priorizado, uma skill que repete isso toda manhã e o resultado já no Notion.</div>
+        </div>
+        <div class="col-box">
+          <div class="ch"><span class="sub">POR QUÊ · CONEXÃO COM VOCÊ</span>Por que isso importa</div>
+          <div class="t-body" style="margin-top:.6em">Todo mundo tem um dump de tarefas espalhado entre e-mail, WhatsApp e bloco de notas. Você vai ver como transformar esse caos em sistema — sem instalar nada, sem planilha, sem código.</div>
+        </div>
+      </div>
+      <div class="tag-pills">
+        <span class="tp">Projetos</span><span class="tp">Contexto</span><span class="tp">Artefatos</span><span class="tp">Iteração</span><span class="tp">Skills</span><span class="tp">Conectores</span>
+      </div>
+    </div>
+    <div class="footer"><span>1.4 · CASE CLAUDE CHAT</span><span>16 / 35</span></div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 2.1 TOUR COWORK — slides 17–19                        -->
+  <!-- ===================================================== -->
+
+  <!-- 17 — Localizador Cowork -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head"><span class="eyebrow">—— 2.1 · MÓDULO 02 · COWORK</span>
+      <div class="icon-box mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+    </div>
+    <div class="s-body center stack">
+      <span class="time-pill">🕐 11h45 → 12h00</span>
+      <div class="t-display">Tour —<br>Claude <span class="coral">Cowork.</span></div>
+      <div class="t-tagline" style="color:var(--fg-muted)">Você pede. <span class="coral">O Claude executa.</span></div>
+    </div>
+    <div class="footer"><span>2.1 · TOUR COWORK</span><span>17 / 34</span></div>
+  </section>
+
+  <!-- 18 — O que muda do Chat pro Cowork -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 2.1 · CHAT → COWORK</span></div>
+    <div class="s-body stack">
+      <div class="t-title">O que muda do Chat<br>pro <span class="coral">Cowork.</span></div>
+      <div class="two-col">
+        <div class="col-box">
+          <div class="ch"><span class="sub">CHAT — VOCÊ PERGUNTA, ELE RESPONDE</span>Chat - No Navegador ou App</div>
+          <ul><li>Vive no navegador ou app</li><li>Conversa e devolve texto / artefato</li><li>Você copia, cola, executa</li></ul>
+        </div>
+        <div class="col-box" style="background:var(--mint);border-color:transparent">
+          <div class="ch" style="color:var(--green-deep)"><span class="sub" style="color:#3c6b58">COWORK — VOCÊ PEDE, ELE EXECUTA</span>Cowork - No seu PC</div>
+          <ul style="--accent:var(--green-deep)"><li style="color:#2a4a3e">Desce pro seu computador</li><li style="color:#2a4a3e">Mexe nos seus arquivos locais</li><li style="color:#2a4a3e">Executa a tarefa sozinho, fim a fim</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>2.1 · CHAT → COWORK</span><span>18 / 34</span></div>
+  </section>
+
+  <!-- 19 — O que o Cowork faz -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 2.1 · COWORK</span></div>
+    <div class="s-body stack">
+      <div class="t-title">O que o Cowork<br>faz <span class="coral">por você.</span></div>
+      <div class="check-list" style="margin-top:3.5vh">
+        <div class="chk"><span class="b"></span><span class="t">Arquivos locais<small>Lê, organiza e cria arquivos direto no seu computador.</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Automações<small>Tarefas repetitivas rodando sozinhas.</small></span></div>
+        <div class="chk"><span class="b"></span><span class="t">Agentes<small>O Claude trabalhando em várias etapas sem você no comando.</small></span></div>
+      </div>
+      <div class="t-lead fg" style="max-width:50ch">Voltando do almoço, a gente <span class="coral">vai direto na prática.</span></div>
+    </div>
+    <div class="footer"><span>2.1 · O QUE O COWORK FAZ</span><span>19 / 36</span></div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 2.2 CASES COWORK — slides 20–21                       -->
+  <!-- ===================================================== -->
+
+  <!-- 20 — Case Cowork 1 · Auditoria de fornecedores -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 2.2 · CASE CLAUDE COWORK 1</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Auditoria de fornecedores:<br><span class="coral">das NFs ao relatório.</span></div>
+      <div class="two-col">
+        <div class="col-box">
+          <div class="ch"><span class="sub">O QUÊ · RESULTADO CONCRETO</span>O que você vai ver sair</div>
+          <div class="t-body" style="margin-top:.6em">O Cowork conecta Drive, Gmail e arquivos locais numa única tarefa. Ele coleta notas fiscais, lê contratos, cruza com contexto de emails e entrega uma planilha consolidada e um relatório PDF prontos, sem você alternar entre abas.</div>
+        </div>
+        <div class="col-box">
+          <div class="ch"><span class="sub">POR QUÊ · CONEXÃO COM VOCÊ</span>Por que isso importa</div>
+          <div class="t-body" style="margin-top:.6em">O Chat responde. O Cowork executa. Ele lê seus arquivos, acessa suas ferramentas e gera entregas reais na sua máquina. Você vai ver como montar um projeto com memória, regras e conectores. Um sistema que roda todo mês com um único prompt.</div>
+        </div>
+      </div>
+      <div class="tag-pills">
+        <span class="tp">Projetos</span><span class="tp">CLAUDE.md</span><span class="tp">Instruções globais</span><span class="tp">Skills</span><span class="tp">Conectores</span><span class="tp">Tasks paralelas</span>
+      </div>
+    </div>
+    <div class="footer"><span>2.2 · CASE CLAUDE COWORK 1</span><span>20 / 36</span></div>
+  </section>
+
+  <!-- 21 — Case Cowork 2 · Painel de Tendências do Nicho -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 2.2 · CASE CLAUDE COWORK 2</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Painel de Tendências<br><span class="coral">do Nicho.</span></div>
+      <div class="two-col">
+        <div class="col-box">
+          <div class="ch"><span class="sub">O QUÊ · O AGENTE</span>O que ele faz</div>
+          <div class="t-body" style="margin-top:.6em">Um agente que, com um comando, pesquisa tendências do seu nicho na web, cruza com uma lista de temas que você mantém, e entrega um dashboard HTML pronto, sozinho, fim a fim.</div>
+        </div>
+        <div class="col-box">
+          <div class="ch"><span class="sub">POR QUÊ · CONEXÃO COM VOCÊ</span>Por que isso importa</div>
+          <div class="t-body" style="margin-top:.6em">Criadores e empreendedores perdem horas toda semana tentando descobrir o que está em alta no seu nicho. Esse agente faz isso antes de você acordar e entrega o resultado formatado.</div>
+        </div>
+      </div>
+      <div class="tag-pills">
+        <span class="tp">Web Search</span><span class="tp">Google Drive MCP</span><span class="tp">CLAUDE.md</span><span class="tp">Dashboard HTML</span><span class="tp">Agendamento</span>
+      </div>
+    </div>
+    <div class="footer"><span>2.2 · CASE CLAUDE COWORK 2</span><span>21 / 36</span></div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 3.1 TOUR CLAUDE CODE — slides 22–27                   -->
+  <!-- ===================================================== -->
+
+  <!-- 20 — Localizador Code -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head"><span class="eyebrow">—— 3.1 · MÓDULO 03 · CODE</span>
+      <div class="icon-box mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></div>
+    </div>
+    <div class="s-body center stack">
+      <span class="time-pill">🕐 15h00 → 15h15</span>
+      <div class="t-display">Tour —<br>Claude <span class="coral">Code.</span></div>
+      <div class="t-tagline" style="color:var(--fg-muted)">Você dirige. <span class="coral">Ele constrói.</span></div>
+    </div>
+    <div class="footer"><span>3.1 · TOUR CLAUDE CODE</span><span>20 / 34</span></div>
+  </section>
+
+  <!-- 21 — O que muda do Cowork pro Code -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 3.1 · COWORK → CODE</span></div>
+    <div class="s-body stack">
+      <div class="t-title">No Code, ele <span class="coral">escreve e executa<br>código por você.</span></div>
+      <div class="two-col">
+        <div class="col-box"><div class="ch"><span class="sub">COWORK</span>Mexe e faz</div><ul><li>Trabalha nos seus arquivos</li><li>Executa a tarefa que existe</li></ul></div>
+        <div class="col-box"><div class="ch"><span class="sub">CODE</span>Cria do zero</div><ul><li>Aplicações, scripts, sistemas</li><li>Scripts, apps e automações do zero</li></ul></div>
+      </div>
+      <div class="t-lead fg" style="max-width:54ch">Não precisa saber programar. <span class="coral">Você descreve o que quer.</span></div>
+    </div>
+    <div class="footer"><span>3.1 · O QUE MUDA</span><span>21 / 34</span></div>
+  </section>
+
+  <!-- 22 — As duas telas -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 3.1 · ONDE O CODE RODA</span></div>
+    <div class="s-body stack">
+      <div class="t-title sm">As duas telas onde<br>o Code <span class="coral">trabalha.</span></div>
+      <div class="screens" style="gap:1.6vw">
+        <div class="screen">
+          <img src="foto-vscode.png" alt="VSCode com extensão Claude Code" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:16/9;background:var(--card);border:1px solid var(--card-border);display:block">
+          <div class="cap" style="margin-top:.6vh">VSCode<small>O ambiente visual, com botões e arquivos à vista. Mais confortável pra quem tá começando.</small></div>
+        </div>
+        <div class="screen">
+          <img src="claude-code.png" alt="Terminal com Claude Code CLI" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:16/9;background:var(--card);border:1px solid var(--card-border);display:block">
+          <div class="cap" style="margin-top:.6vh">CLI / Terminal<small>A tela onde o trabalho de quem programa sempre aconteceu. Agora você manda nela em português.</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>3.1 · VSCODE E CLI</span><span>22 / 34</span></div>
+  </section>
+
+  <!-- 23 — O piloto e o avião -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head"><span class="section-tag">3.1 · O CORAÇÃO DO MÓDULO</span><span class="ast-deco">✳</span></div>
+    <div class="s-body stack">
+      <div class="t-title">O modelo é o piloto.<br>O Code é o <span class="mint">avião.</span></div>
+      <div class="analogy">
+        <div class="an-box"><div class="em">🧑‍✈️</div><div class="lb">O MODELO</div><div class="nm">Piloto</div></div>
+        <div class="an-plus">+</div>
+        <div class="an-box"><div class="em">✈️</div><div class="lb">O CODE</div><div class="nm">Avião inteiro</div></div>
+      </div>
+      <div class="t-lead fg" style="max-width:62ch">O piloto é genial, mas sozinho não sai do chão. <span class="mint">O que faz o avião voar é todo o resto ao redor dele:</span> ferramentas pra ler arquivos, rodar comandos, ver o resultado e ajustar a rota.</div>
+    </div>
+    <div class="footer"><span>3.1 · PILOTO E AVIÃO</span><span>23 / 34</span></div>
+  </section>
+
+  <!-- 24 — O ciclo -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 3.1 · O CICLO</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Ele testa, vê o erro<br>e <span class="coral">corrige.</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3vw;align-items:stretch;flex:1;min-height:0">
+        <div style="display:flex;flex-direction:column;justify-content:center;gap:1.4vh">
+          <div class="cycle left" style="flex-wrap:nowrap">
+            <span class="cy">Lê</span><span class="cy-ar">→</span>
+            <span class="cy">Executa</span><span class="cy-ar">→</span>
+            <span class="cy">Vê</span>
+          </div>
+          <div class="cycle left" style="flex-wrap:nowrap">
+            <span class="cy-ar">→</span>
+            <span class="cy hot">Corrige</span><span class="cy-ar">↺</span>
+            <span class="cy">Repete</span>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;transform:translateY(-3vh)">
+          <img src="flow-code-2.png" alt="Fluxo do Claude Code" style="max-width:100%;max-height:50vh;border-radius:14px;border:1px solid var(--card-border);background:var(--card);display:block">
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>3.1 · O CICLO</span><span>24 / 34</span></div>
+  </section>
+
+  <!-- 25 — Vamos pra prática -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 3.1 · AGORA A PRÁTICA</span></div>
+    <div class="s-body center stack">
+      <div class="t-title">Chega de teoria.<br><span class="coral">Bora construir.</span></div>
+      <div class="t-lead" style="max-width:52ch">Você vai ver o Claude Code funcionando do zero, ao vivo. Sem código pra escrever. Você descreve o que quer, ele faz.</div>
+    </div>
+    <div class="footer"><span>3.1 · PRÁTICA AO VIVO</span><span>27 / 38</span></div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 3.2/3.3 CASES CLAUDE CODE — slides 28–29              -->
+  <!-- ===================================================== -->
+
+  <!-- 28 — Case Code 1 · Base de Documentos com NotebookLM -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 3.2 · CASE CLAUDE CODE 1</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Sua base de documentos com<br><span class="coral">superpoderes do NotebookLM.</span></div>
+      <div class="two-col">
+        <div class="col-box">
+          <div class="ch"><span class="sub">O QUÊ · RESULTADO CONCRETO</span>O que você vai ver sair</div>
+          <div class="t-body" style="margin-top:.6em">O Claude Code conecta direto no NotebookLM: organiza seus documentos numa base limpa, sobe como fontes, e usa a IA do próprio NotebookLM pra gerar infográfico, quiz, mapa mental e podcast. Tudo comandado em português, sem você abrir a ferramenta.</div>
+        </div>
+        <div class="col-box">
+          <div class="ch"><span class="sub">POR QUÊ · CONEXÃO COM VOCÊ</span>Por que isso importa</div>
+          <div class="t-body" style="margin-top:.6em">O Claude Code não fica preso ao que a Anthropic oferece. Ele opera ferramentas externas, e a geração dos artefatos roda no NotebookLM, não no Claude. Você amplia o que dá pra criar sem queimar token no Code. Cada ferramenta no seu papel.</div>
+        </div>
+      </div>
+      <div class="tag-pills">
+        <span class="tp">VSCode</span><span class="tp">Skills</span><span class="tp">MCP NotebookLM</span><span class="tp">Base de documentos</span><span class="tp">Artefatos (sem token)</span>
+      </div>
+    </div>
+    <div class="footer"><span>3.2 · CASE CLAUDE CODE 1</span><span>28 / 38</span></div>
+  </section>
+
+  <!-- 29 — Case Code 2 · Vários Agentes -->
+  <section class="slide" data-theme="light">
+    <div class="s-head"><span class="eyebrow">—— 3.3 · CASE CLAUDE CODE 2</span></div>
+    <div class="s-body stack">
+      <div class="t-title">Vários agentes trabalhando<br><span class="coral">por você.</span></div>
+      <div class="two-col">
+        <div class="col-box">
+          <div class="ch"><span class="sub">O QUÊ · RESULTADO CONCRETO</span>O que você vai ver sair</div>
+          <div class="t-body" style="margin-top:.6em">Você pede uma vez, e vários agentes se dividem o trabalho: um busca os dados das suas ferramentas, um encontra os padrões, um organiza tudo. No fim, vira um painel visual publicado na internet, uma página no ar que você compartilha com quem quiser.</div>
+        </div>
+        <div class="col-box">
+          <div class="ch"><span class="sub">POR QUÊ · CONEXÃO COM VOCÊ</span>Por que isso importa</div>
+          <div class="t-body" style="margin-top:.6em">Não é mais uma IA fazendo uma tarefa de cada vez. É uma equipe de agentes trabalhando junto pra te entregar algo pronto e online. Daquele relatório que você montava na mão toda semana a um painel que se atualiza sozinho.</div>
+        </div>
+      </div>
+      <div class="tag-pills">
+        <span class="tp">CLI</span><span class="tp">Vários agentes</span><span class="tp">MCP (suas ferramentas)</span><span class="tp">Painel automático</span><span class="tp">Publicação na web</span>
+      </div>
+    </div>
+    <div class="footer"><span>3.3 · CASE CLAUDE CODE 2</span><span>29 / 38</span></div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- BÔNUS · ECONOMIA DE TOKENS — slides 30–38             -->
+  <!-- ===================================================== -->
+
+  <!-- 26 — Abertura Bônus -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head">
+      <span class="eyebrow">—— BÔNUS EXCLUSIVO</span>
+      <div class="icon-box coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></div>
+    </div>
+    <div class="s-body center stack">
+      <span class="time-pill">🕐 17h30 → 18h00</span>
+      <div class="t-display"><span class="mint">+01</span><br>Economia de <span class="coral">Tokens.</span></div>
+      <div class="t-tagline" style="color:var(--fg-muted)">O módulo que <span class="mint">se paga sozinho.</span></div>
+      <div class="t-lead" style="max-width:50ch">Em 30 min você faz sua assinatura render <span class="mint">a semana inteira</span>, e não acabar na terça.</div>
+    </div>
+    <div class="footer"><span>BÔNUS · ECONOMIA</span><span>26 / 34</span></div>
+  </section>
+
+  <!-- 27 — Hack 01 Caveman -->
+  <section class="slide" data-theme="light">
+    <div class="s-head">
+      <span class="eyebrow">—— BÔNUS · ECONOMIA DE TOKENS</span>
+      <span class="hack-num">01</span>
+    </div>
+    <div class="s-body stack" style="--gap-stack:2vh">
+      <div>
+        <span class="hack-tag">HACK 01 · CAVEMAN</span>
+        <div class="t-title sm">Corta o enchimento. Fala como<br><span class="coral">homem das cavernas.</span></div>
+      </div>
+      <div class="hack-grid">
+        <div class="prompt-box">Resposta direta. Sem enchimento.
+Frases de 3-6 palavras.
+Executa a ferramenta primeiro,
+mostra o resultado.</div>
+        <div class="ic-stack">
+          <div class="ic-card">
+            <span class="ic-k">Problema</span>
+            <span class="ic-v">O Claude é verborrágico por padrão. Cada "claro, vou te ajudar!" é token saindo do bolso.</span>
+          </div>
+          <div class="ic-card">
+            <span class="ic-k">Número</span>
+            <span class="ic-v">Até <strong>75% dos tokens de saída</strong>. Resposta mais curta deixou o modelo <strong>26 pontos mais preciso</strong> em certos testes.</span>
+          </div>
+          <div class="ic-card">
+            <span class="ic-k">Aplicação</span>
+            <span class="ic-v">Cola nas instruções do Projeto uma vez. Vale pra todo chat dali pra frente. Economiza <strong>e melhora</strong>, não é trade-off.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>HACK 01 · CAVEMAN</span><span>27 / 34</span></div>
+  </section>
+
+  <!-- 28 — Hack 02 Opus vs Sonnet -->
+  <section class="slide" data-theme="light">
+    <div class="s-head">
+      <span class="eyebrow">—— BÔNUS · ECONOMIA DE TOKENS</span>
+      <span class="hack-num">02</span>
+    </div>
+    <div class="s-body stack" style="--gap-stack:2vh">
+      <div>
+        <span class="hack-tag">HACK 02 · O MODELO CERTO</span>
+        <div class="t-title sm">Não use Opus <span class="coral">o tempo todo.</span></div>
+      </div>
+      <div class="two-col">
+        <div class="col-box">
+          <div class="ch"><span class="sub">USE SONNET PARA</span>O dia a dia</div>
+          <ul>
+            <li>Escrita e análise</li>
+            <li>Resumo</li>
+            <li>Perguntas gerais</li>
+          </ul>
+        </div>
+        <div class="col-box" style="background:var(--mint);border-color:transparent">
+          <div class="ch" style="color:var(--green-deep)"><span class="sub" style="color:#3c6b58">USE OPUS PARA</span>Quando trava</div>
+          <ul style="--accent:var(--green-deep)">
+            <li style="color:#2a4a3e">Decisão estratégica</li>
+            <li style="color:#2a4a3e">Problema complexo</li>
+            <li style="color:#2a4a3e">Escrita com nuance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="t-lead fg" style="max-width:62ch">Sonnet entrega <strong>~90% do Opus por 1/5 do preço</strong>. É a mesma tabela da manhã: <span class="coral">lá foi teoria, aqui é o bolso.</span></div>
+    </div>
+    <div class="footer"><span>HACK 02 · OPUS vs SONNET</span><span>28 / 34</span></div>
+  </section>
+
+  <!-- 29 — Hack 03 Timing -->
+  <section class="slide" data-theme="light">
+    <div class="s-head">
+      <span class="eyebrow">—— BÔNUS · ECONOMIA DE TOKENS</span>
+      <span class="hack-num">03</span>
+    </div>
+    <div class="s-body stack" style="--gap-stack:1.8vh">
+      <div>
+        <span class="hack-tag">HACK 03 · TIMING DE JANELA</span>
+        <div class="t-title sm">Mande um "oi" antes e <span class="coral">encaixe duas janelas.</span></div>
+      </div>
+      <div class="win-strip">
+        <div class="win-seg a">
+          <span class="ws-dur">JANELA 1 · 5h</span>
+          <span class="ws-lab">"oi" abre a janela<br>2–3h antes do trabalho</span>
+        </div>
+        <div class="win-seg mid">
+          <span class="ws-dur">Você senta pra trabalhar</span>
+          <span class="ws-lab">janela já rodando · saldo cheio</span>
+        </div>
+        <div class="win-seg b">
+          <span class="ws-dur">JANELA 2 · 5h</span>
+          <span class="ws-lab">reset no meio do expediente</span>
+        </div>
+      </div>
+      <div class="ic-grid-2">
+        <div class="ic-card">
+          <span class="ic-k">A janela</span>
+          <span class="ic-v">Reseta a cada 5h e começa a contar na sua <strong>primeira</strong> mensagem, não num horário fixo.</span>
+        </div>
+        <div class="ic-card">
+          <span class="ic-k">A jogada</span>
+          <span class="ic-v">"oi" 2-3h antes do trabalho pesado. Você senta com saldo cheio, <strong>e ainda ganha uma janela nova no meio do expediente.</strong></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>HACK 03 · TIMING DE JANELA</span><span>29 / 34</span></div>
+  </section>
+
+  <!-- 30 — Hack 04 PDF -->
+  <section class="slide" data-theme="light">
+    <div class="s-head">
+      <span class="eyebrow">—— BÔNUS · ECONOMIA DE TOKENS</span>
+      <span class="hack-num">04</span>
+    </div>
+    <div class="s-body stack" style="--gap-stack:2vh">
+      <div>
+        <span class="hack-tag">HACK 04 · PRÉ-PROCESSADOR</span>
+        <div class="t-title sm">Condensa o PDF em <span class="coral">outra IA antes.</span></div>
+      </div>
+      <div class="hack-grid">
+        <div class="prompt-box">Remove enchimento e formatação.
+Extrai os pontos-chave.
+Devolve em Markdown condensado.</div>
+        <div class="ic-stack">
+          <div class="ic-card">
+            <span class="ic-k">Problema</span>
+            <span class="ic-v">PDF grande pode comer <strong>80% da sessão</strong>. Arquivo recorrente = pedágio toda semana.</span>
+          </div>
+          <div class="ic-card">
+            <span class="ic-k">Solução</span>
+            <span class="ic-v">Joga numa IA grátis (Gemini, o que for) com esse prompt. Leva o Markdown enxuto pro Claude.</span>
+          </div>
+          <div class="ic-card">
+            <span class="ic-k">Enquadramento</span>
+            <span class="ic-v">Pré-processador descartável. <strong>Cada modelo no seu papel.</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>HACK 04 · PDF PRÉ-CONDENSADO</span><span>30 / 34</span></div>
+  </section>
+
+  <!-- 31 — Hack 05 COMPACT -->
+  <section class="slide" data-theme="light">
+    <div class="s-head">
+      <span class="eyebrow">—— BÔNUS · ECONOMIA DE TOKENS</span>
+      <span class="hack-num">05</span>
+    </div>
+    <div class="s-body stack" style="--gap-stack:2vh">
+      <div>
+        <span class="hack-tag">HACK 05 · COMPACT</span>
+        <div class="t-title sm">Chat longo pesado? <span class="coral">Diga "COMPACT".</span></div>
+      </div>
+      <div class="hack-grid">
+        <div class="prompt-box">COMPACT
+
+→ Resume a conversa em 5-7
+  pontos-chave: contexto crítico,
+  decisões e código.
+→ Cola num chat novo e continua.</div>
+        <div class="ic-stack">
+          <div class="ic-card">
+            <span class="ic-k">Problema</span>
+            <span class="ic-v">Chat longo consome tokens exponencialmente. Mas trocar de chat = perder o contexto.</span>
+          </div>
+          <div class="ic-card">
+            <span class="ic-k">Solução</span>
+            <span class="ic-v">Continua de onde parou, <strong>sem carregar o peso morto.</strong></span>
+          </div>
+          <div class="ic-card">
+            <span class="ic-k">Diferencial</span>
+            <span class="ic-v">Eu uso isso direto. Tenho a skill montada e <strong>vou mostrar rodando.</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>HACK 05 · COMPACT</span><span>31 / 34</span></div>
+  </section>
+
+  <!-- 32 — Hack 06 RTK -->
+  <section class="slide" data-theme="light">
+    <div class="s-head">
+      <span class="eyebrow">—— BÔNUS · ECONOMIA DE TOKENS</span>
+      <span class="hack-num">06</span>
+    </div>
+    <div class="s-body stack" style="--gap-stack:2.6vh">
+      <div>
+        <span class="hack-tag">HACK 06 · RTK · BÔNUS PRO TERMINAL</span>
+        <div class="t-title sm">RTK, o primo do caveman, <span class="coral">pro terminal.</span></div>
+      </div>
+      <div class="cards-3">
+        <div class="r-card">
+          <div class="lbl">O QUE É</div>
+          <div class="h">Terminal<br>comprimido</div>
+          <div class="b">Comprime a comunicação de comandos de terminal, de forma enxuta em vez de tudo por extenso.</div>
+        </div>
+        <div class="r-card">
+          <div class="lbl">ECONOMIA</div>
+          <div class="kpi-big" style="color:var(--coral);margin:.15em 0 .2em">22–87%</div>
+          <div class="b">Em comandos de terminal. Empilha com caveman + COMPACT, não competem, somam.</div>
+        </div>
+        <div class="r-card">
+          <div class="lbl">CALIBRAGEM</div>
+          <div class="h">Pra quem<br>vive no Code</div>
+          <div class="b">Se você vive no Chat, caveman + COMPACT já ajudam muito. RTK é o próximo nível.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>HACK 06 · RTK</span><span>32 / 34</span></div>
+  </section>
+
+  <!-- 33 — Recap -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head">
+      <span class="brand-badge"><span class="ast">✳</span> Claude Sem Frescura</span>
+      <span class="eyebrow">BÔNUS · RECAP</span>
+    </div>
+    <div class="s-body stack">
+      <div class="t-title">Em 1 dia você aprendeu a<br><span class="mint">dominar o Claude de Verdade.</span></div>
+      <div class="layers">
+        <div class="layer">
+          <div class="ln">DE MANHÃ</div>
+          <div class="nm">Chat</div>
+          <div class="tg">Você pergunta, ele responde.</div>
+          <div class="ar">→</div>
+        </div>
+        <div class="layer">
+          <div class="ln">PÓS-ALMOÇO</div>
+          <div class="nm">Cowork</div>
+          <div class="tg">Você pede, ele executa.</div>
+          <div class="ar">→</div>
+        </div>
+        <div class="layer">
+          <div class="ln">À TARDE</div>
+          <div class="nm">Code</div>
+          <div class="tg">Você planeja, ele constrói.</div>
+        </div>
+      </div>
+      <div class="t-lead fg" style="max-width:60ch">Construiu, automatizou e economizou. <span class="coral">Sem frescura, com aplicação.</span></div>
+    </div>
+    <div class="footer"><span>RECAP DO DIA</span><span>33 / 34</span></div>
+  </section>
+
+  <!-- 34 — Agradecimento -->
+  <section class="slide" data-theme="dark">
+    <div class="s-head">
+      <span class="brand-badge"><span class="ast">✳</span> Claude Sem Frescura</span>
+    </div>
+    <div class="s-body two-col" style="align-items:center">
+      <div class="stack" style="--gap-stack:3vh">
+        <div class="t-display">Obrigado<span class="coral">.</span></div>
+        <div class="t-tagline" style="color:var(--fg-muted)">Foi um prazer.</div>
+        <div class="t-lead" style="max-width:32ch">Ah, escaneie o QR code ao lado e responda essa pesquisa de satisfação.</div>
+      </div>
+      <div class="qr-wrap">
+        <div class="qr-box">
+          <img src="qrcode_final.png" alt="QR Code pesquisa de satisfação" style="width:100%;height:100%;object-fit:contain;border-radius:12px;">
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span>CLAUDE SEM FRESCURA</span><span>34 / 34</span></div>
+  </section>
+
+</div></div>
+
+<div class="help">← → navega · F tela cheia</div>
+<div class="hud">
+  <button id="prev">‹</button>
+  <span class="pg"><span id="cur">1</span>/<span id="tot">1</span></span>
+  <button id="next">›</button>
+</div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+let i=0;
+const cur=document.getElementById('cur'),tot=document.getElementById('tot');
+tot.textContent=slides.length;
+
+// Atualiza paginação do rodapé para numeração global
+slides.forEach((s,k)=>{
+  const spans=s.querySelectorAll('.footer>span');
+  if(spans.length>=2) spans[spans.length-1].textContent=(k+1).toString().padStart(2,'0')+' / '+slides.length;
+});
+
+function updateProgress(){
+  const p=document.getElementById('progress');
+  if(p) p.style.width=(slides.length>1?(i/(slides.length-1)*100):100)+'%';
+}
+
+function show(n){
+  i=Math.max(0,Math.min(slides.length-1,n));
+  slides.forEach((s,k)=>s.classList.toggle('active',k===i));
+  cur.textContent=i+1;
+  updateProgress();
+  const t=slides[i].querySelector('[data-timer]');
+  if(t) startTimer(t);
+}
+
+function next(){show(i+1)} function prev(){show(i-1)}
+document.getElementById('next').onclick=next;
+document.getElementById('prev').onclick=prev;
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')next();
+  else if(e.key==='ArrowLeft'||e.key==='PageUp')prev();
+  else if(e.key==='f'||e.key==='F'){
+    if(!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+  else if(e.key==='Home')show(0);
+  else if(e.key==='End')show(slides.length-1);
+});
+
+updateProgress();
+
+let timerId=null;
+function startTimer(el){
+  clearInterval(timerId);let t=180;
+  const r=()=>{const m=Math.floor(t/60),s=t%60;el.textContent=m+':'+String(s).padStart(2,'0');};r();
+  timerId=setInterval(()=>{if(t>0){t--;r();}else clearInterval(timerId);},1000);
+}
+</script>
+</body>
+</html>

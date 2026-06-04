@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "name": "IA Sem Frescura — Design System · Painel de Tendências",
+    "version": "1.0",
+    "origin": "Derivado de design-system-claude-sem-frescura.json v2.0",
+    "purpose": "Define com exatidão o HTML standalone do painel de tendências de IA gerado pela skill pesquisar-tendencias.",
+    "language": "pt-BR",
+    "ethos": "Determinismo total: o modelo não toma nenhuma decisão de design. Cada elemento tem exatamente uma forma de existir.",
+    "deterministicManifesto": [
+      "ZERO improvisação de cor, tamanho ou estrutura.",
+      "Cada componente tem HTML e CSS exatos definidos no SKILL.md — copiar, não criar.",
+      "Variações de dados (título longo, lista vazia, sem temas) são tratadas por regras explícitas neste arquivo.",
+      "Fonte, paleta, espaçamento e raio são definidos como variáveis CSS; NUNCA valores inline.",
+      "A ordem dos cards é sempre: alto → médio → baixo. Dentro do mesmo calor: ordem da pesquisa."
+    ]
+  },
+
+  "canvas": {
+    "type": "Web page standalone — NÃO é slide.",
+    "htmlLang": "pt-BR",
+    "viewport": "width=device-width, initial-scale=1",
+    "bodyBackground": "#EDE7D6",
+    "pageMaxWidth": "1200px",
+    "pageMargin": "0 auto",
+    "note": "Body tem bg #EDE7D6 (creamDark). Cards e content area usam #F5EFE3 (cream). Header usa #0E3A2F (greenDeep)."
+  },
+
+  "color": {
+    "palette": {
+      "greenDeep":   { "hex": "#0E3A2F", "role": "Fundo do header, texto principal, highlight de botão ativo" },
+      "cream":       { "hex": "#F5EFE3", "role": "Fundo dos cards, fundo da content area" },
+      "creamDark":   { "hex": "#EDE7D6", "role": "Fundo do body, fundo da filter bar" },
+      "coral":       { "hex": "#E8865A", "role": "Badge QUENTE, asterisco do header, link de fonte, filtro calor ativo" },
+      "mint":        { "hex": "#A8E6C9", "role": "Badge MORNO, borda do bloco importa, filtro calor ativo" },
+      "mintMuted":   { "hex": "#8FB89E", "role": "Texto do brand-badge, timestamp, label de categoria no card, label seção" },
+      "pillLight":   { "hex": "#E7DFCF", "role": "Badge FRIO, pill de temas sem movimento, fundo de filtro inativo" },
+      "hairline":    { "hex": "#C9BFA9", "role": "Borda de card, divisor de filtros, borda de filtro, rodapé do card" },
+      "textMuted":   { "hex": "#5B6B61", "role": "Texto secundário, label de filtro, badge FRIO texto, rodapé" }
+    },
+
+    "heatBadge": {
+      "alto":  { "bg": "#E8865A", "text": "#FFFFFF",  "cssClass": "heat-alto",  "label": "QUENTE" },
+      "médio": { "bg": "#A8E6C9", "text": "#0E3A2F",  "cssClass": "heat-medio", "label": "MORNO"  },
+      "baixo": { "bg": "#E7DFCF", "text": "#5B6B61",  "cssClass": "heat-baixo", "label": "FRIO"   }
+    },
+
+    "usageRules": [
+      "Coral: badge QUENTE + asterisco + link de fonte + filtro de calor 'alto' ativo. Máximo 3 usos por card.",
+      "Mint: badge MORNO + borda do bloco 'por que importa' + filtro de calor 'médio' ativo.",
+      "Fundo do card NUNCA varia — sempre #F5EFE3.",
+      "Texto principal NUNCA varia — sempre #0E3A2F.",
+      "NENHUM elemento usa cor fora desta paleta."
+    ]
+  },
+
+  "typography": {
+    "googleFontsLink": "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "families": {
+      "display": "'Hanken Grotesk', system-ui, sans-serif",
+      "mono":    "'JetBrains Mono', ui-monospace, monospace"
+    },
+    "scale": {
+      "--t-page-title":    { "value": "1.75rem",   "weight": 800, "family": "display", "use": "H1 do painel" },
+      "--t-section-title": { "value": "0.6875rem", "weight": 600, "family": "mono",    "use": "Títulos de seção (TENDÊNCIAS DE IA, TEMAS SEM MOVIMENTO)" },
+      "--t-card-title":    { "value": "1rem",      "weight": 700, "family": "display", "use": "Título H2 do card" },
+      "--t-body":          { "value": "0.875rem",  "weight": 400, "family": "display", "use": "Resumo do card" },
+      "--t-importa":       { "value": "0.875rem",  "weight": 500, "family": "display", "use": "Texto do bloco 'por que importa'" },
+      "--t-meta":          { "value": "0.6875rem", "weight": 500, "family": "mono",    "use": "Categoria, data, fonte, labels mono" },
+      "--t-badge":         { "value": "0.625rem",  "weight": 600, "family": "mono",    "use": "Badge de calor (QUENTE/MORNO/FRIO)" },
+      "--t-filter":        { "value": "0.6875rem", "weight": 600, "family": "mono",    "use": "Pills de filtro" },
+      "--t-timestamp":     { "value": "0.75rem",   "weight": 400, "family": "mono",    "use": "Timestamp da última atualização" }
+    },
+    "rules": [
+      "NUNCA font-size inline. Sempre var(--t-*).",
+      "letter-spacing para qualquer texto mono: 0.08em.",
+      "text-transform: uppercase para --t-section-title, --t-badge, --t-filter, --t-meta quando for label.",
+      "line-height padrão para corpo: 1.55. Para título: 1.35. Para título de seção: 1.0."
+    ]
+  },
+
+  "spacing": {
+    "--space-xs":  "4px",
+    "--space-sm":  "8px",
+    "--space-md":  "16px",
+    "--space-lg":  "24px",
+    "--space-xl":  "40px",
+    "--card-pad":  "20px",
+    "--grid-gap":  "16px"
+  },
+
+  "radius": {
+    "--r-badge": "999px",
+    "--r-card":  "16px",
+    "--r-pill":  "999px"
+  },
+
+  "shadow": {
+    "--shadow-card": "0 2px 8px rgba(14,58,47,0.07), 0 0 0 1px #C9BFA9"
+  },
+
+  "layout": {
+    "sections": [
+      {
+        "id": "page-header",
+        "desc": "Topo fixo. Fundo greenDeep. Contém brand-badge à esq + título+timestamp à dir.",
+        "bg": "#0E3A2F",
+        "padding": "28px 40px",
+        "neverChange": "Cor de fundo, padding e estrutura flex são fixos."
+      },
+      {
+        "id": "filter-bar",
+        "desc": "Barra sticky logo abaixo do header. Fundo creamDark. Dois grupos: categorias (dinâmico) + calor (fixo).",
+        "bg": "#EDE7D6",
+        "padding": "14px 40px",
+        "sticky": true,
+        "groups": {
+          "categorias": "Gerado dinamicamente via JS com base nas categorias únicas dos itens. Primeiro pill sempre 'Todos'.",
+          "calor": "Fixo: Todos / QUENTE / MORNO / FRIO"
+        }
+      },
+      {
+        "id": "content-area",
+        "desc": "Padding 32px 40px. Contém section-header + news-grid + no-movement + page-footer.",
+        "padding": "32px 40px 0"
+      },
+      {
+        "id": "news-grid",
+        "desc": "CSS Grid. 3 colunas ≥900px, 2 colunas 600-899px, 1 coluna <600px. Gap 16px.",
+        "columns": { "desktop": 3, "tablet": 2, "mobile": 1 },
+        "gap": "16px",
+        "emptyState": "Se nenhum card visível: '<p class=\"empty-state\">Nenhum resultado para este filtro.</p>' dentro do grid."
+      },
+      {
+        "id": "no-movement",
+        "desc": "Só renderizar se temas_sem_movimento.length > 0. Pills cinza com os temas.",
+        "condition": "temas_sem_movimento.length > 0",
+        "defaultStyle": "display: none (JS remove quando há temas)"
+      },
+      {
+        "id": "page-footer",
+        "desc": "Rodapé centralizado mono. Texto: 'IA Sem Frescura · Gerado por Claude · AAAA-MM-DD'.",
+        "padding": "24px 0 8px"
+      }
+    ]
+  },
+
+  "components": {
+    "brandBadge": {
+      "desc": "Pill no header com asterisco coral + 'IA Sem Frescura'. Sempre no topo-esq do header.",
+      "bg": "transparent",
+      "border": "1px solid rgba(168,230,201,0.3)",
+      "text": "#A8E6C9",
+      "asterisk": "#E8865A",
+      "font": "mono 600",
+      "size": "--t-meta",
+      "letterSpacing": "0.08em",
+      "textTransform": "uppercase",
+      "padding": "5px 12px"
+    },
+
+    "heatBadge": {
+      "desc": "Pill de calor no topo do card. Sempre à esquerda, antes da categoria.",
+      "font": "mono 600",
+      "size": "--t-badge",
+      "letterSpacing": "0.08em",
+      "textTransform": "uppercase",
+      "padding": "3px 8px",
+      "variants": {
+        "heat-alto":  { "bg": "#E8865A", "text": "#FFFFFF" },
+        "heat-medio": { "bg": "#A8E6C9", "text": "#0E3A2F" },
+        "heat-baixo": { "bg": "#E7DFCF", "text": "#5B6B61" }
+      },
+      "htmlMapping": {
+        "alto":  "<span class=\"heat-badge heat-alto\">QUENTE</span>",
+        "médio": "<span class=\"heat-badge heat-medio\">MORNO</span>",
+        "baixo": "<span class=\"heat-badge heat-baixo\">FRIO</span>"
+      }
+    },
+
+    "filterPill": {
+      "desc": "Pill de filtro. Estado inativo: bg transparente, borda hairline. Estado ativo: depende do tipo.",
+      "font": "mono 600",
+      "size": "--t-filter",
+      "letterSpacing": "0.08em",
+      "textTransform": "uppercase",
+      "padding": "5px 12px",
+      "inactiveState": { "bg": "transparent", "border": "#C9BFA9", "text": "#5B6B61" },
+      "activeStates": {
+        "categoria": { "bg": "#0E3A2F", "border": "#0E3A2F", "text": "#F5EFE3" },
+        "calor-all":  { "bg": "#0E3A2F", "border": "#0E3A2F", "text": "#F5EFE3" },
+        "calor-alto": { "bg": "#E8865A", "border": "#E8865A", "text": "#FFFFFF" },
+        "calor-medio":{ "bg": "#A8E6C9", "border": "#A8E6C9", "text": "#0E3A2F" },
+        "calor-baixo":{ "bg": "#E7DFCF", "border": "#C9BFA9", "text": "#5B6B61" }
+      }
+    },
+
+    "newsCard": {
+      "desc": "Card de notícia. Ordem dos elementos SEMPRE a mesma: top (badge+categoria) → título → resumo → importa → footer.",
+      "bg": "#F5EFE3",
+      "radius": "16px",
+      "shadow": "0 2px 8px rgba(14,58,47,0.07), 0 0 0 1px #C9BFA9",
+      "padding": "20px",
+      "internalGap": "12px",
+      "elements": {
+        "card-top":      "flex row, gap 8px, alinha badge + categoria",
+        "card-title":    "H2, --t-card-title, weight 700, line-height 1.35",
+        "card-summary":  "p, --t-body, weight 400, line-height 1.55",
+        "card-importa":  "div com border-left mint 2px + bg rgba(14,58,47,0.04) + padding 10px 12px + border-radius 0 8px 8px 0",
+        "card-footer":   "flex space-between, padding-top 8px, border-top hairline, margin-top auto"
+      },
+      "textOverflowRule": "card-title sem truncate — deixar quebrar em múltiplas linhas. card-source: text-overflow ellipsis, max-width 70%."
+    },
+
+    "importaBlock": {
+      "desc": "Bloco destacado dentro do card. Sempre presente. Nunca omitir mesmo que o texto seja curto.",
+      "bg": "rgba(14,58,47,0.04)",
+      "borderLeft": "2px solid #A8E6C9",
+      "padding": "10px 12px",
+      "borderRadius": "0 8px 8px 0",
+      "label": { "font": "mono 600", "size": "--t-meta", "color": "#8FB89E", "transform": "uppercase", "letterSpacing": "0.08em" },
+      "text": { "font": "display 500", "size": "--t-importa", "color": "#0E3A2F", "lineHeight": 1.5 }
+    },
+
+    "noMovementPill": {
+      "desc": "Pill cinza para temas sem movimento.",
+      "bg": "#E7DFCF",
+      "border": "1px solid #C9BFA9",
+      "text": "#5B6B61",
+      "font": "mono",
+      "size": "--t-meta",
+      "letterSpacing": "0.06em",
+      "padding": "4px 12px"
+    }
+  },
+
+  "dataRules": {
+    "cardOrdering": "Ordenar DATA.itens antes de renderizar: alto → médio → baixo. Dentro do mesmo calor, manter ordem original.",
+    "dateFormatting": {
+      "publicado_em": "ISO date AAAA-MM-DD → 'DD Mmm AAAA'. Ex.: '2026-06-03' → '03 Jun 2026'. Meses: Jan,Fev,Mar,Abr,Mai,Jun,Jul,Ago,Set,Out,Nov,Dez.",
+      "gerado_em": "ISO-8601 com offset → 'DD Mmm AAAA · HHhMM'. Ex.: '2026-06-03T14:30:00-03:00' → '03 Jun 2026 · 14h30'."
+    },
+    "heatMapping": {
+      "alto":  { "label": "QUENTE", "cssClass": "heat-alto"  },
+      "médio": { "label": "MORNO",  "cssClass": "heat-medio" },
+      "baixo": { "label": "FRIO",   "cssClass": "heat-baixo" },
+      "note": "A classe CSS usa 'medio' (sem acento) para evitar problemas de encoding."
+    },
+    "jsonEscaping": "Serializar DATA inline como JSON.stringify(data) — o JS engine trata o escape. Não adicionar quebras de linha manuais dentro do objeto.",
+    "noMovementSection": "Só tornar visível (style display:block) se DATA.temas_sem_movimento.length > 0.",
+    "emptyGrid": "Se filtro ativo não retornar resultados, mostrar '<p class=\"empty-state\">Nenhum resultado para este filtro.</p>' dentro do grid."
+  },
+
+  "mobileRules": {
+    "header": "flex-direction: column, align-items: flex-start, padding 20px 16px",
+    "filterBar": "padding 12px 16px",
+    "contentArea": "padding 20px 16px 0",
+    "breakpoints": {
+      "desktop": "≥ 900px → 3 colunas",
+      "tablet":  "600–899px → 2 colunas",
+      "mobile":  "< 600px → 1 coluna"
+    }
+  },
+
+  "neverDo": [
+    "Adicionar gradientes, sombras além de --shadow-card, ou efeitos visuais não definidos aqui.",
+    "Usar cores fora da paleta definida.",
+    "Adicionar imagens, ícones SVG ou emojis além do asterisco ✳ no brand-badge.",
+    "Alterar a ordem dos elementos dentro do card.",
+    "Criar variantes de componentes não documentadas.",
+    "Usar font-size inline.",
+    "Omitir o bloco 'Por que importa' mesmo que o texto seja curto.",
+    "Mostrar a seção 'Temas sem movimento' se a lista estiver vazia."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "data": "2026-06-03",
+  "nicho": "Inteligência Artificial",
+  "gerado_em": "2026-06-03T23:27:51-03:00",
+  "itens": [
+    {
+      "titulo": "Claude Opus 4.8 e Dynamic Workflows no Claude Code",
+      "categoria": "Novos lançamentos de modelos",
+      "resumo": "Anthropic lançou Opus 4.8 em 28/05 com 88,6% no SWE-Bench e novo recurso Dynamic Workflows no Claude Code, que divide tarefas em sub-agentes paralelos, reduzindo tempo em builds complexos.",
+      "por_que_importa": "Teste hoje o Dynamic Workflows no Claude Code para acelerar projetos com múltiplas subtarefas independentes — o agente divide e executa em paralelo.",
+      "calor": "alto",
+      "fonte_titulo": "Sherwood News",
+      "fonte_url": "https://sherwood.news/tech/anthropic-raises-65-billion-at-a-965-billion-valuation-releases-a-more-honest-claude-opus-4-8/",
+      "publicado_em": "2026-05-28"
+    },
+    {
+      "titulo": "GitHub Copilot migra para cobrança por créditos (1º jun)",
+      "categoria": "IA para desenvolvedores",
+      "resumo": "A partir de 1º de junho, Copilot passou a cobrar por AI Credits (1 crédito = $0,01). Plano Pro = 1.500 créditos/mês; novo plano Max a $100/mês com 20.000 créditos. Modelos premium consomem créditos mais rápido.",
+      "por_que_importa": "Revise agora qual plano do Copilot faz sentido para o seu uso — modelos Opus em sessões longas podem zerar o saldo antes do fim do mês.",
+      "calor": "alto",
+      "fonte_titulo": "GitHub Blog",
+      "fonte_url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Windsurf vira Devin Desktop — novo protocolo ACP",
+      "categoria": "IA para desenvolvedores",
+      "resumo": "A Cognition rebrandeou o IDE Windsurf como Devin Desktop em 2 de junho, com Agent Command Center como painel padrão e suporte ao protocolo aberto ACP (Agent Client Protocol) para integração de agentes.",
+      "por_que_importa": "Se você usava Windsurf, o produto mudou: teste agora o Agent Command Center para automatizar tarefas de código de ponta a ponta com o Devin integrado.",
+      "calor": "alto",
+      "fonte_titulo": "AI Coding Agents 2026 — Lushbinary",
+      "fonte_url": "https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "Microsoft MAI-Code-1-Flash: primeiro modelo próprio de código no Copilot",
+      "categoria": "Novidades das big techs",
+      "resumo": "No Microsoft Build (2 jun), a Microsoft apresentou seu primeiro modelo de código próprio: MAI-Code-1-Flash (5B params), já disponível em todos os planos do Copilot via VS Code. Supera Claude Haiku 4.5 no SWE-Bench (51,2% vs 35,2%).",
+      "por_que_importa": "Ative já o MAI-Code-1-Flash no VS Code pelo seletor de modelos — disponível gratuitamente em todos os planos Copilot, entregando resultado melhor que Haiku 4.5 em código.",
+      "calor": "alto",
+      "fonte_titulo": "Microsoft AI Blog",
+      "fonte_url": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "GPT-5.5 Instant atualizado: memória de Gmail e menos alucinações",
+      "categoria": "Novos lançamentos de modelos",
+      "resumo": "OpenAI atualizou o GPT-5.5 Instant em junho para integrar contexto de chats anteriores, arquivos e Gmail nas respostas. O modelo passou a alucinar 52,5% menos do que seu antecessor em prompts de alta precisão.",
+      "por_que_importa": "Usuários Plus e Pro podem conectar o Gmail ao ChatGPT hoje e testar respostas contextualizadas sem precisar reexplicar o contexto a cada nova sessão.",
+      "calor": "alto",
+      "fonte_titulo": "OpenAI",
+      "fonte_url": "https://openai.com/index/gpt-5-5-instant/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Sora descontinuado — API encerra em setembro de 2026",
+      "categoria": "IA generativa visual (imagem, vídeo, design)",
+      "resumo": "OpenAI encerrou o produto Sora em 26/04 e anunciou que a API será desligada em setembro de 2026. Veo 3.1 (Google) e Kling 3.0 emergem como substitutos mais robustos no mercado.",
+      "por_que_importa": "Se você usa a API do Sora em algum fluxo de produção de vídeo, comece a migrar agora — setembro chega rápido e o Veo 3.1 já está disponível para testes via Google AI Studio.",
+      "calor": "alto",
+      "fonte_titulo": "Best Text-to-Video AI Generators June 2026",
+      "fonte_url": "https://www.buildmvpfast.com/articles/best-llms-2026-guide/video-generation-ai",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Anthropic faz filing confidencial de IPO — valuation de $965B",
+      "categoria": "Regulação, ética e tendências de mercado",
+      "resumo": "A Anthropic captou $65B em rodada Serie H avaliada em $965B — ultrapassando a OpenAI ($850B) — e fez submissão confidencial de IPO, com previsão de listagem para outubro de 2026.",
+      "por_que_importa": "Mais capital significa mais investimento em produto Claude; o ecossistema deve acelerar lançamentos nos próximos meses — vale acompanhar de perto.",
+      "calor": "médio",
+      "fonte_titulo": "Fortune",
+      "fonte_url": "https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Gemini 3.5 Flash — alternativa rápida e econômica em produção",
+      "categoria": "Novos lançamentos de modelos",
+      "resumo": "Google lançou Gemini 3.5 Flash em 19/05 com precificação de $1,50 (input) / $9,00 (output) por milhão de tokens — já disponível na API para aplicações de produção.",
+      "por_que_importa": "Vale testar Gemini 3.5 Flash como substituto de menor custo em fluxos que hoje usam modelos mais caros para tarefas de classificação, resumo ou triagem.",
+      "calor": "médio",
+      "fonte_titulo": "LLM Stats",
+      "fonte_url": "https://llm-stats.com/llm-updates",
+      "publicado_em": "2026-05-19"
+    },
+    {
+      "titulo": "OpenAI Codex chega ao Amazon Bedrock",
+      "categoria": "Agentes de IA e automações",
+      "resumo": "O agente de engenharia de software Codex, da OpenAI — com 5 milhões de usuários semanais — passou a estar disponível via Amazon Bedrock, integrando governança e segurança nativas da AWS.",
+      "por_que_importa": "Times que já operam na AWS podem integrar o Codex no stack hoje sem sair do ecossistema Amazon — sem configuração adicional de autenticação.",
+      "calor": "médio",
+      "fonte_titulo": "CNBC",
+      "fonte_url": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Google lança plano developer de IA a $100/mês",
+      "categoria": "Ferramentas e apps emergentes",
+      "resumo": "No Google I/O, o Google anunciou plano de assinatura para desenvolvedores a $100/mês com acesso ao stack Gemini, posicionando-se como alternativa mais acessível ao ecossistema OpenAI/Anthropic.",
+      "por_que_importa": "Desenvolvedores que pagam mais por outros stacks podem comparar agora — vale checar o que está incluído no plano Google e simular o custo do seu uso atual.",
+      "calor": "médio",
+      "fonte_titulo": "CNBC",
+      "fonte_url": "https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
+      "publicado_em": "2026-05-29"
+    },
+    {
+      "titulo": "Colorado AI Act entra em vigor em 30 de junho de 2026",
+      "categoria": "Regulação, ética e tendências de mercado",
+      "resumo": "O Colorado AI Act começa a valer em 30/06/2026, exigindo de desenvolvedores e implantadores de IA cuidados razoáveis para evitar discriminação algorítmica, políticas de gestão de risco e avaliações de impacto.",
+      "por_que_importa": "Quem vende ou opera ferramentas de IA para clientes nos EUA deve verificar hoje se precisa adequar práticas antes do prazo — 27 dias restantes.",
+      "calor": "médio",
+      "fonte_titulo": "Wilson Sonsini",
+      "fonte_url": "https://www.wsgr.com/en/insights/2026-year-in-preview-ai-regulatory-developments-for-companies-to-watch-out-for.html",
+      "publicado_em": "2026-01-07"
+    },
+    {
+      "titulo": "Few-shot prompting com tags XML: técnica de maior ROI em 2026",
+      "categoria": "Prompts e técnicas práticas",
+      "resumo": "Guias e pesquisas de 2026 confirmam que few-shot prompting com 3 a 5 exemplos em tags XML estruturadas segue sendo a técnica de maior retorno para obter consistência em LLMs.",
+      "por_que_importa": "Adicione 3 exemplos com tags XML ao seu próximo prompt e compare a qualidade da saída — provavelmente você vai parar de usar prompts sem exemplos depois disso.",
+      "calor": "baixo",
+      "fonte_titulo": "Lakera Prompt Engineering Guide",
+      "fonte_url": "https://www.lakera.ai/blog/prompt-engineering-guide",
+      "publicado_em": "2026-01-01"
+    },
+    {
+      "titulo": "82% das PMEs já usam IA — mediana de 5 ferramentas",
+      "categoria": "IA para empreendedores e pequenos negócios",
+      "resumo": "Pesquisa SBE Council 2026 mostra que 82% das PMEs investiram em IA, operando em média com 5 ferramentas simultaneamente. Marketing segue como caso de uso #1.",
+      "por_que_importa": "Contexto de posicionamento: seu público já usa IA — a briga agora é por quem usa melhor, não por quem usa primeiro.",
+      "calor": "baixo",
+      "fonte_titulo": "SBE Council",
+      "fonte_url": "https://sbecouncil.org/2026/04/25/the-ai-tools-small-businesses-are-using/",
+      "publicado_em": "2026-04-25"
+    },
+    {
+      "titulo": "Veo 3.1 consolida-se como referência de vídeo com IA após saída do Sora",
+      "categoria": "IA generativa visual (imagem, vídeo, design)",
+      "resumo": "Com a descontinuação do Sora, o Veo 3.1 (Google) emerge como a opção mais completa para geração de vídeo com IA em 2026 — combina realismo, movimento fluido e geração de áudio nativo no mesmo modelo.",
+      "por_que_importa": "Criadores de conteúdo visual: acesse o Google AI Studio hoje e teste o Veo 3.1 — pode substituir seu fluxo atual de produção de clipes com IA.",
+      "calor": "baixo",
+      "fonte_titulo": "Best AI Video Generator 2026",
+      "fonte_url": "https://www.buildmvpfast.com/articles/best-llms-2026-guide/video-generation-ai",
+      "publicado_em": "2026-06-01"
+    }
+  ],
+  "temas_sem_movimento": []
+}

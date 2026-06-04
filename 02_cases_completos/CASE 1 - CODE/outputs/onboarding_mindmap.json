@@ -1,0 +1,218 @@
+{
+  "name": "Engineering Onboarding and Standards",
+  "children": [
+    {
+      "name": "Environment Setup",
+      "children": [
+        {
+          "name": "Foundational Tools",
+          "children": [
+            {
+              "name": "GitHub & SSH"
+            },
+            {
+              "name": "1Password Dev Secrets"
+            },
+            {
+              "name": "Docker & Docker Compose"
+            }
+          ]
+        },
+        {
+          "name": "Local Services",
+          "children": [
+            {
+              "name": "PostgreSQL 16"
+            },
+            {
+              "name": "Redis 7"
+            },
+            {
+              "name": "LocalStack AWS"
+            }
+          ]
+        },
+        {
+          "name": "VSCode Extensions",
+          "children": [
+            {
+              "name": "Python & Pylance"
+            },
+            {
+              "name": "ESLint & Prettier"
+            },
+            {
+              "name": "REST Client"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Development Standards",
+      "children": [
+        {
+          "name": "Git Flow",
+          "children": [
+            {
+              "name": "Trunk-based development"
+            },
+            {
+              "name": "Conventional Commits"
+            },
+            {
+              "name": "Short-lived branches"
+            }
+          ]
+        },
+        {
+          "name": "Pull Requests",
+          "children": [
+            {
+              "name": "Under 400 lines ideal"
+            },
+            {
+              "name": "Minimum 2 reviewers"
+            },
+            {
+              "name": "CI passing required"
+            }
+          ]
+        },
+        {
+          "name": "Pre-commit Hooks",
+          "children": [
+            {
+              "name": "Black & Ruff (Python)"
+            },
+            {
+              "name": "Secret detection"
+            },
+            {
+              "name": "Environment file blocks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "System Architecture",
+      "children": [
+        {
+          "name": "Services",
+          "children": [
+            {
+              "name": "api-core (Python/FastAPI)"
+            },
+            {
+              "name": "ai-service (LangChain/RAG)"
+            },
+            {
+              "name": "file-svc (Go/S3)"
+            },
+            {
+              "name": "worker-jobs (Celery/Redis)"
+            }
+          ]
+        },
+        {
+          "name": "Data & Observability",
+          "children": [
+            {
+              "name": "PostgreSQL (UUID/Soft delete)"
+            },
+            {
+              "name": "Datadog Logs & APM"
+            },
+            {
+              "name": "Sentry Error Tracking"
+            },
+            {
+              "name": "OpenTelemetry Tracing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Operations & Deployment",
+      "children": [
+        {
+          "name": "Deployment Philosophy",
+          "children": [
+            {
+              "name": "Routine small deploys"
+            },
+            {
+              "name": "Merge owner monitors"
+            },
+            {
+              "name": "Unleash Feature Flags"
+            }
+          ]
+        },
+        {
+          "name": "Incident Response",
+          "children": [
+            {
+              "name": "On-call rotation (post-90 days)"
+            },
+            {
+              "name": "PagerDuty alerts (P1-P4)"
+            },
+            {
+              "name": "Rollback-first policy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Team Culture",
+      "children": [
+        {
+          "name": "Values",
+          "children": [
+            {
+              "name": "Clarity over cleverness"
+            },
+            {
+              "name": "Design reversibility"
+            },
+            {
+              "name": "Async communication"
+            }
+          ]
+        },
+        {
+          "name": "Ceremonies",
+          "children": [
+            {
+              "name": "Bi-weekly Sprints"
+            },
+            {
+              "name": "Async Dailies"
+            },
+            {
+              "name": "Architecture Decision Records (ADR)"
+            }
+          ]
+        },
+        {
+          "name": "Onboarding Path",
+          "children": [
+            {
+              "name": "Days 1-14: Setup & Context"
+            },
+            {
+              "name": "Days 15-30: Workflow Fluency"
+            },
+            {
+              "name": "Days 61-90: Domain Ownership"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

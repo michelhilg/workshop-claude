@@ -1,0 +1,73 @@
+# Processo de Gravação
+
+**Objetivo:** Documentar o equipamento, as configurações e as boas práticas de gravação para garantir qualidade consistente nos vídeos.
+**Última atualização:** 2026-06-04
+**Fonte:** Consolidado a partir dos arquivos em inputs/
+
+---
+
+## Equipamento atual
+
+- Câmera: iPhone 14 Pro (câmera principal)
+- Microfone: Rode Wireless Me
+- Iluminação: Ring light 18 polegadas
+- Fundo: parede bege do escritório (fundo verde foi testado e descartado — ficou feio)
+
+---
+
+## Configurações de câmera
+
+- Resolução: 4K 30fps
+- NÃO usar 60fps — arquivo fica muito grande e a editora reclamou
+- Iluminação: ring light posicionada na diagonal, nunca frontal (frontal achata o rosto)
+
+---
+
+## Regras de roupa e aparência
+
+- Sem listras finas — vibra na câmera
+- Preferência: cores sólidas e neutras
+
+---
+
+## Duração ideal de gravação
+
+- Gravar entre 8 e 12 minutos de material bruto para render 60-90 segundos de reel
+- Se a gravação passar de 20 minutos, provavelmente tem excesso de erro ou enrolação — regravar
+
+---
+
+## Checklist antes de gravar
+
+- [ ] Tema definido e briefing escrito
+- [ ] Roteiro pronto (pelo menos os pontos principais na cabeça)
+- [ ] Equipamento ligado e testado
+- [ ] Fundo arrumado
+- [ ] Roupa correta (sem listras)
+- [ ] Celular no modo avião durante a gravação (notificação no meio quebra o ritmo)
+- [ ] Verificar bateria do microfone antes de começar (já aconteceu de gravar 15 min sem bateria)
+
+---
+
+## Boas práticas
+
+- Gravar na manhã de terça, quando a luz está melhor
+- Se o áudio tiver problema, avisar a editora imediatamente — não tentar consertar na edição
+  se a origem do áudio estiver ruim. Enviar um clip de 10s para o Michel decidir se regravar.
+- Tomar takes diferentes se necessário; a editora usa o último salvo a menos que Michel marque qual usar
+
+---
+
+## Erros recorrentes
+
+- Gravar e esquecer de passar o briefing para a editora — Carol (ou Jana) fica esperando sem começar
+- Travar no tema na segunda e atrasar toda a semana
+- Aprovar correndo e descobrir erro de legenda depois de postar
+
+---
+
+## Pendências e itens em aberto
+
+- Processo de backup dos vídeos nunca foi definido sistematicamente — está em aberto
+- Processo de reutilização de conteúdo para outros formatos ainda não documentado
+- Quando e como fazer um post de correção caso tenha falado algo errado — não definido

@@ -1,0 +1,47 @@
+checklist publicação - versão 3 (as versões 1 e 2 eram piores)
+
+ANTES DE GRAVAR
+[ ] tema definido e briefing escrito
+[ ] roteiro (pelo menos os pontos principais na cabeça)
+[ ] equipamento ligado e testado
+[ ] fundo arrumado
+[ ] roupa ok (sem listras)
+[ ] celular no modo avião durante a gravação (notificação no meio é horrível)
+(falta colocar: verificar bateria do microfone - já aconteceu de gravar 15 min e o microfone tava sem bateria)
+
+ANTES DE MANDAR PRA EDIÇÃO
+[ ] assistiu os takes e marcou o melhor
+[ ] mandou briefing completo pra editora
+[ ] ??? (tinha mais coisa aqui mas apaguei sem querer)
+
+ANTES DE POSTAR
+[ ] assistiu a versão final completa (não só os primeiros segundos)
+[ ] verificou legenda do vídeo
+[ ] escreveu a descrição do post (não pode ser genérica)
+[ ] hashtags (máximo 5, relevantes)
+[ ] definiu horário de postagem
+[ ] thumbnail/capa se for carrossel
+
+DEPOIS DE POSTAR
+[ ] primeiras 2h: responde todos os comentários (isso influencia o algoritmo)
+[ ] se tiver pergunta relevante nos comentários: responde em story
+[ ] 72h depois: olha os números. salvo, compartilhamento, alcance
+
+CRITÉRIOS PRA CONSIDERAR UM POST BEM-SUCEDIDO
+taxa de salvo acima de 3% = bom
+compartilhamento acima de 1% = bom
+comentários com pergunta = ótimo sinal
+comentários tipo "ótimo conteúdo" sem mais = não conta muito
+
+se foi mal:
+- espera 72h antes de concluir que foi mal
+- olha o hook - esse é o principal suspeito
+- olha se o algoritmo tá em modo baixo alcance (verificar outros posts do mesmo período)
+- não deleta
+
+---
+
+COISAS QUE AINDA PRECISAM ENTRAR NESSE CHECKLIST:
+- processo de reutilização de conteúdo pra outros formatos
+- quando e como fazer um post de correção se falei algo errado
+- backup dos vídeos (nunca pensei nisso sistematicamente)

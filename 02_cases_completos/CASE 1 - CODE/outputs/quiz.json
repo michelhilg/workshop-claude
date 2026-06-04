@@ -1,0 +1,265 @@
+{
+  "title": "Content Quiz",
+  "questions": [
+    {
+      "question": "According to the Editorial Calendar, what is the minimum absolute frequency for posting Reels per week?",
+      "answerOptions": [
+        {
+          "text": "2 Reels per week",
+          "isCorrect": false,
+          "rationale": "While a lower frequency might seem easier, the documentation explicitly sets a higher minimum to maintain growth."
+        },
+        {
+          "text": "3 Reels per week",
+          "isCorrect": true,
+          "rationale": "The editorial calendar defines 3 Reels as the absolute minimum, with 4 being optional if possible."
+        },
+        {
+          "text": "5 Reels per week",
+          "isCorrect": false,
+          "rationale": "The strategy prioritizes consistency over extreme volume, and 5 is not mentioned as a requirement."
+        },
+        {
+          "text": "Daily Reels",
+          "isCorrect": false,
+          "rationale": "Daily posting is only required for Stories, not for produced video content like Reels."
+        }
+      ],
+      "hint": "Consider the minimum threshold established for the primary reach format."
+    },
+    {
+      "question": "Which content format is identified as the best for converting users into 'saved' posts and engaged followers?",
+      "answerOptions": [
+        {
+          "text": "Stories",
+          "isCorrect": false,
+          "rationale": "Stories are used for daily interaction and behind-the-scenes content rather than high-save educational value."
+        },
+        {
+          "text": "YouTube Shorts",
+          "isCorrect": false,
+          "rationale": "YouTube is currently treated only as a secondary channel for repurposing existing content."
+        },
+        {
+          "text": "Reels",
+          "isCorrect": false,
+          "rationale": "Reels are designated as the primary tool for reach and attracting new followers rather than deep engagement."
+        },
+        {
+          "text": "Carousels",
+          "isCorrect": true,
+          "rationale": "Carousels are noted for their ability to convert users into saves and high-engagement followers."
+        }
+      ],
+      "hint": "Think about the format that allows for multi-page educational deep dives."
+    },
+    {
+      "question": "By what time on Tuesday must Michel send the briefing to the editor to avoid being 'poked' on WhatsApp?",
+      "answerOptions": [
+        {
+          "text": "9:00 AM",
+          "isCorrect": false,
+          "rationale": "While early is better, the specific deadline for the editor to take action is slightly later in the day."
+        },
+        {
+          "text": "Noon (12:00 PM)",
+          "isCorrect": true,
+          "rationale": "The rules state that if the briefing isn't sent by Tuesday at noon, the editor is instructed to request it."
+        },
+        {
+          "text": "6:00 PM",
+          "isCorrect": false,
+          "rationale": "Late afternoon would delay the 48-hour editing SLA significantly."
+        },
+        {
+          "text": "Monday Night",
+          "isCorrect": false,
+          "rationale": "Monday is for planning and briefing preparation, but the hard deadline for delivery is Tuesday."
+        }
+      ],
+      "hint": "This deadline occurs right in the middle of the recording day."
+    },
+    {
+      "question": "Which of these metrics is considered the MOST important for evaluating educational content success?",
+      "answerOptions": [
+        {
+          "text": "Number of Likes",
+          "isCorrect": false,
+          "rationale": "The documentation dismisses likes as a 'vanity metric' that doesn't reflect real value."
+        },
+        {
+          "text": "View Count",
+          "isCorrect": false,
+          "rationale": "Views indicate reach, but they don't necessarily prove the educational value provided to the user."
+        },
+        {
+          "text": "Save Rate",
+          "isCorrect": true,
+          "rationale": "Saves are the top priority for educational content, with a target goal of staying above $3\\%$."
+        },
+        {
+          "text": "Follower Count",
+          "isCorrect": false,
+          "rationale": "While there is a goal for 10k followers, individual post success is measured by user intent like saving."
+        }
+      ],
+      "hint": "Identify the action a user takes when they want to reference the information later."
+    },
+    {
+      "question": "What is the specific camera setting Michel is instructed to avoid because it makes files too large for the editor?",
+      "answerOptions": [
+        {
+          "text": "4K Resolution",
+          "isCorrect": false,
+          "rationale": "4K is actually the required resolution for high-quality source material."
+        },
+        {
+          "text": "60 fps (frames per second)",
+          "isCorrect": true,
+          "rationale": "The recording process explicitly forbids 60 fps because it inflates file size unnecessarily; 30 fps is preferred."
+        },
+        {
+          "text": "Cinematic Mode",
+          "isCorrect": false,
+          "rationale": "The documents do not mention Cinematic Mode, focusing instead on framerate and resolution."
+        },
+        {
+          "text": "1080p Resolution",
+          "isCorrect": false,
+          "rationale": "1080p would result in smaller files, but the goal is high quality (4K) at a manageable framerate."
+        }
+      ],
+      "hint": "Focus on the setting related to the number of frames captured every second."
+    },
+    {
+      "question": "What advice did the mentor, Gabriel, give regarding the delegation of tasks?",
+      "answerOptions": [
+        {
+          "text": "Delegate caption writing to the editors",
+          "isCorrect": false,
+          "rationale": "Michel currently retains responsibility for writing post descriptions and CTAs."
+        },
+        {
+          "text": "Never delegate responding to comments",
+          "isCorrect": true,
+          "rationale": "Gabriel emphasizes that responding to comments is a vital way to build a real community and should stay with the creator."
+        },
+        {
+          "text": "Outsource script writing immediately",
+          "isCorrect": false,
+          "rationale": "Michel still does all the scripting and is only considering a framework for future delegation."
+        },
+        {
+          "text": "Automate all Direct Messages",
+          "isCorrect": false,
+          "rationale": "Automation isn't mentioned; the focus is on the human connection in the comments section."
+        }
+      ],
+      "hint": "Consider which task involves the most direct personal connection with the audience."
+    },
+    {
+      "question": "According to the 'M\u00e9tricas e KPIs' document, how long should the team wait before judging a post as a failure?",
+      "answerOptions": [
+        {
+          "text": "24 hours",
+          "isCorrect": false,
+          "rationale": "Early data can be misleading as the algorithm takes time to find the right audience segments."
+        },
+        {
+          "text": "48 hours",
+          "isCorrect": false,
+          "rationale": "While closer, the specific rule in the strategy allows for one more day of performance tracking."
+        },
+        {
+          "text": "72 hours",
+          "isCorrect": true,
+          "rationale": "The rules state to wait at least 72 hours, as the Instagram algorithm can sometimes take days to distribute a post."
+        },
+        {
+          "text": "One week",
+          "isCorrect": false,
+          "rationale": "Waiting a full week is unnecessary for initial performance assessment, though late virality can happen after two weeks."
+        }
+      ],
+      "hint": "Think of a three-day window for the algorithm to stabilize."
+    },
+    {
+      "question": "Which of the following is an 'autonomous' decision the editor (Carol or Jana) can make without asking Michel?",
+      "answerOptions": [
+        {
+          "text": "Changing the Call to Action (CTA)",
+          "isCorrect": false,
+          "rationale": "The CTA is a critical strategic element that must be clear in the briefing or checked before delivery."
+        },
+        {
+          "text": "Selecting the background music",
+          "isCorrect": true,
+          "rationale": "Editors have autonomy to pick music from the approved Drive folder or Spotify playlist."
+        },
+        {
+          "text": "Determining if the hook is strong enough",
+          "isCorrect": false,
+          "rationale": "The editor must specifically ask Michel if the hook (first 3 seconds) is strong enough before final delivery."
+        },
+        {
+          "text": "Choosing the video's main theme",
+          "isCorrect": false,
+          "rationale": "The theme is determined by Michel in the briefing and locked two weeks in advance."
+        }
+      ],
+      "hint": "Look for a stylistic element that is supported by a pre-approved library or playlist."
+    },
+    {
+      "question": "What was identified as a major 'positioning problem' during Michel's mentorship session?",
+      "answerOptions": [
+        {
+          "text": "The video quality is too low",
+          "isCorrect": false,
+          "rationale": "The mentor actually noted that the content is good, but the unique angle is what's missing."
+        },
+        {
+          "text": "Michel lacks a clear 'Transformation' statement",
+          "isCorrect": true,
+          "rationale": "Michel was unable to clearly define the specific transformation he delivers, leading to a generic productivity POV."
+        },
+        {
+          "text": "He is posting too many Carousels",
+          "isCorrect": false,
+          "rationale": "Carousels are actually performing well; the issue is with the underlying brand message."
+        },
+        {
+          "text": "The use of AI tools is confusing the audience",
+          "isCorrect": false,
+          "rationale": "As an educator of AI, this is his niche, but he lacks a unique perspective within that niche."
+        }
+      ],
+      "hint": "Recall the question Michel couldn't answer clearly during his talk with Gabriel."
+    },
+    {
+      "question": "What is the mandatory visual style for captions (legends) in the Reels according to the technical specs?",
+      "answerOptions": [
+        {
+          "text": "Yellow text with no border at the top of the screen",
+          "isCorrect": false,
+          "rationale": "The specs require specific colors and positioning to avoid UI interference and ensure readability."
+        },
+        {
+          "text": "White text with a thin black outline, centered-low",
+          "isCorrect": true,
+          "rationale": "The standard is white text with a black outline, positioned in the center-bottom (but not the absolute bottom)."
+        },
+        {
+          "text": "Multi-colored text that changes with each word",
+          "isCorrect": false,
+          "rationale": "Consistency is prioritized over flashy changes; the template defines a specific uniform style."
+        },
+        {
+          "text": "Black text in a solid white box, aligned left",
+          "isCorrect": false,
+          "rationale": "The defined template uses an outline rather than a solid background box for the text."
+        }
+      ],
+      "hint": "The position must avoid being cut off by the Instagram UI elements like the description or buttons."
+    }
+  ]
+}
