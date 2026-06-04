@@ -3,3 +3,5 @@
 **/.playwright-browsers/
 **/node_modules/
 **/.venv/
+.env
+**/.env
