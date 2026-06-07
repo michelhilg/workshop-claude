@@ -1,6 +1,6 @@
 ![Capa](capa.png)
 
-# Workshop Claude — IA Sem Frescura
+# Workshop Claude Sem Frescura
 
 Materiais do workshop de uso prático do Claude, organizado em três módulos: Chat, Cowork e Code. Cada case explora uma camada diferente de colaboração com IA, do simples ao sistêmico.
 
