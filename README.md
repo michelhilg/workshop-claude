@@ -4,6 +4,8 @@
 
 Materiais do workshop de uso prático do Claude, organizado em três módulos: Chat, Cowork e Code. Cada case explora uma camada diferente de colaboração com IA, do simples ao sistêmico.
 
+> **Aviso importante:** a documentação e os contextos dos cases foram criados para cenários fictícios usados durante o workshop. Se quiser evoluir alguma aplicação para uso real, é necessário adaptar os CLAUDE.md, prompts e dados para a sua realidade.
+
 ---
 
 ## Estrutura do Repositório
@@ -28,7 +30,7 @@ O workshop cobre três modos de uso do Claude, organizados em cinco cases progre
 **Case 1 · Do caos à skill: organizando seu dia**  
 `01_comece_aqui/1 - CASE 1 - CHAT/`
 
-Uma lista bagunçada de tarefas entra no chat e sai como um quadro visual priorizado, com uma skill para repetir o processo toda manhã e o resultado salvo no Notion.
+Uma lista bagunçada de tarefas entra no chat e sai como um quadro visual priorizado.
 
 Todo mundo tem tarefas espalhadas entre e-mail, WhatsApp e bloco de notas. O exercício mostra como organizar isso só com o chat do Claude, sem instalar nada, sem planilha, sem código.
 
@@ -43,7 +45,7 @@ Todo mundo tem tarefas espalhadas entre e-mail, WhatsApp e bloco de notas. O exe
 
 O Cowork conecta Drive, Gmail e arquivos locais numa única tarefa. Ele coleta notas fiscais, lê contratos, cruza com contexto de emails e entrega uma planilha consolidada e um relatório PDF prontos, sem você alternar entre abas.
 
-O Chat responde. O Cowork executa. Ele lê arquivos, acessa ferramentas e gera entregas na sua máquina. O case mostra como montar um projeto com memória, regras e conectores para que o processo rode de forma repetível.
+O case mostra como montar um projeto com memória, regras e conectores para que o processo rode de forma repetível.
 
 `Projetos` `CLAUDE.md` `Instruções globais` `Skills` `Conectores` `Tasks paralelas`
 
@@ -52,7 +54,7 @@ O Chat responde. O Cowork executa. Ele lê arquivos, acessa ferramentas e gera e
 **Case 2 · Painel de Tendências do Nicho**  
 `01_comece_aqui/3 - CASE 2 - COWORK/`
 
-Um agente que, com um comando, pesquisa tendências do seu nicho na web, cruza com uma lista de temas que você mantém e entrega um dashboard HTML pronto, sozinho, fim a fim.
+Um agente que, com um comando, pesquisa tendências do seu nicho na web, cruza com uma lista de temas que você mantém e entrega um dashboard HTML pronto.
 
 O objetivo é automatizar uma tarefa que costuma ser manual: monitorar o que está em alta no nicho e ter o resultado formatado sem precisar varrer a web na mão.
 
@@ -69,7 +71,7 @@ O Claude Code conecta direto no NotebookLM: organiza seus documentos numa base l
 
 A geração dos artefatos roda no NotebookLM, não no Claude. O case mostra como usar ferramentas externas a partir do Claude Code, deixando cada parte do trabalho na ferramenta certa.
 
-`VSCode` `Skills` `MCP NotebookLM` `Base de documentos` `Artefatos (sem token)`
+`VSCode` `Skills` `NotebookLM (biblioteca Python)` `Base de documentos` `Artefatos (sem token)`
 
 ---
 
