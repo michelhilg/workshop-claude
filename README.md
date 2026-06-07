@@ -128,6 +128,6 @@ As skills funcionam tanto no Claude Code quanto no aplicativo do Claude.
 
 ## Sobre o Workshop
 
-Parte da série **IA Sem Frescura** — educação prática de IA para quem quer usar, não só entender.
+Parte da série **IA Sem Frescura**. Educação prática de IA!
 
-[@michelhilg](https://www.instagram.com/michelhilg) no Instagram.
+Siga [@michelhilg](https://www.instagram.com/michelhilg) no Instagram.
