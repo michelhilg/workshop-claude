@@ -1,0 +1,121 @@
+# Calendário Editorial
+
+**Objetivo:** Documentar a cadência semanal de publicações, frequência por formato, regras de agendamento, horários e o planejamento de abril/2026 com itens em aberto identificados.
+**Última atualização:** 2026-06-05
+**Fonte:** Consolidado a partir dos arquivos em inputs/
+
+---
+
+## Cadência Semanal Padrão
+
+Frequência mínima semanal:
+- 3 Reels por semana (mínimo inegociável)
+- 4 Reels por semana se der — não é obrigatório
+- 1 Carrossel por semana
+- Stories todos os dias úteis
+
+Regra dos stories:
+- Pode ser bastidor ou repost — não precisa ser conteúdo produzido do zero
+- Serve para manter presença diária sem aumentar a carga de produção
+
+Canal YouTube:
+- Apenas reaproveitamento de conteúdo já publicado no Instagram
+- Proibido criar roteiros novos exclusivamente para o YouTube neste momento
+
+---
+
+## Regras de Agendamento
+
+- Calendário bloqueado com no mínimo 14 dias de antecedência operacional
+- Michel envia o tema da semana na segunda-feira
+- Briefing completo deve chegar para a editora até terça-feira ao meio-dia
+- Aprovação final pelo menos 6 horas antes da publicação
+- Ferramenta de agendamento: ainda não definida — ver pendências
+
+---
+
+## Distribuição Temática — Abril 2026
+
+Semanas 1 e 2 (31/03 a 11/04) — Foco: Produtividade e Autoridade
+- Reel: análise de falhas operacionais do início
+- Carrossel técnico: copywriting
+- Ferramentas: adoção do Notion
+
+Semanas 3 e 4 (14/04 a 30/04) — Foco: Engajamento Orgânico e Conexão Humana
+- Reel de bastidores: linha de gravação sem filtros
+- Conteúdo emocional focado no público-alvo
+- 21/04 (Feriado): janela de teste de distribuição — postar ou não ainda em dúvida
+
+---
+
+## Calendário de Abril 2026 — Detalhado
+
+Semana 1
+DATA   | FORMATO   | TEMA                                          | STATUS
+31/03  | Reel      | Produtividade creator — ângulo ainda a definir | PLANEJADO
+01/04  | Carrossel | 5 erros que cometi (atrasado desde fevereiro!) | EM ATRASO
+03/04  | Story     | Bastidor da semana / reposta pergunta          | RECORRENTE
+
+Semana 2
+DATA   | FORMATO   | TEMA                                          | STATUS
+07/04  | Reel      | Ferramenta do mês — qual não foi decidido       | EM ABERTO
+09/04  | Carrossel | Copywriting — tema do backlog a escolher       | EM ABERTO
+10/04  | Story     | (não preenchido)                              | EM ABERTO
+
+Semana 3
+DATA   | FORMATO   | TEMA                                          | STATUS
+14/04  | (vazio)   | —                                             | NÃO PLANEJADO
+15/04  | (vazio)   | —                                             | NÃO PLANEJADO
+17/04  | (vazio)   | —                                             | NÃO PLANEJADO
+
+Semana 4
+DATA   | FORMATO   | TEMA                                          | STATUS
+22/04  | Reel      | Bastidor de como gravo                        | PLANEJADO
+24/04  | ???       | A definir                                     | EM ABERTO
+25/04  | (feriado) | Postar ou não?                                | DÚVIDA
+
+---
+
+## Histórico de Performance por Formato
+
+Baseado nos dados do Q1 2026 (janeiro a março):
+
+Tipo de conteúdo        | Resultado
+Erros e Aprendizados    | 2x mais salvamentos que a média
+Números no título       | Aumento de CTR orgânico
+Manuais passo a passo   | Pico de compartilhamentos
+Bastidores (ex. setup)  | Alto alcance + engajamento emocional
+Hook forte ("você está perdendo dinheiro") | Melhor post do mês
+
+Conclusão provisória (confirmar com mais dados):
+- Carrossel converte melhor em salvamentos
+- Reel gera mais alcance orgânico
+- Estratégia combinada: reel abre audiência, carrossel converte em seguidor engajado
+
+---
+
+## Backlog de Ideias — Priorizado
+
+IDEIA                                          | FORMATO       | POTENCIAL | STATUS
+Como fazer uma semana de conteúdo em 2h        | Reel          | 5/5       | PRIORIDADE ALTA — muito pedido nos directs
+Quanto ganhei no 1o ano como creator           | Reel          | 5/5       | Pendente decisão de Michel (medo de postar)
+Newsletter como repositório do que foi postado | Newsletter    | 4/5       | Pesquisar mais referências antes
+Por que parei de usar o Reels nativo do IG     | Reel          | 4/5       | Precisa de ângulo diferente dos concorrentes
+Colaboração com [nome não registrado]          | Reel/Collab   | 4/5       | Ficou para maio — confirmar disponibilidade
+Gestão de tempo pra creator (série de 3 partes)| Carrossel     | 4/5       | Decidir: série ou posts separados?
+Desmistificar o algoritmo (com dados reais)    | Reel          | 3/5       | Diferencial: usar dados da própria conta
+Série temática mensal                          | Carrossel+Reel| 3/5       | Risco de prender o feed — testar em maio
+Bastidor de uma edição do zero (Carol)         | Carrossel     | ?/5       | Pedir autorização da Carol primeiro
+Live semanal de perguntas e respostas          | Live          | 2/5       | Deixar para depois do 10k seguidores
+
+---
+
+## Pendências e itens em aberto
+
+- Semanas 3 e 4 de abril estão em aberto — não planejadas nos inputs
+- Ferramenta de agendamento/publicação não decidida (Buffer? Later? Outro?)
+- Dúvida sobre feriado 21/04: postar ou aproveitar como janela de teste
+- Carrossel "5 erros que cometi" está em atraso desde fevereiro — resolver
+- Tema "ferramenta do mês" de 07/04 sem definição de qual ferramenta
+- 3 reels/semana foi questionado como ritmo sustentável — fevereiro foi difícil, revisar capacidade
+- Meta de frequência de stories não estava sendo cumprida sistematicamente — medir a partir de abril

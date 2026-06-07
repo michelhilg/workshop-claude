@@ -1,0 +1,118 @@
+{
+  "input_dir": ".claude/data/dadosBrutos",
+  "output_dir": ".claude/data/processados",
+
+  "CANAL_MAP": {
+    "LI Ads": "LinkedIn Ads",
+    "linkedin": "LinkedIn Ads",
+    "Linkedin": "LinkedIn Ads",
+    "Linkedin Ads": "LinkedIn Ads",
+    "LinkedIn": "LinkedIn Ads",
+    "li ads": "LinkedIn Ads",
+
+    "Google": "Google Ads",
+    "google": "Google Ads",
+    "google ads": "Google Ads",
+    "Goog Ads": "Google Ads",
+    "Google Ads": "Google Ads",
+    "gads": "Google Ads",
+
+    "Meta": "Meta Ads",
+    "meta": "Meta Ads",
+    "Facebook": "Meta Ads",
+    "facebook": "Meta Ads",
+    "FB Ads": "Meta Ads",
+    "fb ads": "Meta Ads",
+    "Instagram Ads": "Meta Ads",
+    "instagram ads": "Meta Ads",
+
+    "Indicação": "Indicação",
+    "indicacao": "Indicação",
+    "indicação": "Indicação",
+    "Referral": "Indicação",
+    "referral": "Indicação",
+
+    "Outbound": "Outbound",
+    "outbound": "Outbound",
+    "Cold Outreach": "Outbound",
+    "cold outreach": "Outbound",
+    "SDR": "Outbound",
+    "sdr": "Outbound",
+
+    "Orgânico": "Orgânico",
+    "organico": "Orgânico",
+    "orgânico": "Orgânico",
+    "Organic": "Orgânico",
+    "organic": "Orgânico",
+    "SEO": "Orgânico",
+
+    "Email": "Email Marketing",
+    "email": "Email Marketing",
+    "Email Marketing": "Email Marketing",
+    "email marketing": "Email Marketing",
+    "Newsletter": "Email Marketing",
+    "newsletter": "Email Marketing",
+
+    "Evento": "Evento",
+    "evento": "Evento",
+    "Events": "Evento",
+    "events": "Evento",
+    "Webinar": "Evento",
+    "webinar": "Evento"
+  },
+
+  "ETAPA_MAP": {
+    "Novo Lead": "Novo Lead",
+    "novo lead": "Novo Lead",
+    "novo": "Novo Lead",
+    "lead novo": "Novo Lead",
+    "entrada": "Novo Lead",
+
+    "Contato Feito": "Contato Feito",
+    "contato feito": "Contato Feito",
+    "contato realizado": "Contato Feito",
+    "primeiro contato": "Contato Feito",
+    "1o contato": "Contato Feito",
+    "abordado": "Contato Feito",
+
+    "Reunião marcada": "Reunião marcada",
+    "reunião marcada": "Reunião marcada",
+    "reuniao marcada": "Reunião marcada",
+    "reunião": "Reunião marcada",
+    "reuniao": "Reunião marcada",
+    "call agendada": "Reunião marcada",
+    "Call Agendada": "Reunião marcada",
+    "demo marcada": "Reunião marcada",
+    "Demo Marcada": "Reunião marcada",
+    "agendado": "Reunião marcada",
+
+    "Proposta Enviada": "Proposta Enviada",
+    "proposta enviada": "Proposta Enviada",
+    "proposta": "Proposta Enviada",
+    "proposta enviada ": "Proposta Enviada",
+    "enviou proposta": "Proposta Enviada",
+
+    "Negociação": "Negociação",
+    "negociação": "Negociação",
+    "negociacao": "Negociação",
+    "em negociação": "Negociação",
+    "negociando": "Negociação",
+    "contraoferta": "Negociação",
+
+    "Fechado Ganho": "Fechado Ganho",
+    "fechado ganho": "Fechado Ganho",
+    "ganho": "Fechado Ganho",
+    "won": "Fechado Ganho",
+    "fechou": "Fechado Ganho",
+    "convertido": "Fechado Ganho",
+    "cliente": "Fechado Ganho",
+
+    "Fechado Perdido": "Fechado Perdido",
+    "fechado perdido": "Fechado Perdido",
+    "perdido": "Fechado Perdido",
+    "lost": "Fechado Perdido",
+    "desistiu": "Fechado Perdido",
+    "sem interesse": "Fechado Perdido",
+    "churn": "Fechado Perdido"
+  }
+}

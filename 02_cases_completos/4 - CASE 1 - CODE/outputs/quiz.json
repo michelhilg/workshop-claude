@@ -1,0 +1,265 @@
+{
+  "title": "Conte\u00fado Quiz",
+  "questions": [
+    {
+      "question": "Qual \u00e9 a frequ\u00eancia m\u00ednima inegoci\u00e1vel de Reels estabelecida no calend\u00e1rio editorial para o Instagram?",
+      "answerOptions": [
+        {
+          "text": "1 Reel por semana",
+          "isCorrect": false,
+          "rationale": "Embora o carrossel tenha essa frequ\u00eancia, os Reels exigem uma presen\u00e7a mais constante para abertura de audi\u00eancia."
+        },
+        {
+          "text": "3 Reels por semana",
+          "isCorrect": true,
+          "rationale": "Este volume foi definido como o m\u00ednimo essencial para manter a consist\u00eancia sem sobrecarregar a produ\u00e7\u00e3o."
+        },
+        {
+          "text": "5 Reels por semana",
+          "isCorrect": false,
+          "rationale": "Apesar de aumentar o alcance, esse volume foi questionado como insustent\u00e1vel ap\u00f3s as dificuldades de fevereiro."
+        },
+        {
+          "text": "Postagens di\u00e1rias",
+          "isCorrect": false,
+          "rationale": "O planejamento prioriza a consist\u00eancia de longo prazo em vez de picos di\u00e1rios que podem levar \u00e0 exaust\u00e3o."
+        }
+      ],
+      "hint": "Considere o equil\u00edbrio entre o alcance org\u00e2nico e a capacidade de produ\u00e7\u00e3o da equipe."
+    },
+    {
+      "question": "De acordo com a estrat\u00e9gia de conte\u00fado, qual \u00e9 a regra primordial para o canal do YouTube?",
+      "answerOptions": [
+        {
+          "text": "Criar roteiros exclusivos focado em busca (SEO)",
+          "isCorrect": false,
+          "rationale": "O foco atual do projeto n\u00e3o permite a cria\u00e7\u00e3o de conte\u00fado do zero para canais secund\u00e1rios."
+        },
+        {
+          "text": "Postar apenas bastidores da edi\u00e7\u00e3o",
+          "isCorrect": false,
+          "rationale": "Os bastidores s\u00e3o focados nos Stories do Instagram para gerar conex\u00e3o e relacionamento."
+        },
+        {
+          "text": "Apenas reaproveitamento de conte\u00fado do Instagram",
+          "isCorrect": true,
+          "rationale": "A arquitetura de ativos foca em maximizar o que j\u00e1 foi produzido para a prioridade n\u00famero um."
+        },
+        {
+          "text": "Realizar lives semanais de perguntas e respostas",
+          "isCorrect": false,
+          "rationale": "Este formato est\u00e1 pausado at\u00e9 que a marca atinja a meta de 10 mil seguidores."
+        }
+      ],
+      "hint": "Pense na hierarquia de prioridades entre o Instagram e outros canais."
+    },
+    {
+      "question": "Qual \u00e9 o prazo limite para Michel enviar o briefing completo para a editora de v\u00eddeo?",
+      "answerOptions": [
+        {
+          "text": "Segunda-feira ao final do dia",
+          "isCorrect": false,
+          "rationale": "Na segunda-feira, apenas o tema da semana deve ser enviado para alinhamento inicial."
+        },
+        {
+          "text": "Ter\u00e7a-feira ao meio-dia",
+          "isCorrect": true,
+          "rationale": "Este hor\u00e1rio permite que a editora organize sua janela de edi\u00e7\u00e3o e cumpra o SLA de 24 horas."
+        },
+        {
+          "text": "Quarta-feira pela manh\u00e3",
+          "isCorrect": false,
+          "rationale": "Enviar o briefing na quarta-feira comprometeria o agendamento com a anteced\u00eancia de 14 dias exigida."
+        },
+        {
+          "text": "Imediatamente ap\u00f3s a grava\u00e7\u00e3o",
+          "isCorrect": false,
+          "rationale": "O processo exige que o briefing e o roteiro sejam validados antes mesmo da capta\u00e7\u00e3o come\u00e7ar."
+        }
+      ],
+      "hint": "O cronograma semanal \u00e9 dividido entre a defini\u00e7\u00e3o do tema e o detalhamento t\u00e9cnico."
+    },
+    {
+      "question": "Conforme a regra de CTA (Call to Action), o que deve ser solicitado ao p\u00fablico em posts de conte\u00fado educativo?",
+      "answerOptions": [
+        {
+          "text": "Pedir coment\u00e1rio",
+          "isCorrect": false,
+          "rationale": "Coment\u00e1rios s\u00e3o priorizados para conte\u00fados que buscam gerar debate ou colher opini\u00f5es."
+        },
+        {
+          "text": "Pedir para salvar",
+          "isCorrect": true,
+          "rationale": "O salvamento \u00e9 o principal indicador de utilidade t\u00e9cnica e autoridade para o algoritmo."
+        },
+        {
+          "text": "Direcionar para o link na bio",
+          "isCorrect": false,
+          "rationale": "O link na bio \u00e9 reservado para momentos de venda direta, evitando o desgaste da audi\u00eancia."
+        },
+        {
+          "text": "Pedir compartilhamento via direct",
+          "isCorrect": false,
+          "rationale": "Embora valioso, o compartilhamento \u00e9 mais comum em manuais passo a passo ou conte\u00fados virais."
+        }
+      ],
+      "hint": "Pense na m\u00e9trica que melhor reflete o valor pr\u00e1tico de um tutorial ou dica t\u00e9cnica."
+    },
+    {
+      "question": "Na configura\u00e7\u00e3o de c\u00e2mera para grava\u00e7\u00e3o, por que \u00e9 proibido o uso de 60fps?",
+      "answerOptions": [
+        {
+          "text": "Reduz a qualidade visual no Instagram",
+          "isCorrect": false,
+          "rationale": "O Instagram suporta 60fps, mas o problema reside no fluxo de trabalho interno."
+        },
+        {
+          "text": "Causa achatamento facial na imagem",
+          "isCorrect": false,
+          "rationale": "O achatamento facial \u00e9 causado pela ilumina\u00e7\u00e3o frontal direta, n\u00e3o pela taxa de quadros."
+        },
+        {
+          "text": "Arquivos pesados e dessincroniza\u00e7\u00e3o de \u00e1udio",
+          "isCorrect": true,
+          "rationale": "A taxa de quadros alta gera complexidade t\u00e9cnica desnecess\u00e1ria para o modelo de edi\u00e7\u00e3o r\u00e1pida atual."
+        },
+        {
+          "text": "O algoritmo do Reels pune v\u00eddeos fluidos",
+          "isCorrect": false,
+          "rationale": "N\u00e3o h\u00e1 evid\u00eancias de puni\u00e7\u00e3o algor\u00edtmica por FPS; a decis\u00e3o \u00e9 puramente operacional."
+        }
+      ],
+      "hint": "Lembre-se dos problemas t\u00e9cnicos que atrasam a entrega da editora."
+    },
+    {
+      "question": "Qual a\u00e7\u00e3o deve ser tomada caso o processo de revis\u00e3o de um v\u00eddeo exija mais de 3 ajustes?",
+      "answerOptions": [
+        {
+          "text": "A editora deve refazer o v\u00eddeo do zero",
+          "isCorrect": false,
+          "rationale": "Refazer sem alinhamento pode perpetuar os mesmos erros de interpreta\u00e7\u00e3o do briefing."
+        },
+        {
+          "text": "Michel deve assumir a edi\u00e7\u00e3o final",
+          "isCorrect": false,
+          "rationale": "Isso violaria as regras de delega\u00e7\u00e3o e sobrecarregaria o creator com tarefas operacionais."
+        },
+        {
+          "text": "Realizar uma call s\u00edncrona de alinhamento",
+          "isCorrect": true,
+          "rationale": "A comunica\u00e7\u00e3o direta resolve ru\u00eddos que o texto no WhatsApp n\u00e3o consegue sanar ap\u00f3s v\u00e1rias tentativas."
+        },
+        {
+          "text": "Cancelar a publica\u00e7\u00e3o do conte\u00fado",
+          "isCorrect": false,
+          "rationale": "O cancelamento fere a meta de consist\u00eancia; a solu\u00e7\u00e3o deve ser processual."
+        }
+      ],
+      "hint": "Pense na solu\u00e7\u00e3o definida ap\u00f3s a reuni\u00e3o de mar\u00e7o para evitar o excesso de idas e vindas."
+    },
+    {
+      "question": "O que indica a 'Regra das 72 Horas' para as m\u00e9tricas de postagem?",
+      "answerOptions": [
+        {
+          "text": "Postar apenas a cada 72 horas para n\u00e3o saturar",
+          "isCorrect": false,
+          "rationale": "A frequ\u00eancia \u00e9 semanal, n\u00e3o baseada em janelas de 72 horas fixas entre posts."
+        },
+        {
+          "text": "Aguardar 72 horas antes de deletar um post de baixo desempenho",
+          "isCorrect": true,
+          "rationale": "Esse tempo \u00e9 necess\u00e1rio para que a distribui\u00e7\u00e3o org\u00e2nica e o aprendizado do algoritmo ocorram."
+        },
+        {
+          "text": "O prazo m\u00e1ximo para a editora entregar o corte final",
+          "isCorrect": false,
+          "rationale": "O SLA de edi\u00e7\u00e3o \u00e9 de 24 horas \u00fateis, n\u00e3o 72."
+        },
+        {
+          "text": "O tempo de vida \u00fatil de um Story antes de sumir",
+          "isCorrect": false,
+          "rationale": "Stories duram naturalmente 24 horas; a regra refere-se a decis\u00f5es de pauta e feed."
+        }
+      ],
+      "hint": "Relacione com o tempo necess\u00e1rio para analisar friamente o desempenho de um conte\u00fado."
+    },
+    {
+      "question": "Qual m\u00e9trica \u00e9 considerada de 'vaidade' e deve ser ignorada para decis\u00f5es de pauta?",
+      "answerOptions": [
+        {
+          "text": "Taxa de salvamentos",
+          "isCorrect": false,
+          "rationale": "Esta \u00e9 uma m\u00e9trica central que indica o valor real e a autoridade do conte\u00fado."
+        },
+        {
+          "text": "Visualiza\u00e7\u00f5es brutas isoladas",
+          "isCorrect": true,
+          "rationale": "Muitas visualiza\u00e7\u00f5es sem salvamentos n\u00e3o constroem autoridade t\u00e9cnica, sendo apenas alcance vazio."
+        },
+        {
+          "text": "Compartilhamentos",
+          "isCorrect": false,
+          "rationale": "Compartilhamentos indicam identifica\u00e7\u00e3o e potencial viral, sendo cruciais para o crescimento."
+        },
+        {
+          "text": "Reten\u00e7\u00e3o nos 3 segundos iniciais",
+          "isCorrect": false,
+          "rationale": "Esta m\u00e9trica \u00e9 vital para avaliar se o gancho (hook) do v\u00eddeo est\u00e1 funcionando."
+        }
+      ],
+      "hint": "Considere os indicadores que n\u00e3o garantem, por si s\u00f3, a constru\u00e7\u00e3o de uma comunidade resiliente."
+    },
+    {
+      "question": "Durante a edi\u00e7\u00e3o, quais v\u00edcios de linguagem do Michel devem ser obrigatoriamente cortados pela editora?",
+      "answerOptions": [
+        {
+          "text": "Uso excessivo de termos em ingl\u00eas",
+          "isCorrect": false,
+          "rationale": "O uso de termos t\u00e9cnicos \u00e9 permitido, dado que o foco \u00e9 IA e ferramentas de produtividade."
+        },
+        {
+          "text": "Pausas dram\u00e1ticas entre as frases",
+          "isCorrect": false,
+          "rationale": "O sil\u00eancio estrat\u00e9gico pode ser mantido para dar \u00eanfase, desde que o ritmo geral seja din\u00e2mico."
+        },
+        {
+          "text": "Express\u00f5es como '\u00e9\u00e9', 'ent\u00e3o' e 'n\u00e9' no in\u00edcio de frases",
+          "isCorrect": true,
+          "rationale": "Eliminar esses v\u00edcios ajuda a manter a autoridade e o dinamismo exigido nos Reels."
+        },
+        {
+          "text": "G\u00edrias regionais e informais",
+          "isCorrect": false,
+          "rationale": "O tom de voz deve ser direto e sem cerim\u00f4nia, mantendo a autenticidade do creator."
+        }
+      ],
+      "hint": "Pense em muletas lingu\u00edsticas que podem prejudicar a fluidez do v\u00eddeo."
+    },
+    {
+      "question": "Qual \u00e9 a meta de taxa de salvamento m\u00ednima para um Reel ser considerado bem-sucedido?",
+      "answerOptions": [
+        {
+          "text": "Maior que $1\\%$",
+          "isCorrect": false,
+          "rationale": "$1\\%$ \u00e9 a meta de refer\u00eancia para compartilhamentos, n\u00e3o para salvamentos."
+        },
+        {
+          "text": "Maior que $3\\%$",
+          "isCorrect": true,
+          "rationale": "Uma taxa acima de $3\\%$ do alcance indica que o conte\u00fado possui alto valor pr\u00e1tico para o seguidor."
+        },
+        {
+          "text": "Exatamente $50\\%$ das curtidas",
+          "isCorrect": false,
+          "rationale": "A compara\u00e7\u00e3o com curtidas n\u00e3o \u00e9 utilizada; a taxa \u00e9 calculada sobre o alcance total."
+        },
+        {
+          "text": "M\u00ednimo de 1.000 salvos",
+          "isCorrect": false,
+          "rationale": "N\u00fameros absolutos podem variar conforme o alcance; a m\u00e9trica percentual \u00e9 mais precisa."
+        }
+      ],
+      "hint": "Lembre-se da meta de refer\u00eancia gen\u00e9rica estabelecida para o Q1 de 2026."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-06T20:19:40.211327+00:00",
+  "total_arquivos": 9,
+  "arquivos": [
+    {
+      "arquivo": "pipeline_view.json",
+      "status": "success",
+      "tamanho_kb": 5029.4,
+      "registros": 16
+    },
+    {
+      "arquivo": "channel_performance.json",
+      "status": "success",
+      "tamanho_kb": 8.7,
+      "registros": 15
+    },
+    {
+      "arquivo": "seller_performance.json",
+      "status": "success",
+      "tamanho_kb": 4.9,
+      "registros": 8
+    },
+    {
+      "arquivo": "campaign_performance.json",
+      "status": "success",
+      "tamanho_kb": 67.2,
+      "registros": 96
+    },
+    {
+      "arquivo": "alerts.json",
+      "status": "success",
+      "tamanho_kb": 3.5,
+      "registros": 2
+    },
+    {
+      "arquivo": "data_quality_report.json",
+      "status": "success",
+      "tamanho_kb": 0.8,
+      "registros": null
+    },
+    {
+      "arquivo": "leads_table.json",
+      "status": "success",
+      "tamanho_kb": 19999.3,
+      "registros": 20000
+    },
+    {
+      "arquivo": "dashboard_summary.json",
+      "status": "success",
+      "tamanho_kb": 2.0,
+      "registros": null
+    },
+    {
+      "arquivo": "recommendations.json",
+      "status": "success",
+      "tamanho_kb": 0.0,
+      "registros": null
+    }
+  ],
+  "status": "success"
+}

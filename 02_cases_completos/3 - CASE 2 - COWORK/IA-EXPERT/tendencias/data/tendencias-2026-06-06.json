@@ -1,0 +1,130 @@
+{
+  "data": "2026-06-06",
+  "nicho": "Inteligência Artificial",
+  "gerado_em": "2026-06-06T18:25:00-03:00",
+  "itens": [
+    {
+      "titulo": "Claude Opus 4.8 lançado com Dynamic Workflows paralelos",
+      "categoria": "Novos lançamentos de modelos",
+      "resumo": "Anthropic lançou Claude Opus 4.8 (28 mai) com 88.6% no SWE-Bench Verified e preview de Dynamic Workflows no Claude Code, que distribui o trabalho entre subagentes paralelos automaticamente.",
+      "por_que_importa": "Quem usa Claude Code pode ativar o Dynamic Workflows agora e testar se projetos grandes ficam mais rápidos com subagentes rodando em paralelo.",
+      "calor": "alto",
+      "fonte_titulo": "AI Coding Agents 2026 — Lushbinary",
+      "fonte_url": "https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Gemini 3 lançado — #1 no LMSYS Arena com Deep Think e suporte multimodal completo",
+      "categoria": "Novos lançamentos de modelos",
+      "resumo": "Google lançou Gemini 3 com modo Deep Think para raciocínio avançado, suporte multimodal completo (texto, imagem, áudio e vídeo) e preços otimizados, ocupando o topo do LMSYS Arena no lançamento.",
+      "por_que_importa": "Vale trocar o modelo padrão dos seus fluxos para Gemini 3 agora e comparar custo-benefício — subiu ao #1 e o pricing novo pode surpreender positivamente.",
+      "calor": "alto",
+      "fonte_titulo": "AI News June 2026 — dentro.de/ai",
+      "fonte_url": "https://dentro.de/ai/news/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Microsoft Build 2026: 7 modelos MAI próprios, incluindo MAI-Code-1 no Copilot",
+      "categoria": "Novidades das big techs",
+      "resumo": "Na Build 2026 (2 jun), Microsoft lançou 7 modelos in-house: MAI-Thinking-1 (raciocínio, 35B, 97% no AIME), MAI-Code-1 (coding, já disponível no Copilot e VS Code), MAI-Image-2.5 e MAI-Voice-2 — todos treinados do zero, sem dependência do OpenAI.",
+      "por_que_importa": "Se você usa GitHub Copilot ou VS Code, o modelo por baixo mudou esta semana para o MAI-Code-1 — teste agora para sentir a diferença no seu fluxo de código.",
+      "calor": "alto",
+      "fonte_titulo": "Microsoft Build 2026 — The Official Microsoft Blog",
+      "fonte_url": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "GitHub Copilot muda para cobrança por créditos e lança plano Max ($100/mês)",
+      "categoria": "IA para desenvolvedores",
+      "resumo": "Em 1º de junho, GitHub Copilot migrou de cobrança por requisições para AI Credits mensais. Os preços nominais se mantiveram ($10 Pro, $39 Pro+), mas agora são limites de crédito. Novo tier Max por $100/mês oferece 20.000 créditos (~$200 de uso) para cargas pesadas.",
+      "por_que_importa": "Se você assina Copilot, a forma de cobrança mudou em 1º de junho — cheque seu plano agora para não ser surpreendido na próxima fatura.",
+      "calor": "alto",
+      "fonte_titulo": "AI Coding Agents 2026 — Lushbinary",
+      "fonte_url": "https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "OpenAI descontinua Sora — Kling 3.0 e Veo 3.1 são os substitutos indicados",
+      "categoria": "IA generativa visual (imagem, vídeo, design)",
+      "resumo": "OpenAI anunciou em março o encerramento das experiências web e app do Sora (desligado em 26 abr) e da API em setembro de 2026. Kling 3.0 (melhor custo-benefício) e Veo 3.1 (melhor qualidade geral) são apontados como principais substitutos.",
+      "por_que_importa": "Quem ainda usa workflows com Sora via API tem até setembro para migrar — Kling 3.0 tem free tier para testar hoje e Avatar 2.0 para criação de talking heads.",
+      "calor": "alto",
+      "fonte_titulo": "Bloomberg — Kling AI, Runway, Vidu replacing Sora",
+      "fonte_url": "https://www.bloomberg.com/news/articles/2026-04-01/kling-ai-runway-vidu-the-ai-video-generators-set-to-replace-openai-s-sora",
+      "publicado_em": "2026-04-01"
+    },
+    {
+      "titulo": "ChatGPT lança Lockdown Mode e nova memória com resumo revisável",
+      "categoria": "Novidades das big techs",
+      "resumo": "OpenAI lançou Lockdown Mode no ChatGPT — modo de segurança que bloqueia web browsing, deep research e downloads para reduzir risco de exfiltração de dados por prompt injection. Também lançou sistema de memória aprimorado com página de resumo revisável para usuários Plus e Pro nos EUA.",
+      "por_que_importa": "Quem usa ChatGPT com dados profissionais ou de clientes pode ativar o Lockdown Mode hoje nas configurações para adicionar uma camada de proteção.",
+      "calor": "médio",
+      "fonte_titulo": "OpenAI Release Notes — Releasebot",
+      "fonte_url": "https://releasebot.io/updates/openai",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "n8n lança AI Workflow Builder — descreva em linguagem natural, receba o workflow pronto",
+      "categoria": "Agentes de IA e automações",
+      "resumo": "n8n lançou AI Workflow Builder que converte prompts em linguagem natural em workflows draft completos, além de Chat node com human-in-the-loop nativo que pausa a execução para pedir confirmação humana antes de continuar.",
+      "por_que_importa": "Acesse o n8n agora e descreva em português o que quer automatizar — o builder monta o rascunho para você ajustar, sem precisar arrastar nó por nó do zero.",
+      "calor": "médio",
+      "fonte_titulo": "n8n Blog — AI agent development tools 2026",
+      "fonte_url": "https://blog.n8n.io/we-need-re-learn-what-ai-agent-development-tools-are-in-2026/",
+      "publicado_em": "2026-05-20"
+    },
+    {
+      "titulo": "Kling 3.0: Avatar 2.0 gera talking heads de 5 min a partir de uma foto",
+      "categoria": "IA generativa visual (imagem, vídeo, design)",
+      "resumo": "Kling 3.0 adicionou Avatar 2.0 que gera avatares falantes hiper-realistas a partir de uma única imagem com até 5 minutos de output identity-consistent, competindo diretamente com HeyGen e Synthesia. Também adicionou geração de vídeo 4K nativo (abr 2026).",
+      "por_que_importa": "Criadores podem testar o Kling Avatar 2.0 hoje para produzir vídeos com apresentador virtual sem precisar aparecer na câmera — caso de uso imediato para cursos e tutoriais.",
+      "calor": "médio",
+      "fonte_titulo": "Kling AI pricing 2026 — eesel AI",
+      "fonte_url": "https://www.eesel.ai/blog/kling-ai-pricing",
+      "publicado_em": "2026-04-15"
+    },
+    {
+      "titulo": "Google lança 'Pics' — gerador de imagens para marketing e redes sociais",
+      "categoria": "Ferramentas e apps emergentes",
+      "resumo": "Google anunciou no I/O 2026 o app Pics, powered by Nano Banana 2, que gera imagens para redes sociais, convites e materiais de marketing via texto — sem necessidade de skills de edição. Disponível inicialmente para assinantes Google AI Ultra.",
+      "por_que_importa": "Ainda restrito ao AI Ultra, mas vale criar conta de teste — quando abrir acesso, é o gerador de imagens mais integrado ao ecossistema Google que existirá.",
+      "calor": "médio",
+      "fonte_titulo": "TechCrunch — Google I/O 2026 AI design tools",
+      "fonte_url": "https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/",
+      "publicado_em": "2026-05-19"
+    },
+    {
+      "titulo": "EU AI Act adia deadline de alto risco de agosto 2026 para dezembro 2027",
+      "categoria": "Regulação, ética e tendências de mercado",
+      "resumo": "Em 7 de maio, negociadores da UE aprovaram emenda que posterga as obrigações para sistemas de IA de alto risco (Anexo III) de agosto de 2026 para dezembro de 2027 — adiamento de 16 meses. O prazo de agosto para outros requisitos se mantém.",
+      "por_que_importa": "Se você vende produtos de IA para o mercado europeu, mapeie agora o que é Anexo III (adiado) versus o que continua com prazo em agosto — a confusão aqui custa caro.",
+      "calor": "médio",
+      "fonte_titulo": "Global Policy Watch — EU AI Act Update maio 2026",
+      "fonte_url": "https://www.globalpolicywatch.com/2026/05/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions/",
+      "publicado_em": "2026-05-07"
+    },
+    {
+      "titulo": "WEF documenta 32 cases de IA com ROI mensurado — Zoom reduz produção de vídeo de dias para 1 hora",
+      "categoria": "Casos de uso reais e workflows",
+      "resumo": "O World Economic Forum publicou 32 cases documentados de IA com resultados mensuráveis. Destaque: Zoom reduziu produção de vídeos de treinamento de dias para menos de 1 hora; Fujitsu cortou $15M em custos de armazém; Duolingo ganhou 25% de velocidade de dev com Copilot.",
+      "por_que_importa": "O case do Zoom é replicável hoje para qualquer criador ou empresa que produz conteúdo em vídeo — a stack de ferramentas necessária está disponível sem custo inicial.",
+      "calor": "baixo",
+      "fonte_titulo": "CIO — WEF AI case studies 2026",
+      "fonte_url": "https://www.cio.com/article/4122937/davos-from-hype-to-ai-transformation-in-the-economy.html",
+      "publicado_em": "2026-01-15"
+    },
+    {
+      "titulo": "Microsoft 365 2026: Copilot integrado em todo o suite para identidade digital no trabalho",
+      "categoria": "Novidades das big techs",
+      "resumo": "Microsoft 365 recebeu atualização de IA em 2026 focada em 'be yourself at work', com Copilot integrado em Word, Excel, Teams e Outlook, incluindo personalização de identidade digital e acessibilidade aprimorada.",
+      "por_que_importa": "Usuários corporativos do M365 podem explorar os novos recursos de Copilot sem trocar de ferramenta — a integração agora é nativa no Office que já usam.",
+      "calor": "baixo",
+      "fonte_titulo": "Microsoft Build 2026 — The Official Microsoft Blog",
+      "fonte_url": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+      "publicado_em": "2026-06-02"
+    }
+  ],
+  "temas_sem_movimento": [
+    "Prompts e técnicas práticas"
+  ]
+}

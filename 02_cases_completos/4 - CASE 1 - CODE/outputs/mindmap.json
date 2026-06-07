@@ -1,0 +1,167 @@
+{
+  "name": "Estratégia e Operação de Conteúdo - Michel IA",
+  "children": [
+    {
+      "name": "Posicionamento e Pilar",
+      "children": [
+        {
+          "name": "Foco: Produtividade e IA para Instagram"
+        },
+        {
+          "name": "Público: Creators e profissionais"
+        },
+        {
+          "name": "Diferencial: Dados reais e densidade técnica"
+        },
+        {
+          "name": "Pilares: Processos, Tecnologia, Copywriting, Bastidores, Erros"
+        }
+      ]
+    },
+    {
+      "name": "Canais e Frequência",
+      "children": [
+        {
+          "name": "Instagram (Prioridade 1)",
+          "children": [
+            {
+              "name": "3-4 Reels/semana (Alcance)"
+            },
+            {
+              "name": "1 Carrossel/semana (Conversão)"
+            },
+            {
+              "name": "Stories diários (Relacionamento)"
+            }
+          ]
+        },
+        {
+          "name": "YouTube (Prioridade 2)",
+          "children": [
+            {
+              "name": "Reaproveitamento de ativos"
+            },
+            {
+              "name": "Proibido conteúdo exclusivo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Processo de Produção (Fluxo)",
+      "children": [
+        {
+          "name": "Pré-Gravação",
+          "children": [
+            {
+              "name": "Tema: Segunda-feira"
+            },
+            {
+              "name": "Briefing: Terça até 12h"
+            }
+          ]
+        },
+        {
+          "name": "Execução Técnica",
+          "children": [
+            {
+              "name": "Câmera: 4K 30fps traseira"
+            },
+            {
+              "name": "Áudio: Lapela obrigatório"
+            },
+            {
+              "name": "Modo Avião ativado"
+            }
+          ]
+        },
+        {
+          "name": "Edição (SLA 24h)",
+          "children": [
+            {
+              "name": "Gancho nos 3s iniciais"
+            },
+            {
+              "name": "Legendas: max 6 palavras/linha"
+            },
+            {
+              "name": "Corte de vícios de linguagem"
+            }
+          ]
+        },
+        {
+          "name": "Revisão e Aprovação",
+          "children": [
+            {
+              "name": "Janela de 12h para Michel"
+            },
+            {
+              "name": "Regra >3 ajustes: Call síncrona"
+            },
+            {
+              "name": "Aprovação final: 6h antes do post"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gestão e Equipe",
+      "children": [
+        {
+          "name": "Michel: Creator e Aprovador"
+        },
+        {
+          "name": "Carol: Editora Principal"
+        },
+        {
+          "name": "Jana: Editora Nova (pendente)"
+        },
+        {
+          "name": "Rodrigo: Calendário e Agendamento"
+        },
+        {
+          "name": "Gabriel: Mentor Estratégico"
+        }
+      ]
+    },
+    {
+      "name": "Métricas e KPIs",
+      "children": [
+        {
+          "name": "Meta Principal: 10k seguidores (Junho/26)"
+        },
+        {
+          "name": "Taxa de Salvamento: >3% (Sucesso)"
+        },
+        {
+          "name": "Compartilhamento: >1%"
+        },
+        {
+          "name": "Vaidade (Ignorar): Views e Curtidas isoladas"
+        },
+        {
+          "name": "Regra 72h: Não deletar posts antes"
+        }
+      ]
+    },
+    {
+      "name": "Pendências Críticas",
+      "children": [
+        {
+          "name": "Definição de ferramenta de agendamento"
+        },
+        {
+          "name": "Criação de template de briefing"
+        },
+        {
+          "name": "Configuração de UTMs no link da bio"
+        },
+        {
+          "name": "Medição sistemática de Stories"
+        }
+      ]
+    }
+  ]
+}

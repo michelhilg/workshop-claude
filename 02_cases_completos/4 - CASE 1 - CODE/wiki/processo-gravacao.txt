@@ -1,0 +1,118 @@
+# Processo de Gravação
+
+**Objetivo:** Documentar as especificações técnicas de equipamento, configurações de câmera, áudio e iluminação, além das boas práticas operacionais para garantir consistência e evitar retrabalho na produção de vídeo.
+**Última atualização:** 2026-06-05
+**Fonte:** Consolidado a partir dos arquivos em inputs/
+
+---
+
+## Equipamento Obrigatório
+
+Câmera
+- Usar sempre a câmera principal traseira do smartphone
+- Resolução: 4K a 30fps (taxa fixa — nunca usar taxa variável ou 60fps)
+- Motivo: arquivos 60fps ficam excessivamente pesados e causam dessincronização de áudio
+
+Áudio
+- Microfone de lapela sem fio é obrigatório — nunca gravar só com o mic do smartphone
+- Antes de cada sessão: testar a bateria do transmissor e do receptor separadamente
+- Se a bateria de qualquer módulo estiver abaixo do seguro, trocar antes de começar
+
+Iluminação
+- Iluminação difusa posicionada na diagonal do apresentador
+- Proibido usar luz frontal direta paralela à lente (causa achatamento facial)
+- Preferência por luz natural difusa quando possível
+
+---
+
+## Configurações de Gravação
+
+Formato de entrega final
+- Arquivo: mp4
+- Resolução: 1080x1920 (vertical, formato reels)
+- Sem transcodificação desnecessária pós-edição
+
+Cenário
+- Cenário limpo e alinhado antes de começar
+- Checar fundo, iluminação e enquadramento antes do primeiro take
+
+Smartphone
+- Colocar em Modo Avião antes de gravar para evitar notificações e interrupções
+
+---
+
+## Antes de Gravar — Checklist
+
+- [ ] Briefing e roteiro validados
+- [ ] Cenário limpo e enquadramento conferido
+- [ ] Smartphone em Modo Avião
+- [ ] Carga do microfone verificada (transmissor + receptor)
+- [ ] Iluminação posicionada na diagonal
+- [ ] Câmera configurada para 4K 30fps
+
+---
+
+## Problemas Durante a Gravação
+
+Se o áudio ficar ruim na origem
+- NÃO tentar corrigir na edição — perde tempo sem resultado adequado
+- Carol deve avisar o Michel imediatamente
+- Enviar um clip de 10 segundos do trecho com problema
+- Michel decide se regrava ou se há alguma solução viável
+
+Se o vídeo tiver outro problema técnico (iluminação, enquadramento)
+- Seguir o mesmo protocolo: avisar, enviar amostra, aguardar decisão
+
+---
+
+## O Que Não Fazer na Gravação
+
+- Não usar filtros pesados no vídeo gravado
+- Não gravar com taxa de frame variável ou 60fps
+- Não gravar sem microfone externo mesmo que o ambiente seja silencioso
+- Não gravar sem verificar a bateria do microfone antes
+- Não começar sem ter o roteiro ou briefing validado
+
+---
+
+## Especificações de Edição de Vídeo
+
+Corte e ritmo
+- Corte dinâmico nos primeiros 3 segundos é obrigatório (gancho visual)
+- Marcar o melhor take bruto antes de montar
+- Cortar vícios de linguagem recorrentes do Michel: "éé", "então" e "né" no início de frases
+
+Filtros e cor
+- Sem filtro pesado
+- Correção leve de exposição e saturação é permitida e recomendada
+
+Legendas
+- Máximo 6 palavras por linha
+- Fonte grande o suficiente para leitura no celular sem aproximar a tela
+- Sem emoji no texto da legenda do vídeo
+- Emoji permitido apenas na descrição/caption do post
+- Sincronização de legendas deve ser revisada antes da entrega
+
+Música
+- Usar músicas da pasta salva do projeto quando disponível
+- Se não houver música adequada, pode pesquisar no próprio Instagram
+- Obrigatório: anotar o nome da música no arquivo de entrega
+- Motivo: já houve caso de vídeo derrubado por copyright de música não registrada
+
+---
+
+## Saída Esperada
+
+O arquivo de entrega da editora deve ser:
+- Formato: mp4 1080x1920
+- Com legendas sincronizadas
+- Com nome da música usada anotado (se aplicável)
+- Sem filtros pesados aplicados
+
+---
+
+## Pendências e itens em aberto
+
+- Não há ferramenta definida para agendamento e upload (Buffer? Later? Outro?) — decisão pendente desde reunião de março/2026
+- Michel nunca mediu stories sistematicamente — processo de medição a definir a partir de abril
+- UTMs no link da bio ainda não configurados — pendente configuração para rastrear cliques

@@ -1,0 +1,25 @@
+{
+  "extracted_at": "2026-06-06T20:16:16.721414+00:00",
+  "sources": {
+    "leads_raw": {
+      "status": "success",
+      "record_count": 20000,
+      "output_file": ".claude\\data\\dadosBrutos\\leads_raw.json"
+    },
+    "campaigns": {
+      "status": "success",
+      "record_count": 96,
+      "output_file": ".claude\\data\\dadosBrutos\\campaigns.json"
+    },
+    "interactions": {
+      "status": "success",
+      "record_count": 51429,
+      "output_file": ".claude\\data\\dadosBrutos\\interactions.json"
+    },
+    "pipeline_config": {
+      "status": "success",
+      "record_count": 7,
+      "output_file": ".claude\\data\\dadosBrutos\\pipeline_config.json"
+    }
+  }
+}

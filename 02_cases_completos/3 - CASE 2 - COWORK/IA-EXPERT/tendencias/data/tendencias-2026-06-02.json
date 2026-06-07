@@ -1,0 +1,138 @@
+{
+  "data": "2026-06-02",
+  "nicho": "Inteligência Artificial",
+  "gerado_em": "2026-06-02T01:20:00-03:00",
+  "itens": [
+    {
+      "titulo": "Microsoft Build 2026: Copilot super app, novo modelo de raciocínio e Windows com IA",
+      "categoria": "Novidades das big techs",
+      "resumo": "Microsoft Build 2026 acontece nos dias 2–3 de junho com três grandes apostas: um Copilot 'super app', um novo modelo de raciocínio próprio da Microsoft AI, e experiências de IA nativa no Windows para hardware Nvidia.",
+      "por_que_importa": "O Copilot está prestes a virar a interface principal do Windows — entender o que foi anunciado esta semana é saber o que seu cliente vai perguntar na próxima.",
+      "calor": "alto",
+      "fonte_titulo": "The News International — Microsoft Build 2026",
+      "fonte_url": "https://www.thenews.com.pk/latest/1404505-microsoft-build-2026-new-pc-cloud-ai-tools-and-windows-upgrades-in-focus",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "Claude Code chega a 18% de adoção entre devs; 46% dos sêniors o preferem",
+      "categoria": "IA para desenvolvedores",
+      "resumo": "Claude Code saltou de 3% em abril de 2025 para 18% em janeiro de 2026. Em pesquisa com devs de mais de 10 anos de experiência, 46% escolheram Claude Code como ferramenta principal — contra 9% do Copilot.",
+      "por_que_importa": "Claude Code se tornou o padrão dos devs avançados — se você fala de IA para programadores, esse é o nome que precisa estar no seu conteúdo.",
+      "calor": "alto",
+      "fonte_titulo": "Cosmic JS — Claude Code vs Copilot vs Cursor 2026",
+      "fonte_url": "https://www.cosmicjs.com/blog/claude-code-vs-github-copilot-vs-cursor-which-ai-coding-agent-should-you-use-2026",
+      "publicado_em": "2026-05-28"
+    },
+    {
+      "titulo": "MCP vira padrão da Linux Foundation — só o Codex da OpenAI ainda fica de fora",
+      "categoria": "IA para desenvolvedores",
+      "resumo": "Model Context Protocol (MCP) foi adotado pela Linux Foundation como padrão aberto para integração de ferramentas com LLMs. Em março de 2026, Antigravity adicionou suporte ao MCP — apenas OpenAI Codex permanece fora do protocolo.",
+      "por_que_importa": "MCP virou o 'USB das ferramentas de IA' — qualquer creator que fale de automações e agentes precisa entender o que é isso.",
+      "calor": "alto",
+      "fonte_titulo": "Lushbinary — AI Coding Agents 2026 Comparison",
+      "fonte_url": "https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/",
+      "publicado_em": "2026-05-30"
+    },
+    {
+      "titulo": "Midjourney lança Video V1: gerador de imagens agora também cria vídeos",
+      "categoria": "IA generativa visual (imagem, vídeo, design)",
+      "resumo": "Midjourney lança seu primeiro modelo de vídeo oficial: a partir de uma única imagem, gera quatro vídeos de 5 segundos em loop com movimento fluido e consistência estilística. Disponível para assinantes.",
+      "por_que_importa": "A melhor ferramenta de imagem do mercado entrou no jogo de vídeo — o que você criava em duas etapas (imagem + vídeo) agora vira um fluxo só.",
+      "calor": "alto",
+      "fonte_titulo": "TugaTech — Midjourney V1 já está disponível",
+      "fonte_url": "https://tugatech.com.pt/t68346-midjourney-v1-ja-esta-disponivel-o-popular-gerador-de-imagens-ia-agora-tambem-cria-videos",
+      "publicado_em": "2026-05-25"
+    },
+    {
+      "titulo": "OpenAI desativa o Sora; mercado migra para Wan 2.6, Kling e Pika",
+      "categoria": "IA generativa visual (imagem, vídeo, design)",
+      "resumo": "OpenAI está encerrando o Sora. As alternativas que assumiram o espaço: Wan 2.6, Seedance, Vidu, Kling AI e Pika Labs. Runway Gen-4 continua como padrão profissional com controle de movimento por pixel.",
+      "por_que_importa": "Se você recomendou Sora para seu público, hora de atualizar — e esse movimento mostra o quanto o mercado de vídeo IA ainda está se consolidando.",
+      "calor": "alto",
+      "fonte_titulo": "TechTudo — Melhor IA para criar vídeos: Sora 2, Runway ou Kling AI?",
+      "fonte_url": "https://www.techtudo.com.br/comparativo/2026/04/melhor-ia-para-criar-videos-sora-2-runway-ou-kling-ai-testamos-edsofwares.ghtml",
+      "publicado_em": "2026-04-15"
+    },
+    {
+      "titulo": "AI Act da UE entra em vigor completo em 2 de agosto de 2026",
+      "categoria": "Regulação, ética e tendências de mercado",
+      "resumo": "A regulação de IA mais abrangente do mundo torna-se plenamente aplicável em agosto de 2026. Proibições de práticas de IA de alto risco já estão em vigor desde fevereiro de 2025; obrigações para modelos de linguagem gerais (GPAI) valem desde agosto de 2025.",
+      "por_que_importa": "Qualquer produto ou automação de IA vendido para empresas na Europa — ou que use dados europeus — precisa estar em conformidade. Isso afeta clientes e parceiros seus.",
+      "calor": "alto",
+      "fonte_titulo": "Europa aposta em regulação para liderar a inteligência artificial — Olhar Digital",
+      "fonte_url": "https://olhardigital.com.br/2026/06/02/inteligencia-artificial/europa-aposta-em-regulacao-para-liderar-a-inteligencia-artificial/",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "PL de IA do Brasil (PL 2338/2023) em fase final no Congresso",
+      "categoria": "Regulação, ética e tendências de mercado",
+      "resumo": "O projeto de lei de regulação de IA é prioridade do presidente da Câmara em 2026. O modelo aproxima o Brasil da UE: responsabilidade por danos, transparência obrigatória, proibição de usos de alto risco. EUA rejeitaram abordagem similar.",
+      "por_que_importa": "Se aprovado, vai mudar o que pode e o que não pode ser feito com IA em produtos brasileiros — pautar isso agora é antecipar o debate que vai explodir.",
+      "calor": "alto",
+      "fonte_titulo": "Congresso em Foco — O Brasil escolhe como regular a IA",
+      "fonte_url": "https://www.congressoemfoco.com.br/artigo/116794/o-brasil-escolhe-como-regular-a-ia-e-define-limites-ao-poder",
+      "publicado_em": "2026-05-20"
+    },
+    {
+      "titulo": "n8n como 'sistema operacional de agentes': orquestração multi-agente sem código",
+      "categoria": "Agentes de IA e automações",
+      "resumo": "Em 2026, o n8n deixou de ser ferramenta de automação simples e se tornou infraestrutura de orquestração para agentes autônomos — sistemas que planejam, decidem e executam tarefas com mínima intervenção. Supera Make e Zapier em flexibilidade.",
+      "por_que_importa": "Montar 'departamentos de IA' com n8n virou caso de uso real — seu público empreendedor pode implementar isso sem programar.",
+      "calor": "médio",
+      "fonte_titulo": "StayCloud — n8n como Sistema Operacional de Agentes de IA em 2026",
+      "fonte_url": "https://staycloud.com.br/blog/alem-da-automacao-o-n8n-como-sistema-operacional-de-agentes-de-ia-em-2026/",
+      "publicado_em": "2026-05-10"
+    },
+    {
+      "titulo": "Engenharia de contexto: a próxima evolução além dos prompts",
+      "categoria": "Prompts e técnicas práticas",
+      "resumo": "Engenharia de contexto emerge como tendência dominante: não é mais sobre escrever prompts melhores, mas sobre como estruturar e alimentar o modelo com a informação certa no momento certo. Técnica do 'sanduíche XML' e separação de componentes ganham adoção.",
+      "por_que_importa": "Quem só fala de 'escrever bons prompts' está ficando para trás — a conversa avançou para arquitetura de contexto.",
+      "calor": "médio",
+      "fonte_titulo": "IBM Think — Guia para Engenharia de Prompts de 2026",
+      "fonte_url": "https://www.ibm.com/think/prompt-engineering",
+      "publicado_em": "2026-05-15"
+    },
+    {
+      "titulo": "GPT-5.5 'Spud' e Gemini 3: os dois novos modelos de topo",
+      "categoria": "Novos lançamentos de modelos (LLMs e multimodais)",
+      "resumo": "OpenAI lançou o GPT-5.5 'Spud' em abril de 2026. O Google respondeu com o Gemini 3, com modo Deep Think e capacidade multimodal avançada — ficou em primeiro no LMSYS Arena no lançamento. Anthropic atualizou Claude Opus 4.7 e adicionou geração de imagens ao Claude.",
+      "por_que_importa": "O teto do que é possível subiu de novo — vale testar os novos modelos nas tarefas que você já usa IA e mostrar a diferença real para seu público.",
+      "calor": "médio",
+      "fonte_titulo": "LLM Stats — AI Model Release Tracker",
+      "fonte_url": "https://llm-stats.com/llm-updates",
+      "publicado_em": "2026-05-01"
+    },
+    {
+      "titulo": "Amazon Q Quick: criar apresentações e documentos direto no chat, com integração Google Workspace",
+      "categoria": "Ferramentas e apps emergentes",
+      "resumo": "Amazon Q agora permite criar documentos polidos, apresentações e infográficos diretamente da interface de chat. Integração expandida para Google Workspace, Zoom, Airtable, Dropbox e Teams — posicionando o Q como concorrente direto do Copilot no ambiente corporativo.",
+      "por_que_importa": "A AWS entrou sério no mercado de produtividade com IA — alternativa real ao Copilot para quem usa stack Amazon.",
+      "calor": "médio",
+      "fonte_titulo": "AWS — Top announcements of the What's Next with AWS 2026",
+      "fonte_url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/",
+      "publicado_em": "2026-05-28"
+    },
+    {
+      "titulo": "Automação de atendimento com IA reduz tempo de resposta em até 90%",
+      "categoria": "IA para empreendedores e pequenos negócios",
+      "resumo": "Ferramentas como Landbot, ManyChat e automações com GPT-4 permitem que pequenas empresas implementem atendimento automatizado sem código. Chatbots têm potencial de automatizar 30% das tarefas de atendimento com investimento mínimo.",
+      "por_que_importa": "ROI imediato e replicável: qualquer negócio com atendimento no WhatsApp pode implementar isso hoje.",
+      "calor": "médio",
+      "fonte_titulo": "Sebrae RN — IA para pequenos negócios em 2026",
+      "fonte_url": "https://blog.rn.sebrae.com.br/inteligencia-artificial-pequenos-negocios/",
+      "publicado_em": "2026-04-20"
+    },
+    {
+      "titulo": "Embraer e Ambev: casos reais de IA generativa em empresas brasileiras",
+      "categoria": "Casos de uso reais e workflows",
+      "resumo": "Embraer usa IA generativa para projetar componentes mais leves; Ambev gera variações de campanhas publicitárias personalizadas por perfil de consumidor. Ambos os casos são replicáveis em escala menor por agências e operações de marketing.",
+      "por_que_importa": "O que as grandes estão fazendo hoje, os pequenos implementam amanhã — esses casos são pauta de conteúdo que valida o tema para quem ainda duvida.",
+      "calor": "baixo",
+      "fonte_titulo": "Somativa — 10 exemplos reais de IA generativa nas empresas",
+      "fonte_url": "https://www.somativa.com.br/blog/inteligencia-artificial-generativa-o-que-e-e-10-exemplos-reais-de-uso-pelas-empresas/",
+      "publicado_em": "2026-04-10"
+    }
+  ],
+  "temas_sem_movimento": []
+}

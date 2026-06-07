@@ -1,0 +1,150 @@
+# Fluxo de Aprovação de Conteúdo
+
+**Objetivo:** Documentar cada etapa do processo de produção, desde o briefing até a publicação, incluindo responsabilidades, SLAs, critérios de qualidade e regras de comunicação entre Michel e as editoras.
+**Última atualização:** 2026-06-05
+**Fonte:** Consolidado a partir dos arquivos em inputs/
+
+---
+
+## Visão Geral do Fluxo
+
+Pré-gravação → Gravação → Edição → Revisão → Aprovação → Publicação
+
+Cada etapa tem responsável definido e janela de execução. Nunca pular etapa.
+
+---
+
+## Etapa 1 — Pré-Gravação (Michel)
+
+Responsável: Michel
+Quando acontece: antes de gravar qualquer vídeo
+
+O que deve estar pronto antes de gravar:
+- Briefing completo elaborado
+- Roteiro validado
+- Tema definido com clareza (ângulo, CTA, formato)
+
+Prazo de envio do briefing para a editora:
+- Michel envia o tema na segunda-feira
+- Briefing completo deve chegar para a editora até terça-feira ao meio-dia
+- Se o briefing não chegar até terça ao meio-dia, a editora deve cobrar no WhatsApp
+
+Regra importante:
+- A editora NÃO começa a editar com briefing incompleto — espera sempre o briefing completo
+- Não há edição "no que tem enquanto espera" — o padrão é esperar
+
+---
+
+## Etapa 2 — Gravação (Michel)
+
+Responsável: Michel
+Referência técnica: ver arquivo processo-gravacao.txt
+
+O que a editora precisa saber sobre a gravação:
+- Se o áudio estiver com problema, a editora avisa Michel imediatamente
+- Envia clip de 10 segundos do problema para Michel decidir
+- Não tenta corrigir áudio ruim na edição — perde tempo sem resultado
+
+---
+
+## Etapa 3 — Edição Primária (Editora)
+
+Responsável: Editora (Carol ou Jana)
+SLA: até 24 horas úteis após receber o material gravado
+
+O que a editora entrega:
+- Corte completo com ritmo dinâmico nos primeiros 3 segundos
+- Legendas sincronizadas (máximo 6 palavras por linha, fonte grande)
+- Sem emoji no texto das legendas do vídeo
+- Sem filtros pesados — correção leve de exposição e saturação apenas
+- Vícios de linguagem cortados: "éé", "então", "né" no início de frases
+- Nome da música usada anotado no arquivo de entrega
+- Arquivo final em mp4 1080x1920
+
+Regras de música:
+- Prioridade: pasta de músicas salvas do projeto
+- Se não houver música adequada: pesquisar no Instagram
+- Sempre anotar o nome da música — vídeos já foram derrubados por copyright não registrado
+
+---
+
+## Etapa 4 — Revisão (Michel)
+
+Responsável: Michel
+Janela: 12 horas após a entrega do corte pela editora
+
+O que Michel revisa:
+- Ortografia e erros nas legendas (ex: acento faltando, palavra errada)
+- Adequação do CTA ao tipo de conteúdo
+- Qualidade do corte e ritmo geral
+
+Regra de CTA:
+- Conteúdo educativo → pedir para salvar
+- Conteúdo de opinião ou debate → pedir comentário
+- Conteúdo de venda → link na bio
+
+Se houver até 3 ajustes: Michel envia por escrito, editora corrige e devolve
+
+---
+
+## Etapa 5 — Resolução de Conflitos
+
+Condição de acionamento: mais de 3 ajustes necessários
+Formato: call síncrona (alinhamento ao vivo)
+SLA: agendamento prioritário imediato
+
+Não deixar acumular idas e vindas por escrito quando o número de ajustes ultrapassa 3.
+Um dos problemas levantados na reunião de março/2026 foi exatamente o excesso de idas e
+vindas no processo de revisão — a call síncrona é a solução definida.
+
+---
+
+## Etapa 6 — Aprovação Final e Publicação
+
+Responsável: Michel (aprovação) + Rodrigo (agendamento/calendário)
+SLA: aprovação final mínimo 6 horas antes da publicação
+
+Calendário bloqueado com 14 dias de antecedência operacional.
+Ferramenta de agendamento: ainda não definida — ver pendências.
+
+Checklist antes de publicar:
+- [ ] Arquivo de vídeo aprovado por Michel
+- [ ] Copywriting da descrição revisado
+- [ ] Capa/thumbnail gerada
+- [ ] Agendamento configurado corretamente
+- [ ] Horário dentro da janela planejada no calendário
+
+---
+
+## Regras de Comunicação com a Editora
+
+Canal principal: WhatsApp
+Tom: direto, sem cerimônia — perguntas são bem-vindas
+
+Situações e como agir:
+- Briefing não chegou até terça ao meio-dia → editora cobra no zap
+- Áudio com problema → editora manda clip de 10s e aguarda resposta
+- Dúvida sobre CTA → consultar regra fixa (salvar/comentar/link na bio)
+- Editora com compromisso que muda prazo → avisa na segunda para Michel não ficar esperando
+- Precisa pesquisar música nova → pode, mas anota o nome no arquivo de entrega
+
+---
+
+## Tabela de SLAs Resumida
+
+ETAPA                          | RESPONSÁVEL      | SLA
+Edição primária                | Editora          | 24 horas úteis pós-captação
+Revisão de legendas e corte    | Michel           | 12 horas pós-entrega do corte
+Resolução de conflitos (>3 ajustes) | Call síncrona | Agendamento imediato
+Aprovação final e upload       | Michel/Rodrigo   | Mínimo 6 horas antes da publicação
+Bloqueio de calendário         | Rodrigo          | 14 dias de antecedência
+
+---
+
+## Pendências e itens em aberto
+
+- Ferramenta de agendamento/publicação não decidida (Buffer? Later? Outro?) — pendente desde reunião de março/2026
+- Briefing padrão para editora ainda não existe em formato de template fixo — foi levantado como problema na reunião mas não resolvido
+- Processo com Jana (editora nova) não está documentado nos inputs — papéis e SLAs específicos a confirmar
+- Lista de próximos passos da reunião de março estava incompleta (slide 4 do pptx não finalizado)
+- Havia mais itens discutidos na reunião que não foram anotados — ver gravação da reunião de 14/03/2026

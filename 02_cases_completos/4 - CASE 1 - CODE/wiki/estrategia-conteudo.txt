@@ -1,0 +1,151 @@
+# Estratégia de Conteúdo
+
+**Objetivo:** Documentar o posicionamento, os tipos de conteúdo que performam, os formatos por canal, as regras do backlog, os CTAs por tipo de conteúdo e o que definitivamente não funciona.
+**Última atualização:** 2026-06-05
+**Fonte:** Consolidado a partir dos arquivos em inputs/
+
+---
+
+## Posicionamento e POV
+
+Creator: Michel — infoprodutor e educator de IA
+Foco: produtividade e ferramentas de IA para o Instagram
+Público-alvo: pessoas que querem ser mais produtivas, creators e profissionais que usam IA
+
+Posicionamento diferencial:
+- Conteúdo técnico com alta densidade prática (não superficial)
+- Autoridade construída via salvamentos + compartilhamentos, não via curtidas
+- Dados reais da própria conta como diferencial — não só teoria
+
+Canal primário: Instagram
+Canal secundário: YouTube (apenas reaproveitamento de conteúdo do Instagram — sem roteiros novos)
+
+---
+
+## Canais e Prioridades
+
+Instagram (PRIORIDADE 1)
+- Foco em retenção orgânica
+- 3 a 4 Reels semanais de alta densidade técnica
+- 1 Carrossel por semana
+- Stories todo dia útil (bastidor ou repost — sem necessidade de produção dedicada)
+
+YouTube (PRIORIDADE 2)
+- Arquitetura de reaproveitamento de ativos de mídia do Instagram
+- Proibido criar conteúdo novo do zero para o YouTube neste momento
+- Nenhum outro canal está sendo desenvolvido ativamente agora
+
+---
+
+## Tipos de Conteúdo que Performam
+
+Tipo                          | Resultado           | Nota
+Bastidores (setup, gravação)  | Viral, alto alcance | "Meu setup de gravação" = 15.800 views, viral
+Hooks com problema direto     | Melhor taxa de salvos | "você está perdendo dinheiro" = 12.400 views
+Erros e aprendizados          | 2x mais salvamentos | Formato que mais converte em autoridade
+Manuais passo a passo         | Pico de compartilhamentos | Carrosseis de guia convertem muito
+Números no título             | Aumento de CTR orgânico | Gatilho de especificidade funciona
+Conteúdo emocional com contexto | Bom alcance em datas | Valentim 2026 performou acima do esperado
+Métricas e dados reais        | Alto engajamento    | "Métricas que importam" = 341 salvos
+
+---
+
+## Regras de CTA por Tipo de Conteúdo
+
+Tipo de conteúdo   | CTA correto
+Educativo          | Pedir para salvar
+Opinião / debate   | Pedir comentário
+Venda              | Link na bio
+
+Regra registrada por Carol em conversa com Michel e confirmada como padrão do canal.
+
+---
+
+## Formatos e Função Estratégica
+
+Reel
+- Função: abrir audiência, trazer novos usuários via alcance orgânico
+- Sucesso: views altas + taxa de salvos acima de 3%
+- Hook forte nos primeiros 3 segundos é obrigatório
+- Pico de performance em março/2026 — causa (conteúdo ou algoritmo) ainda não confirmada
+
+Carrossel
+- Função: converter audiência em seguidor engajado
+- Sucesso: taxa de salvos alta, compartilhamentos acima de 1%
+- Melhor formato para guias, listas, passo a passos
+- Dados: carrossel "da ideia ao post" = 312 salvos (melhor do Q1)
+
+Story
+- Função: presença diária, relacionamento, bastidor
+- Pode ser bastidor simples ou repost — sem produção obrigatória
+- 88 interações no story de pergunta de janeiro/2026
+
+---
+
+## Algoritmo e Consistência
+
+Referência: Gabriel (mentor estratégico)
+
+- O algoritmo pune a intermitência — hiato depois de pico é pior do que ritmo baixo constante
+- 3 postagens semanais consistentes > picos de posts diários seguidos de pausa
+- Consistência = longevidade do modelo
+- Produto digital deve nascer de dores repetitivas identificadas nos comentários, não de suposição
+
+---
+
+## Estratégia de Produto Digital
+
+- O produto nasce do mapeamento de perguntas e dores que aparecem repetidamente nos comentários
+- Abordagem: engenharia reversa de demanda — ler comentários antes de criar produto
+- Meta intermediária: construir comunidade resiliente, não apenas audiência passageira
+
+---
+
+## O Que Não Funciona
+
+- Hooks fracos (nota 1-2/5): resultado abaixo da média mesmo com bom conteúdo
+- Vídeos sem tema registrado: dificulta análise posterior e repetição do sucesso
+- Criar conteúdo novo para YouTube: esforço sem retorno no modelo atual
+- Filtros pesados: não são parte da identidade visual do canal
+- Curtidas e views brutas como critério de pauta: métricas de vaidade, não de autoridade
+- Deletar posts que performaram mal imediatamente: nunca antes de 72 horas pós-publicação
+- Lives antes de atingir 10k: potencial 2/5 — deixar para depois
+
+---
+
+## Backlog — Priorização Atual
+
+IDEIA                                         | POTENCIAL | PRIORIDADE
+Como fazer semana de conteúdo em 2h           | 5/5       | ALTA — muito pedido nos directs
+Quanto ganhei no 1o ano como creator          | 5/5       | ALTA — decisão de Michel pendente
+Newsletter como repositório de conteúdo       | 4/5       | MÉDIA — pesquisar referências
+Por que parei de usar Reels nativo do IG      | 4/5       | MÉDIA — ângulo diferente necessário
+Colaboração com [nome não registrado]         | 4/5       | MÉDIA — confirmar disponibilidade (maio)
+Gestão de tempo pra creator — série 3 partes  | 4/5       | MÉDIA — série ou posts separados?
+Desmistificar o algoritmo com dados reais     | 3/5       | BAIXA — diferencial está nos dados próprios
+Série temática mensal                         | 3/5       | BAIXA — testar em maio, risco de prender feed
+Bastidor de edição do zero (Carol)            | ?         | AGUARDANDO — pedir autorização da Carol
+Live Q&A semanal                              | 2/5       | BAIXA — deixar para depois de 10k seguidores
+
+---
+
+## Pilares de Conteúdo Identificados
+
+Com base nos posts e no backlog, os pilares recorrentes são:
+1. Produtividade de creator (processos, rotinas, sistemas)
+2. Ferramentas e tecnologia (IA, apps, setup de gravação)
+3. Copywriting e comunicação (hooks, legendas, descrições)
+4. Bastidores e processo real (sem filtro, dados reais)
+5. Erros e aprendizados (vulnerabilidade técnica, não emocional)
+
+---
+
+## Pendências e itens em aberto
+
+- Tema "ferramenta do mês" de abril não decidido
+- Série temática mensal: testar em maio ou adiar?
+- Decisão de Michel sobre post "quanto ganhei no 1o ano" ainda pendente
+- Colaboração com [nome apagado]: confirmar disponibilidade para maio
+- Teste de distribuição no feriado 21/04: postar ou não (sem decisão nos inputs)
+- Como medir stories a partir de abril: processo não está definido
+- UTMs no link da bio: configuração pendente para medir taxa de clique

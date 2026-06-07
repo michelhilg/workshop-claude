@@ -1,0 +1,26 @@
+{
+  "credentials_path": ".claude/agents/extrator/service_account.json",
+  "output_dir": ".claude/data/dadosBrutos",
+  "sheets": [
+    {
+      "name": "leads_raw",
+      "spreadsheet_id": "1nLtBkCsFcidxVau7GNrySfAe8YAbp8NjvYWBjRWlAe4",
+      "tab": "leads_raw"
+    },
+    {
+      "name": "campaigns",
+      "spreadsheet_id": "1XVTNK0bQprmQAjZUHceAOlcqrYvOQQ7-i-T6IrYUMRU",
+      "tab": "campaigns"
+    },
+    {
+      "name": "interactions",
+      "spreadsheet_id": "1QPKIquhQJ_fYfSRmwTBmr0GqUh2e4uKDAxiheEXgBNk",
+      "tab": "interactions"
+    },
+    {
+      "name": "pipeline_config",
+      "spreadsheet_id": "1GUFl32bAqOsxgXsjOrSQuTL2tQlj6Eg1rPAyauhwXTk",
+      "tab": "pipeline_config"
+    }
+  ]
+}

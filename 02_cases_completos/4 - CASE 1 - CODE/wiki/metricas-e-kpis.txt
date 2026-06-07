@@ -1,0 +1,124 @@
+# Métricas e KPIs
+
+**Objetivo:** Documentar as métricas que realmente importam para o negócio, as metas definidas, os resultados do Q1 2026, os critérios de sucesso por formato e o que deve ser ignorado.
+**Última atualização:** 2026-06-05
+**Fonte:** Consolidado a partir dos arquivos em inputs/
+
+---
+
+## Métricas que Importam
+
+MÉTRICA               | META DE REFERÊNCIA | O QUE INDICA
+Taxa de Salvamentos   | > 3% do alcance    | Alto valor prático e utilidade real do conteúdo
+Compartilhamentos     | > 1% do alcance    | Identificação com o conteúdo ou potencial de viralidade
+Retenção nos 3s iniciais | > 70% dos usuários | Gancho (hook) eficaz — mantém o espectador
+Comentários com pergunta | Qualitativo     | Demanda por novos conteúdos — alimenta o backlog
+
+Índice de autoridade: medido pelo volume acumulado de salvamentos e compartilhamentos.
+
+---
+
+## Métricas de Vaidade — Ignorar para Decisões de Pauta
+
+- Visualizações brutas isoladas
+- Curtidas isoladas
+
+Regra: visualizações e curtidas não guiam redirecionamento de pauta.
+Se um post tiver muitas views mas poucos salvos — não é conteúdo de autoridade.
+
+---
+
+## Resultados do Q1 2026 (Janeiro a Março)
+
+Nota: dados parciais — março não foi totalmente fechado no momento do relatório.
+
+INDICADOR              | RESULTADO    | META      | STATUS
+Seguidores (final Q1)  | 6.840        | —         | +640 no período
+Reels publicados       | 31           | 36        | Falhou — 5 abaixo da meta
+Taxa média de salvos   | 3,2%         | > 3%      | Atingida
+Melhor post (views)    | 47k          | —         | Reel do hook "você está perdendo dinheiro"
+
+---
+
+## Destaque de Performance — Posts Q1 2026
+
+Posts com melhor resultado por categoria:
+
+MELHOR ALCANCE
+- "Meu setup de gravação" (04/02): 15.800 views, 290 salvos, 104 compartilhamentos — viral
+- "Hook: você está perdendo dinheiro" (17/01): 12.400 views, 380 salvos, 92 compartilhamentos
+- "Como criar conteúdo em 2h por semana" (04/03): 11.200 views, 234 salvos
+
+MELHOR CONVERSÃO EM SALVOS (carrosseis)
+- "Passo a passo: da ideia ao post" (18/02): 312 salvos — melhor carrossel do trimestre
+- "Métricas que importam" (07/03): 341 salvos
+- "Guia de copywriting para iniciantes" (07/02): 287 salvos
+
+POSTS COM BAIXO RESULTADO
+- "Por que eu parei de usar o Canva" (03/01): 4.200 views, 87 salvos — hook fraco
+- Post sem tema identificado (11/02): 3.100 views, 44 salvos, hook nota 2/5 — anotar temas sempre
+
+---
+
+## Critérios de Sucesso por Formato
+
+Reel
+- Sucesso: alto alcance (views) + taxa de salvos acima de 3%
+- Reel forte = hook nota 4 ou 5 + corte nos 3 primeiros segundos funcionando
+- Função estratégica: abrir audiência, trazer novos usuários
+
+Carrossel
+- Sucesso: taxa de salvos alta, compartilhamentos acima de 1%
+- Carrosseis de guia e passo a passo têm pico de compartilhamentos
+- Função estratégica: converter em seguidor engajado
+
+Story
+- Métrica: interações (respostas, cliques) — qualitativo
+- Histórico: story de pergunta em 14/01 gerou 88 interações
+- Função estratégica: presença diária, relacionamento, bastidor
+
+---
+
+## Padrões de Conteúdo com Alto Retorno
+
+Tipo de conteúdo                  | Resultado observado
+Bastidores (setup, gravação real) | Viral — equipamento sempre performa
+Hook com problema direto ao público | Melhor taxa de salvos + alcance
+Erros e aprendizados              | 2x mais salvamentos que média
+Números no título                 | Aumento de CTR orgânico
+Manuais e guias passo a passo     | Pico de compartilhamentos
+Carrosseis técnicos               | Conversão mais alta em salvos
+
+---
+
+## Regra dos 72 Horas
+
+Nunca deletar um post que performou abaixo da média imediatamente.
+Aguardar no mínimo 72 horas para a distribuição orgânica acontecer.
+Só então analisar friamente a métrica de retenção antes de qualquer decisão.
+
+---
+
+## Meta Principal 2026
+
+Seguidores: 10.000 até junho de 2026
+Status atual (fim do Q1): 6.840
+Necessário: +3.160 entre abril e junho
+
+---
+
+## Questões Abertas de Análise
+
+- O pico de performance em março foi pelo conteúdo ou favorecimento algorítmico? Não há dados suficientes para concluir — precisa de mais meses para comparar.
+- 3 reels/semana é ritmo sustentável? Fevereiro foi difícil — revisar capacidade antes do Q2.
+- Metas de taxa de salvos por formato ainda não definidas individualmente — a meta de 3% é genérica.
+
+---
+
+## Pendências e itens em aberto
+
+- Stories nunca foram medidos sistematicamente — começar a medir a partir de abril
+- Taxa de clique no link da bio: sem UTMs configurados — não há dados
+- Dados de março ainda parciais — fechar análise até 05/04/2026 (estava em aberto no input)
+- Planilha de acompanhamento semanal ainda manual e lenta — criar modelo automatizado para Q2
+- Meta de taxa de salvo por formato (reel vs. carrossel) a definir individualmente para o Q2

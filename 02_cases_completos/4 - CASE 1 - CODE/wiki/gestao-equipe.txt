@@ -1,0 +1,139 @@
+# Gestão de Equipe
+
+**Objetivo:** Documentar os papéis de cada pessoa da equipe, como se comunicar com cada uma, os SLAs acordados, as regras de delegação e os limites de autonomia de cada papel.
+**Última atualização:** 2026-06-05
+**Fonte:** Consolidado a partir dos arquivos em inputs/
+
+---
+
+## Composição da Equipe
+
+PESSOA   | PAPEL                           | CANAL DE CONTATO
+Michel   | Creator, roteirista, aprovador final | —
+Carol    | Editora de vídeo (principal)    | WhatsApp
+Jana     | Editora de vídeo (nova)         | A confirmar
+Rodrigo  | Calendário editorial e agendamento | A confirmar
+
+Mentoria externa:
+Gabriel  | Mentor estratégico do Michel    | Sessões periódicas
+
+---
+
+## Carol — Editora Principal
+
+Responsabilidades:
+- Edição de vídeo (corte, ritmo, trilha sonora)
+- Sincronização e revisão de legendas
+- Entrega em mp4 1080x1920
+
+Autonomia — o que Carol pode fazer sem perguntar:
+- Agendar o vídeo depois que Michel liberar
+- Corrigir erros ortográficos nas legendas sob orientação de Michel
+- Pesquisar músicas no Instagram quando a pasta do projeto não tiver opção adequada
+  (obrigatório anotar o nome da música no arquivo de entrega)
+
+Autonomia — o que Carol DEVE perguntar antes de agir:
+- Iniciar edição sem briefing completo → NÃO iniciar, esperar e cobrar no zap se necessário
+- Áudio com problema na origem → NÃO tentar corrigir, avisar Michel com clip de 10s
+- Dúvida sobre CTA do vídeo → consultar regra fixa ou perguntar a Michel
+
+Regras de comunicação com Carol:
+- Canal: WhatsApp
+- Se o briefing não chegar até terça ao meio-dia, Carol cobra no zap
+- Se Carol tiver compromisso que altera prazo, avisa na segunda
+- Perguntas técnicas são bem-vindas — Michel prefere dúvida levantada a retrabalho depois
+
+---
+
+## Jana — Editora Nova
+
+Responsabilidades:
+- Ainda não documentadas nos inputs disponíveis
+
+Pendência:
+- Papéis, SLAs e canal de comunicação de Jana precisam ser documentados formalmente
+- Não está claro se Jana trabalha nos mesmos conteúdos que Carol ou em projetos separados
+
+---
+
+## Rodrigo — Calendário Editorial
+
+Responsabilidades:
+- Gestão e bloqueio do calendário editorial
+- Agendamento com antecedência mínima de 14 dias
+
+Canal de comunicação: não documentado nos inputs
+
+Pendência:
+- Processo de comunicação entre Rodrigo e Michel não está descrito — a documentar
+
+---
+
+## SLAs Acordados
+
+ETAPA                              | RESPONSÁVEL | SLA
+Envio do tema para editora         | Michel      | Toda segunda-feira
+Envio do briefing completo         | Michel      | Até terça ao meio-dia
+Cobrança se briefing não chegou    | Carol       | Terça ao meio-dia
+Edição primária                    | Carol/Jana  | 24 horas úteis pós-captação
+Revisão de legendas e CTA          | Michel      | 12 horas pós-entrega do corte
+Resolução de >3 ajustes (call)     | Michel+Carol| Agendamento imediato
+Aprovação final                    | Michel      | Mínimo 6 horas antes da publicação
+Bloqueio do calendário             | Rodrigo     | 14 dias de antecedência
+
+---
+
+## Regras de Delegação
+
+O que Michel delega para Carol:
+- Edição completa do vídeo dentro dos parâmetros definidos
+- Correção de erros ortográficos nas legendas
+- Pesquisa de músicas quando necessário (com registro do nome)
+- Agendamento pós-aprovação
+
+O que Michel NÃO delega para Carol:
+- Decisão sobre CTA
+- Decisão sobre retrabalho quando áudio está ruim
+- Aprovação final do conteúdo
+- Definição de temas ou pautas
+
+O que Carol NÃO deve fazer por conta própria:
+- Começar a editar com briefing incompleto
+- Tentar corrigir problema de áudio de origem na edição
+- Agendar sem aprovação de Michel
+
+---
+
+## Problemas Levantados na Reunião de Março 2026
+
+Itens identificados como problemas no processo atual:
+- Processo de aprovação confuso com muitas idas e vindas
+- Sem briefing padrão para a editora (template ainda não criado)
+- Temas definidos em cima da hora, sem antecedência
+- Retrabalho por falta de alinhamento inicial
+- Havia mais itens mas não foram anotados — ver gravação da reunião de 14/03/2026
+
+---
+
+## Mentoria com Gabriel — Diretrizes Estratégicas
+
+Gabriel é o mentor estratégico do Michel. Pontos principais da última sessão:
+
+Foco em comunidade versus audiência passageira:
+- Produto digital deve nascer do mapeamento das dores repetitivas nos comentários
+- Menos suposição, mais engenharia reversa de demandas reais
+
+Consistência de publicação:
+- O algoritmo pune a intermitência
+- Operacionalmente superior: 3 postagens semanais consistentes > picos diários seguidos de hiato
+- A consistência, não o volume, define a longevidade do modelo
+
+---
+
+## Pendências e itens em aberto
+
+- Template de briefing padrão para editora ainda não foi criado — era um dos problemas levantados na reunião de março
+- Processo e SLAs de Jana não estão documentados
+- Canal de comunicação de Rodrigo não está registrado nos inputs
+- Lista completa de próximos passos da reunião de 14/03 não foi anotada — ver gravação
+- Havia mais itens discutidos na reunião que não foram registrados no slide 4 do pptx

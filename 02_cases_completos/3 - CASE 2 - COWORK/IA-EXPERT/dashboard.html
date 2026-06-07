@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA Sem Frescura — Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F5F0E8;
+      --green: #0E3A2F;
+      --coral: #E8865A;
+      --green-light: #1a5c47;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --card-bg: #ffffff;
+      --border: #e0d8cc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Hanken Grotesk', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--green);
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--green);
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--coral); }
+    .subtitle {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+    .domains {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .domain-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: box-shadow 0.15s, transform 0.15s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .domain-card:hover {
+      box-shadow: 0 4px 16px rgba(14,58,47,0.12);
+      transform: translateY(-2px);
+    }
+    .domain-card .icon { font-size: 2rem; }
+    .domain-card .name { font-weight: 700; font-size: 1rem; color: var(--green); }
+    .domain-card .desc { font-size: 0.85rem; color: var(--muted); }
+    .domain-card .status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      width: fit-content;
+      margin-top: 0.25rem;
+    }
+    .status.active { background: #d1fae5; color: #065f46; }
+    .status.building { background: #fef3c7; color: #92400e; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="logo">IA<span> Sem Frescura</span></div>
+      <div class="subtitle">@michelhilg · painel de operações</div>
+    </div>
+  </header>
+
+  <h2>Domínios ativos</h2>
+  <div class="domains">
+    <a href="tendencias/outputs/dashboard-tendencias.html" class="domain-card">
+      <div class="icon">📡</div>
+      <div class="name">Tendências de IA</div>
+      <div class="desc">O que está em alta no nicho — pesquisa semanal cruzada com seus temas.</div>
+      <div class="status active">ativo ✓</div>
+    </a>
+  </div>
+
+  <footer>
+    painel-tendencias · construído em 2026-06-02 · Michel Hilgemberg
+  </footer>
+</body>
+</html>

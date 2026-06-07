@@ -1,0 +1,178 @@
+{
+  "data": "2026-06-05",
+  "nicho": "Inteligência Artificial",
+  "gerado_em": "2026-06-05T07:00:00-03:00",
+  "itens": [
+    {
+      "titulo": "GitHub Copilot migra para cobrança por uso — contas subiram até 25x",
+      "categoria": "Novidades das big techs",
+      "resumo": "Em 1º de junho o GitHub Copilot trocou o modelo flat de assinatura por créditos de IA baseados em consumo de tokens. Alguns desenvolvedores relataram contas até 25x maiores que o valor anterior.",
+      "por_que_importa": "Se você usa Copilot diariamente, revise agora qual modelo está usando e compare o plano Pro vs Pro+ — sua conta pode ter mudado bastante sem aviso claro.",
+      "calor": "alto",
+      "fonte_titulo": "GitHub Blog",
+      "fonte_url": "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Context Engineering: o novo nome do jogo (prompt engineering ficou para trás)",
+      "categoria": "Prompts e técnicas práticas",
+      "resumo": "O paradigma mudou de escrever bons prompts para arquitetar o contexto inteiro do LLM como sistema modular: RAG, memória, instruções de sistema e resultados de ferramentas — tudo compondo o 'orçamento de contexto'.",
+      "por_que_importa": "Prompt longo e monolítico já degrada performance nos modelos atuais. A técnica prática: blocos de 150–300 palavras, compressão de estado em multi-turn, RAG para não saturar o contexto.",
+      "calor": "alto",
+      "fonte_titulo": "The AI Corner — Context Engineering Guide 2026",
+      "fonte_url": "https://www.the-ai-corner.com/p/context-engineering-guide-2026",
+      "publicado_em": "2026-06-03"
+    },
+    {
+      "titulo": "OpenAI descontinua o Sora: web e app encerrados, API segue temporariamente",
+      "categoria": "IA generativa visual (imagem, vídeo, design)",
+      "resumo": "A OpenAI anunciou o encerramento da experiência web e do app do Sora. A API ainda funciona mas também será descontinuada mais adiante em 2026.",
+      "por_que_importa": "Se você usava Sora para criar vídeos, é hora de migrar: Runway Gen-4.5, Kling 3.0 Omni e Seedance 2.0 são as alternativas mais maduras com áudio nativo.",
+      "calor": "alto",
+      "fonte_titulo": "Lovart AI — Best AI Video Generators 2026",
+      "fonte_url": "https://www.lovart.ai/blog/video-generators-review",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "EU AI Act: aplicação plena em 2 de agosto de 2026 — prazo real, fiscais já nomeados",
+      "categoria": "Regulação, ética e tendências de mercado",
+      "resumo": "O regulamento europeu de IA entra em plena vigência em 2 de agosto, incluindo regras de transparência. Em 1º de junho, a Comissão nomeou o Painel Científico com 60 experts e o Fórum Consultivo para fiscalização.",
+      "por_que_importa": "Quem usa IA em produtos que atendem usuários europeus precisa verificar conformidade agora — os fiscais estão organizados e o prazo não vai ser prorrogado desta vez.",
+      "calor": "alto",
+      "fonte_titulo": "Axis Intelligence — EU AI Act 2026",
+      "fonte_url": "https://axis-intelligence.com/eu-ai-act-news-2026/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "MAI-Code-1-Flash da Microsoft chega ao VS Code via GitHub Copilot",
+      "categoria": "Novos lançamentos de modelos (LLMs e multimodais)",
+      "resumo": "Anunciado no Build 2026, o MAI-Code-1-Flash tem 5B parâmetros, foi treinado com dados limpos e licenciados pela Microsoft, e já supera o Claude Haiku 4.5 em benchmarks de código a custo menor.",
+      "por_que_importa": "Disponível hoje no picker de modelos do VS Code dentro do Copilot — teste em tarefas de coding rotineiro para ver se substitui o modelo que você já usa.",
+      "calor": "alto",
+      "fonte_titulo": "Microsoft AI — Introducing MAI-Code-1-Flash",
+      "fonte_url": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "Google Gemini Omni disponível para assinantes: qualquer input, qualquer output",
+      "categoria": "Novos lançamentos de modelos (LLMs e multimodais)",
+      "resumo": "O Gemini Omni Flash, lançado no Google I/O, já está disponível para assinantes AI Plus, Pro e Ultra. Aceita texto, imagem, vídeo e áudio como entrada e gera saídas coesas em qualquer formato.",
+      "por_que_importa": "Se você já paga o Google AI Pro, abra o Gemini app agora e teste geração de vídeo a partir de referências visuais — funcionalidade similar ao Sora, mas ainda ativa.",
+      "calor": "alto",
+      "fonte_titulo": "Google Blog — I/O 2026 All Announcements",
+      "fonte_url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "publicado_em": "2026-05-30"
+    },
+    {
+      "titulo": "'Think step by step' prejudica modelos de raciocínio modernos",
+      "categoria": "Prompts e técnicas práticas",
+      "resumo": "Guias de 2026 confirmam: a instrução clássica é redundante ou prejudicial com modelos como o1, o3, Claude 4 e MAI-Thinking-1, que já raciocinam internamente sem precisar de instrução explícita.",
+      "por_que_importa": "Remova essa instrução dos seus prompts-padrão com modelos de raciocínio — pode melhorar a qualidade das respostas e reduzir custo de tokens.",
+      "calor": "alto",
+      "fonte_titulo": "Thomas Wiegold — Prompt Engineering Best Practices 2026",
+      "fonte_url": "https://thomas-wiegold.com/blog/prompt-engineering-best-practices-2026/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Microsoft MAI-Thinking-1: primeiro modelo de raciocínio da MS treinado sem dados OpenAI",
+      "categoria": "Novos lançamentos de modelos (LLMs e multimodais)",
+      "resumo": "Anunciado no Build 2026, o MAI-Thinking-1 é o primeiro modelo de raciocínio desenvolvido inteiramente pela Microsoft, sem usar dados de treinamento da OpenAI, marcando soberania de IA da empresa.",
+      "por_que_importa": "É o sinal mais claro da independência da Microsoft em relação à OpenAI — a competição em modelos de raciocínio vai esquentar no segundo semestre de 2026.",
+      "calor": "médio",
+      "fonte_titulo": "TechTimes — Microsoft Build 2026",
+      "fonte_url": "http://www.techtimes.com/articles/317631/20260602/microsoft-build-2026-mai-thinking-1-first-house-reasoning-model-trained-without-openai-data.htm",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "n8n remove limite de workflows ativos e adota billing por execução",
+      "categoria": "Agentes de IA e automações",
+      "resumo": "A n8n eliminou o limite de workflows ativos em todos os planos e passou a cobrar por execução de workflow completo (não por step individual), tornando automações complexas muito mais baratas que Zapier e Make.",
+      "por_que_importa": "Se você usa Make ou Zapier para automações com muitos passos encadeados, vale comparar o custo agora — a n8n ficou significativamente mais competitiva em price/performance.",
+      "calor": "médio",
+      "fonte_titulo": "n8n Blog — AI agent development tools 2026",
+      "fonte_url": "https://blog.n8n.io/we-need-re-learn-what-ai-agent-development-tools-are-in-2026/",
+      "publicado_em": "2026-05-30"
+    },
+    {
+      "titulo": "Google Docs Live: criar e editar documentos com a voz",
+      "categoria": "Novidades das big techs",
+      "resumo": "Anunciado no I/O 2026, o Docs Live permite criar e editar documentos no Google Docs usando comandos de voz, com IA cuidando da estrutura e organização. Disponível para planos Pro e Ultra no verão.",
+      "por_que_importa": "Para quem já usa o Google Workspace, a funcionalidade chega embutida sem custo extra — vale monitorar a liberação para o seu plano.",
+      "calor": "médio",
+      "fonte_titulo": "Google Blog — I/O 2026 All Announcements",
+      "fonte_url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "publicado_em": "2026-05-30"
+    },
+    {
+      "titulo": "MAI-Image-2.5 da Microsoft já está no PowerPoint e OneDrive",
+      "categoria": "Ferramentas e apps emergentes",
+      "resumo": "O MAI-Image-2.5, modelo de geração e edição de imagens da Microsoft anunciado no Build 2026, já está disponível no PowerPoint para geração text-to-image e edição de imagens existentes.",
+      "por_que_importa": "Se você usa PowerPoint para apresentações, o gerador de imagens por IA agora está nativo — sem precisar de Midjourney ou DALL-E separados.",
+      "calor": "médio",
+      "fonte_titulo": "TestingCatalog — Microsoft Build 2026",
+      "fonte_url": "https://www.testingcatalog.com/microsoft-readies-new-mai-voice-and-image-models-for-build-2026/",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "Seedance 2.0: geração de vídeo com áudio nativo e multi-shot storytelling",
+      "categoria": "IA generativa visual (imagem, vídeo, design)",
+      "resumo": "O Seedance 2.0 da ByteDance combina texto, imagem, áudio e vídeo como inputs, gera clipes de até 15 segundos em 1080p com diálogo sincronizado, trilha e efeitos sonoros — sem pós-produção separada.",
+      "por_que_importa": "Com o Sora sendo descontinuado, o Seedance 2.0 é uma das alternativas mais completas para vídeo com áudio embutido disponíveis hoje.",
+      "calor": "médio",
+      "fonte_titulo": "Pixflow — Best AI Video Generator 2026",
+      "fonte_url": "https://pixflow.net/blog/best-ai-video-generator/",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Amazon Quick: apps e dashboards inteligentes criados em linguagem natural",
+      "categoria": "IA para empreendedores e pequenos negócios",
+      "resumo": "A Amazon lançou o Quick, ferramenta que cria apps, dashboards e páginas web conectados a dados de negócio apenas descrevendo o que você quer em texto. Integra Google Workspace, Zoom, Airtable e Teams nativamente.",
+      "por_que_importa": "Empreendedores sem time técnico conseguem criar painel de métricas ou app interno descrevendo o que precisam — vale testar se sua stack de dados é suportada.",
+      "calor": "médio",
+      "fonte_titulo": "AWS — What's Next 2026",
+      "fonte_url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "EU nomeia Painel Científico com 60 experts para fiscalização do AI Act",
+      "categoria": "Regulação, ética e tendências de mercado",
+      "resumo": "Em 1º de junho, a Comissão Europeia nomeou o Painel Científico e o Fórum Consultivo do AI Act. Os 60 especialistas internacionais vão orientar o AI Office europeu na fiscalização de modelos de propósito geral.",
+      "por_que_importa": "O enforcement do AI Act está sendo estruturado agora com fiscais reais — quem desenvolve ou vende soluções de IA com exposição europeia precisa entender o que muda em agosto.",
+      "calor": "médio",
+      "fonte_titulo": "EU Digital Strategy — AI Act enforcement",
+      "fonte_url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support",
+      "publicado_em": "2026-06-01"
+    },
+    {
+      "titulo": "Project Solara: Microsoft e Qualcomm desenvolvem wearable agentic",
+      "categoria": "Agentes de IA e automações",
+      "resumo": "Microsoft e Qualcomm revelaram o Project Solara, dispositivo vestível parecido com smartphone no pescoço que executa tarefas por agentes de IA em vez de apps tradicionais.",
+      "por_que_importa": "Ainda é protótipo — relevante como sinal da direção da Microsoft para computação agentic, mas sem produto disponível para testar.",
+      "calor": "baixo",
+      "fonte_titulo": "Apple Insider — Microsoft & Qualcomm Project Solara",
+      "fonte_url": "https://appleinsider.com/articles/26/06/02/apples-on-device-ai-protects-privacy-microsofts-cloud-based-plans-offer-only-convenience",
+      "publicado_em": "2026-06-02"
+    },
+    {
+      "titulo": "88% das organizações usam IA regularmente em pelo menos uma função (McKinsey)",
+      "categoria": "Regulação, ética e tendências de mercado",
+      "resumo": "O State of AI da McKinsey mostra 88% das organizações usando IA regularmente em alguma função de negócio — alta de 10 pontos em relação ao ano anterior.",
+      "por_que_importa": "O mercado saiu da fase de early adopters — dado útil para argumentação com clientes ou parceiros que ainda resistem à adoção de ferramentas de IA.",
+      "calor": "baixo",
+      "fonte_titulo": "UC Today — AI Productivity Use Cases 2026",
+      "fonte_url": "https://www.uctoday.com/productivity-automation/ai-productivity-use-cases/",
+      "publicado_em": "2026-05-28"
+    },
+    {
+      "titulo": "Cases: AstraZeneca recuperou 30k horas/ano, Siemens resolve 210k tickets/mês com IA",
+      "categoria": "Casos de uso reais e workflows",
+      "resumo": "Grandes empresas saindo do piloto para produção com agentes: AstraZeneca automatizou 30.000 horas anuais de trabalho repetitivo; Siemens processa 210.000 tickets de suporte por mês autonomamente.",
+      "por_que_importa": "Os playbooks de automação de suporte e processos internos com agentes já estão documentados e podem ser replicados em escala menor para pequenas e médias empresas.",
+      "calor": "baixo",
+      "fonte_titulo": "UC Today — AI Productivity Workflows 2026",
+      "fonte_url": "https://www.uctoday.com/productivity-automation/which-ai-productivity-workflows-actually-deliver-roi-in-2026/",
+      "publicado_em": "2026-05-30"
+    }
+  ],
+  "temas_sem_movimento": []
+}

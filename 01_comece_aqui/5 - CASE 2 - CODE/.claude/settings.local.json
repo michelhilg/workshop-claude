@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Agent",
+      "Bash",
+      "PowerShell",
+      "Skill(update-config)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "google-sheets"
+  ]
+}
