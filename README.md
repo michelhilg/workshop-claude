@@ -104,7 +104,11 @@ A pasta `05_bonus/` traz duas skills para instalar no Claude Code e reduzir o co
 
 - **`compactador-de-contexto.skill`** — skill para compactar o contexto acumulado em conversas longas, preservando decisões e fatos relevantes e descartando verbosidade redundante.
 
-Para instalar uma skill no Claude Code, copie o arquivo `.skill` para a pasta `.claude/skills/` do seu projeto (ou `~/.claude/skills/` para uso global) e referencie pelo nome nas instruções do CLAUDE.md.
+As skills funcionam tanto no Claude Code quanto no aplicativo do Claude.
+
+**No Claude Code:** copie o arquivo `.skill` para `.claude/skills/` dentro do projeto ou para `~/.claude/skills/` para uso global.
+
+**No aplicativo Claude:** acesse **Customize** no menu lateral, vá em **Skills** e importe o arquivo `.skill` diretamente pela interface.
 
 ---
 
